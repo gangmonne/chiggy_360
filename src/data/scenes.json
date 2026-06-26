@@ -740,6 +740,217 @@
         "text": "만술이 주머니에 손을 넣는다. D-21에 트럭에서 집은 쌀알. 아직 거기 있다.\n손가락으로 굴린다. 작다.\n\nD-18이 끝났다."
       },
       { "condition": {}, "text": "D-18이 끝났다." }
+    ],
+    "next": "d17_01"
+  },
+
+  "d17_01": {
+    "panorama": "/panorama/d17_01_wakeup.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "아침. 성칠이 만술을 발로 툭 찬다.\n\"일어나.\"\n봉길 아저씨 방식이랑 똑같다. 만술이 그걸 안다."
+      },
+      { "condition": {}, "text": "아침. 누군가 만술을 발로 툭 찬다.\n\"일어나.\"" }
+    ],
+    "next": "d17_02"
+  },
+
+  "d17_02": {
+    "panorama": "/panorama/d17_02_load.jpg",
+    "narrative": "짐 배정. 하사가 만술을 부른다. 오늘 짐이 다르다.\n의식 없는 군인 하나. 들것이 없다. 지게에 묶는다.\n하사가 말한다. \"천천히. 흔들리면 안 돼.\"\n만술이 군인을 본다. 또래다. 얼굴이 창백하다. 숨은 쉰다.",
+    "choices": [
+      { "label": "A. 군인 얼굴만 본다", "goto": "d17_03" },
+      { "label": "B. 군복 어딘가에 이름이 있나 찾아본다", "goto": "d17_03", "effect": { "readNameTag": 1 } }
+    ]
+  },
+
+  "d17_03": {
+    "panorama": "/panorama/d17_02_load.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "readNameTag": { "gte": 1 } },
+        "text": "군복 가슴께에 이름표가 있다. 글씨가 작다.\n만술이 읽으려 하는데 하사가 빨리 하라고 한다. 다 못 읽는다.\n한 글자만 읽었다. '이'."
+      },
+      { "condition": {}, "text": "만술이 군인 얼굴만 본다." }
+    ],
+    "next": "d17_04"
+  },
+
+  "d17_04": {
+    "panorama": "/panorama/d17_04_tying.jpg",
+    "narrative": "군인을 지게에 묶는다. 어떻게 묶어야 하는지 아무도 안 알려준다.\n만술이 끈을 잡는다.",
+    "choices": [
+      { "label": "A. 짐 묶던 방식으로 묶는다", "goto": "d17_05" },
+      { "label": "B. 최대한 조심스럽게 묶는다", "goto": "d17_05", "effect": { "tiedCarefully": 1 } },
+      { "label": "C. 앞사람한테 봐달라고 한다", "goto": "d17_05" }
+    ]
+  },
+
+  "d17_05": {
+    "panorama": "/panorama/d17_04_tying.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "tiedCarefully": { "gte": 1 } },
+        "text": "시간이 걸린다. 하사가 보고 있다. 뭐라 안 한다.\n만술이 끈을 매만진다. 느슨하지 않게. 흔들리지 않게.\n군인의 숨소리가 들린다."
+      },
+      { "condition": {}, "text": "만술이 짐 묶던 방식으로 묶는다." }
+    ],
+    "next": "d17_06"
+  },
+
+  "d17_06": {
+    "panorama": "/panorama/d17_06_climb.jpg",
+    "narrative": "출발. 포탄 상자랑 무게가 비슷한데 — 다르다.\n출렁인다. 숨소리가 들린다. 가끔 신음소리가 난다.\n만술이 걸으면서 그 숨소리를 듣는다. 살아 있다는 소리.",
+    "choices": [
+      { "label": "A. 그냥 걷는다", "goto": "d17_07" },
+      { "label": "B. 군인 숨소리에 리듬을 맞춰본다", "goto": "d17_07", "effect": { "matchedSoldierBreath": 1 } }
+    ]
+  },
+
+  "d17_07": {
+    "panorama": "/panorama/d17_06_climb.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "matchedSoldierBreath": { "gte": 1 } },
+        "text": "만술이 군인의 숨에 맞춰 발을 내딛는다. 리듬이 불규칙하다.\n만술도 불규칙해진다. 오히려 힘들다. 그런데 계속 맞춘다."
+      },
+      { "condition": {}, "text": "만술이 그냥 걷는다." }
+    ],
+    "next": "d17_08"
+  },
+
+  "d17_08": {
+    "panorama": "/panorama/d17_08_midslope.jpg",
+    "narrative": "고개 중턱. 군인이 크게 신음한다.\n만술이 멈춘다. 앞사람도 멈춘다. 줄 전체가 멈춘다.",
+    "choices": [
+      { "label": "A. \"괜찮습니까?\" 묻는다", "goto": "d17_09", "effect": { "askedIfOk": 1 } },
+      { "label": "B. 그냥 기다린다", "goto": "d17_09" },
+      { "label": "C. 내려놓는다", "goto": "d17_09", "effect": { "lowered": 1 } }
+    ]
+  },
+
+  "d17_09": {
+    "panorama": "/panorama/d17_08_midslope.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "askedIfOk": { "gte": 1 } },
+        "text": "군인이 대답 못 한다. 그런데 손가락이 움직인다.\n만술의 지게끈을 잡으려는 것처럼. 못 잡는다.\n만술이 그걸 본다."
+      },
+      {
+        "condition": { "lowered": { "gte": 1 } },
+        "text": "앞사람이 뒤를 돌아본다. 하사가 온다. 뭐라 하지 않는다.\n잠깐 군인 상태를 보고 말한다. \"다시 매라.\"\n만술이 다시 맨다."
+      },
+      { "condition": {}, "text": "그냥 기다린다." }
+    ],
+    "next": "d17_10"
+  },
+
+  "d17_10": {
+    "panorama": "/panorama/d17_10_summit_handoff.jpg",
+    "narrative": "정상에 도착한다. 의무병이 기다리고 있다. 군인을 받아간다.\n만술의 등이 가벼워진다.\n그 가벼움이 이상하다. 홀가분한 건지 — 뭔가 잃은 건지.",
+    "choices": [
+      { "label": "A. 본다", "goto": "d17_11", "effect": { "watchedSoldierCarried": 1 } },
+      { "label": "B. 고개를 돌린다", "goto": "d17_11" }
+    ]
+  },
+
+  "d17_11": {
+    "panorama": "/panorama/d17_10_summit_handoff.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "watchedSoldierCarried": { "gte": 1 }, "readNameTag": { "gte": 1 } },
+        "text": "군인이 의무병 손에 실려간다. 만술이 그 뒷모습을 본다.\n'이'씨. 이름 한 글자."
+      },
+      {
+        "condition": { "watchedSoldierCarried": { "gte": 1 } },
+        "text": "군인이 의무병 손에 실려간다. 만술이 그 뒷모습을 본다."
+      },
+      { "condition": {}, "text": "만술이 고개를 돌린다." }
+    ],
+    "next": "d17_12"
+  },
+
+  "d17_12": {
+    "panorama": "/panorama/d17_12_descend.jpg",
+    "narrative": "내려오는 길. 봉길 아저씨가 만술 옆으로 온다. 걸으면서 말한다.\n\"무거웠지?\"",
+    "choices": [
+      { "label": "A. \"네.\" 한다", "goto": "d17_13" },
+      { "label": "B. \"짐이랑 달라요.\" 한다", "goto": "d17_13", "effect": { "saidLoadDiffers": 1 } },
+      { "label": "C. 아무 말 안 한다", "goto": "d17_13" }
+    ]
+  },
+
+  "d17_13": {
+    "panorama": "/panorama/d17_12_descend.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidLoadDiffers": { "gte": 1 } },
+        "text": "봉길 아저씨가 걸으면서 말한다. \"그래.\"\n그게 다다. 근데 그 '그래'가 — 알고 있었다는 말이다."
+      },
+      { "condition": {}, "text": "봉길 아저씨가 그냥 걷는다." }
+    ],
+    "next": "d17_14"
+  },
+
+  "d17_14": {
+    "panorama": "/panorama/d17_14_evening.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "저녁. 성칠이 묻는다. \"오늘 사람 졌어?\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"나도 언제 그거 할 차례 올 텐데.\""
+      },
+      { "condition": {}, "text": "저녁. 만술이 혼자 밥을 먹는다." }
+    ],
+    "choices": [
+      { "label": "A. \"별거 없어.\" 한다", "goto": "d17_15", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "B. 아무 말 안 한다", "goto": "d17_15", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. \"이름 있던데.\" 한다", "goto": "d17_15", "condition": { "knowsSeongchil": { "gte": 1 }, "readNameTag": { "gte": 1 } }, "effect": { "toldSeongchilName": 1 } }
+    ],
+    "next": "d17_15"
+  },
+
+  "d17_15": {
+    "panorama": "/panorama/d17_14_evening.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "toldSeongchilName": { "gte": 1 } },
+        "text": "성칠이 만술을 본다. \"알아?\"\n만술이 말한다. \"'이'씨인 것 같아.\"\n성칠이 고개를 끄덕인다. 그게 다다. 근데 그 이름이 둘 사이에 생겼다."
+      },
+      { "condition": {}, "text": "저녁 시간이 지나간다." }
+    ],
+    "next": "d17_16"
+  },
+
+  "d17_16": {
+    "panorama": "/panorama/d17_16_stars.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "starsCounted": { "gte": 1 } },
+        "text": "텐트 밖. 만술이 혼자 앉아 있다. 하늘. 별.\nD-21 새벽에 별을 셌던 게 떠오른다.\n만술이 별을 찾는다. 그때 그 자리에 있던 별. 있는지 없는지 모르겠다. 하늘이 너무 넓다."
+      },
+      { "condition": {}, "text": "텐트 밖. 만술이 혼자 앉아 있다.\n그냥 하늘을 본다. 별이 많다. 그게 다다." }
+    ],
+    "next": "d17_17"
+  },
+
+  "d17_17": {
+    "panorama": "/panorama/d17_17_tent_night.jpg",
+    "narrative": "텐트 안. 봉길 아저씨가 눕는다.\n만술이 들어와서 눕는다.\n침묵.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 그게 다다.",
+    "choices": [
+      { "label": "A. \"예.\" 한다", "goto": "d17_end" },
+      { "label": "B. 아무 말 안 한다", "goto": "d17_end", "effect": { "silentAtNightD17": 1 } }
+    ]
+  },
+
+  "d17_end": {
+    "panorama": "/panorama/d17_17_tent_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "silentAtNightD17": { "gte": 1 } },
+        "text": "봉길 아저씨가 돌아눕는다. 만술이 눈을 감는다.\n군인 숨소리가 아직 귀에 남아 있다.\n\nD-17이 끝났다."
+      },
+      { "condition": {}, "text": "만술이 \"예.\" 하고 눈을 감는다.\n\nD-17이 끝났다." }
     ]
   }
 }
