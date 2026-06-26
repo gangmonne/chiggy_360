@@ -171,6 +171,16 @@ const director = new GameDirector(canvas, sceneGraph, {
   watchedBonggilTomorrowD2: 0,
   saidScaredYesD2: 0,
   stayedAwakeD2: 0,
+  lookedAtHandsD1: 0,
+  rememberedBonggilBackD1: 0,
+  hidFromBearD1: 0,
+  stillForBearD1: 0,
+  ranFromBearD1: 0,
+  pushedTowardBonggilD1: 0,
+  saidItWasBearD1: 0,
+  stoodLongLastSummitD1: 0,
+  watchedBonggilLastD1: 0,
+  saidYouTooD1: 0,
 });
 
 const firstNode = Object.keys(sceneGraph)[0];
