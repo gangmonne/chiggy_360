@@ -2914,6 +2914,224 @@
         "condition": {},
         "text": "만술이 눈을 감는다.\n2주일이 지났다.\n앞사람이 사라졌다. 재복이라는 이름이 생겼다. 성칠이 생겼다. 봉길 아저씨가 — 달라졌다.\n그 달라짐이 언제부터인지 모른다. 어느 날 보니까 — 없어진 거다. 그 사람이.\n만술이 눈을 감는다. 페이드 아웃.\n\n2주차 끝."
       }
+    ],
+    "next": "d6_01"
+  },
+
+  "d6_01": {
+    "panorama": "/panorama/d6_01_tent_morning.jpg",
+    "narrative": "3주차 — 감당한다.\n\n아침. 만술이 눈을 뜬다.\n몸이 — 안 아프다. 아픈 게 없어진 게 아니라 — 아픔이 그냥 몸의 일부가 됐다.\n앞사람이 말했던 것. 익숙해지면 그게 더 나쁜 거야.\n이제 완전히 안다.",
+    "next": "d6_02"
+  },
+
+  "d6_02": {
+    "panorama": "/panorama/d6_02_morning_seongchil.jpg",
+    "narrative": "성칠이 옆에 앉는다. 건빵을 물에 적신다. 만술도 적신다.\n성칠이 말한다. \"일주일 남았다.\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"그 다음엔 어떻게 되는 거야.\"",
+    "choices": [
+      { "label": "A. \"집에 가겠지.\" 한다", "goto": "d6_03", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "B. \"모르지.\" 한다", "goto": "d6_03", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. \"또 있겠지.\" 한다", "goto": "d6_03", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "saidThereWillBeMoreD6": 1 } }
     ]
+  },
+
+  "d6_03": {
+    "panorama": "/panorama/d6_02_morning_seongchil.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidThereWillBeMoreD6": { "gte": 1 } },
+        "text": "성칠이 만술을 본다. 오래. 그리고 건빵을 씹는다. 아무 말 안 한다."
+      },
+      { "condition": {}, "text": "성칠이 건빵을 씹는다." }
+    ],
+    "next": "d6_04"
+  },
+
+  "d6_04": {
+    "panorama": "/panorama/d6_04_bonggil_eat.jpg",
+    "narrative": "봉길 아저씨가 혼자 앉아서 밥을 먹는다.\n만술이 다가가서 옆에 앉는다.\n봉길 아저씨가 보지 않는다. 만술도 보지 않는다.\n그냥 같이 먹는다.\n다 먹고 봉길 아저씨가 일어난다. 아무 말 없다.\n만술이 그 뒷모습을 본다.\n이제는 — 그냥 본다. 뭔가를 기대하지 않는다.\n그게 더 편한 건지 더 슬픈 건지 모른다.",
+    "next": "d6_05"
+  },
+
+  "d6_05": {
+    "panorama": "/panorama/d6_05_load_ammo.jpg",
+    "narrative": "오늘 짐은 탄약 상자.\n만술이 맨다. 손이 기억한다. 자동이다.\n셋이 나란히 선다.\n줄이 출발한다.\n그냥 출발한다. 이제 출발은 그냥 출발이다.",
+    "next": "d6_06"
+  },
+
+  "d6_06": {
+    "panorama": "/panorama/d6_06_ascent_open_sky.jpg",
+    "narrative": "오늘 루트는 처음 가는 길이다. 나무가 없다. 탁 트여 있다.\n하늘이 크다.\n만술이 올라가면서 하늘을 본다. 오랜만에 하늘을 봤다.",
+    "choices": [
+      { "label": "A. 잠깐 보고 발을 본다", "goto": "d6_07" },
+      { "label": "B. 걸으면서 계속 하늘을 본다", "goto": "d6_07" },
+      { "label": "C. 멈춰서 본다 — 봉길 아저씨가 지나친다", "goto": "d6_07", "effect": { "stoppedForSkyD6": 1 } }
+    ]
+  },
+
+  "d6_07": {
+    "panorama": "/panorama/d6_06_ascent_open_sky.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "stoppedForSkyD6": { "gte": 1 } },
+        "text": "봉길 아저씨가 만술 옆을 지나친다. 보지 않는다.\n만술이 하늘을 본다. 구름이 간다. 어디로 가는지 모른다. 전장 위로도 가겠지. 고향 위로도 가겠지."
+      },
+      { "condition": {}, "text": "만술이 걷는다. 하늘이 크다." }
+    ],
+    "next": "d6_08"
+  },
+
+  "d6_08": {
+    "panorama": "/panorama/d6_08_medic_passing.jpg",
+    "narrative": "쉬는 시간. 의무병이 지나간다. 부상병을 지고 간다.\n만술이 본다. 얼굴이 안 보인다.\n재복인지 아닌지 모른다.",
+    "choices": [
+      { "label": "A. 보려 한다 — 얼굴을 확인하려", "goto": "d6_09", "condition": { "knowsJaebok": { "gte": 1 } }, "effect": { "triedToSeeJaebokD6": 1 } },
+      { "label": "B. 그냥 본다", "goto": "d6_09" },
+      { "label": "C. 안 본다", "goto": "d6_09" }
+    ]
+  },
+
+  "d6_09": {
+    "panorama": "/panorama/d6_08_medic_passing.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "triedToSeeJaebokD6": { "gte": 1 } },
+        "text": "얼굴이 안 보인다. 너무 빠르게 지나간다. 재복인지 아닌지 끝내 모른다.\n만술이 그 뒷모습을 본다."
+      },
+      { "condition": {}, "text": "만술이 그 부상병을 잠시 보다가 시선을 돌린다." }
+    ],
+    "next": "d6_10"
+  },
+
+  "d6_10": {
+    "panorama": "/panorama/d6_10_summit_smoke.jpg",
+    "narrative": "정상. 연기를 센다. 오늘은 한 줄기.\n며칠 전에 다섯이었는데.\n만술이 센다. 하나.\n그게 다다.",
+    "choices": [
+      { "label": "A. \"오늘 하나야.\" 한다", "goto": "d6_11", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "toldSeongchilOneSmokeD6": 1 } },
+      { "label": "B. 혼자 센다", "goto": "d6_11" }
+    ]
+  },
+
+  "d6_11": {
+    "panorama": "/panorama/d6_10_summit_smoke.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "toldSeongchilOneSmokeD6": { "gte": 1 } },
+        "text": "성칠이 그 방향을 본다. \"줄었네.\"\n만술이 고개를 끄덕인다."
+      },
+      { "condition": {}, "text": "만술이 혼자 그 한 줄기 연기를 본다." }
+    ],
+    "next": "d6_12"
+  },
+
+  "d6_12": {
+    "panorama": "/panorama/d6_12_descent_us_soldiers.jpg",
+    "narrative": "내려오는 길. 미군 둘이 올라온다. 반대 방향.\n지나치면서 하나가 만술한테 뭔가 말한다. 못 알아듣는다.\n그냥 지나친다.",
+    "choices": [
+      { "label": "A. 돌아본다", "goto": "d6_13", "effect": { "lookedBackUSD6": 1 } },
+      { "label": "B. 그냥 내려간다", "goto": "d6_13" }
+    ]
+  },
+
+  "d6_13": {
+    "panorama": "/panorama/d6_12_descent_us_soldiers.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "lookedBackUSD6": { "gte": 1 } },
+        "text": "미군들이 올라가고 있다. 저 위에 뭐가 있는지 모른다.\n만술이 그 등을 보다가 내려간다."
+      },
+      { "condition": {}, "text": "만술이 그냥 내려간다." }
+    ],
+    "next": "d6_14"
+  },
+
+  "d6_14": {
+    "panorama": "/panorama/d6_14_afternoon_smell.jpg",
+    "narrative": "오후. 오늘 오후 루트에서 냄새가 난다. 탄 냄새가 아니다.\n썩는 냄새다.\n지게꾼들이 다 안다. 아무도 말 안 한다.",
+    "choices": [
+      { "label": "A. 숨을 참는다", "goto": "d6_15" },
+      { "label": "B. 그냥 쉰다 — 익숙해지려", "goto": "d6_15" },
+      { "label": "C. 봉길 아저씨를 본다", "goto": "d6_15", "effect": { "watchedBonggilSmellD6": 1 } }
+    ]
+  },
+
+  "d6_15": {
+    "panorama": "/panorama/d6_14_afternoon_smell.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "watchedBonggilSmellD6": { "gte": 1 } },
+        "text": "봉길 아저씨가 그냥 걷는다. 숨을 참는 것 같지도 않다. 그냥 걷는다.\n만술이 그걸 본다. 그리고 숨을 참는 걸 멈춘다."
+      },
+      { "condition": {}, "text": "만술이 그 냄새를 견딘다." }
+    ],
+    "next": "d6_16"
+  },
+
+  "d6_16": {
+    "panorama": "/panorama/d6_16_afternoon_summit_empty.jpg",
+    "narrative": "정상. 오늘 오후 정상엔 아무것도 없다. 군인도 없다. 미군도 없다.\n그냥 하늘이다.\n만술이 선다.\n멀리 — 마을들. 길들. 산들. 전장이 어딘지 모른다. 다 같이 보인다.",
+    "choices": [
+      { "label": "A. 짐 내려놓고 바로 내려간다", "goto": "d6_17" },
+      { "label": "B. 잠깐 선다", "goto": "d6_17" },
+      { "label": "C. 한참 선다", "goto": "d6_17", "effect": { "stoodLongD6": 1 } }
+    ]
+  },
+
+  "d6_17": {
+    "panorama": "/panorama/d6_16_afternoon_summit_empty.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "stoodLongD6": { "gte": 1 } },
+        "text": "아무도 재촉하지 않는다. 만술이 한참 선다. 바람이 분다. 짐이 없는 것처럼 서 있다. 잠깐. 그리고 내려간다."
+      },
+      { "condition": {}, "text": "만술이 내려간다." }
+    ],
+    "next": "d6_18"
+  },
+
+  "d6_18": {
+    "panorama": "/panorama/d6_18_evening_rice.jpg",
+    "narrative": "오늘 저녁은 쌀밥이다. 처음으로 쌀밥이다.\n성칠이 눈이 커진다. \"쌀밥이다.\"\n만술이 한 숟갈 뜬다. 어머니 집 밥이랑 다르다. 그런데 쌀이다.",
+    "choices": [
+      { "label": "A. 천천히 먹는다", "goto": "d6_19", "effect": { "ateSlowlyD6": 1 } },
+      { "label": "B. 빨리 먹는다", "goto": "d6_19" }
+    ]
+  },
+
+  "d6_19": {
+    "panorama": "/panorama/d6_18_evening_rice.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "ateSlowlyD6": { "gte": 1 } },
+        "text": "성칠이 만술을 본다. \"왜 그렇게 먹어.\" 만술이 말한다. \"그냥.\"\n성칠이 고개를 끄덕이고 자기도 천천히 먹는다."
+      },
+      { "condition": {}, "text": "만술이 밥을 먹는다." }
+    ],
+    "next": "d6_20"
+  },
+
+  "d6_20": {
+    "panorama": "/panorama/d6_20_evening_bonggil_rice.jpg",
+    "narrative": "봉길 아저씨도 쌀밥을 먹는다. 혼자.\n쌀밥인데 — 건빵 먹는 것처럼 먹는다.",
+    "choices": [
+      { "label": "A. 그냥 본다", "goto": "d6_21" },
+      { "label": "B. 다가간다", "goto": "d6_21", "effect": { "approachedBonggilRiceD6": 1 } }
+    ]
+  },
+
+  "d6_21": {
+    "panorama": "/panorama/d6_20_evening_bonggil_rice.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "approachedBonggilRiceD6": { "gte": 1 } },
+        "text": "봉길 아저씨 옆에 앉는다. 봉길 아저씨가 다 먹는다. 일어나려다 — 만술의 밥그릇을 본다.\n아무 말 안 한다. 일어난다."
+      },
+      { "condition": {}, "text": "만술이 멀리서 그 모습을 본다." }
+    ],
+    "next": "d6_end"
+  },
+
+  "d6_end": {
+    "panorama": "/panorama/d6_end_tent_night.jpg",
+    "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n오늘 하루. 하늘을 봤다. 쌀밥을 먹었다. 썩는 냄새를 맡았다. 재복인지 아닌지 모르는 부상병을 봤다.\n다 같이 오늘이다.\n\nD-6이 끝났다."
   }
 }
