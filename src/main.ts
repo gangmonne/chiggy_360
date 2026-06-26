@@ -16,6 +16,14 @@ const director = new GameDirector(canvas, sceneGraph, {
   valleyEyeContact: 0,
   bonggilDistance: 0,
   countsSmoke: 0,
+  softenedBiscuit: 0,
+  redidStrap: 0,
+  breathRhythm: 0,
+  rememberedSummitView: 0,
+  talkedToStranger: 0,
+  blisterPopped: 0,
+  lickedBowl: 0,
+  askedIfScared: 0,
 });
 
 const firstNode = Object.keys(sceneGraph)[0];
