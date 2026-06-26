@@ -147,6 +147,14 @@ const director = new GameDirector(canvas, sceneGraph, {
   saidNoNameD5: 0,
   saidPaddyD5: 0,
   saidYesD5: 0,
+  stoodInRainD4: 0,
+  driedStrapD4: 0,
+  followedFootprintsD4: 0,
+  helpedSlippedPorterD4: 0,
+  passedByD4: 0,
+  lookedInRainD4: 0,
+  tookOwnPathD4: 0,
+  offeredClothD4: 0,
 });
 
 const firstNode = Object.keys(sceneGraph)[0];
