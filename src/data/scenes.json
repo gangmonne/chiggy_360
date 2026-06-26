@@ -1545,6 +1545,189 @@
         "text": "봉길 아저씨가 말한다. \"왜.\"\n만술이 할 말이 없다. 그냥 불렀다.\n봉길 아저씨가 기다린다. 만술이 말한다. \"아니에요.\"\n봉길 아저씨가 돌아눕는다. 만술이 그 등을 본다.\n\nD-14가 끝났다."
       },
       { "condition": {}, "text": "만술이 눈을 감는다.\n\nD-14가 끝났다." }
+    ],
+    "next": "d13_01"
+  },
+
+  "d13_01": {
+    "panorama": "/panorama/d13_01_americans.jpg",
+    "narrative": "아침. 캠프에 처음 보는 사람들이 있다. 미군 셋.\n키가 크다. 냄새가 다르다. 말이 안 통한다.",
+    "choices": [
+      { "label": "A. 힐끗 본다", "goto": "d13_02" },
+      { "label": "B. 제대로 본다", "goto": "d13_02", "effect": { "eyeContactUS": 1 } },
+      { "label": "C. 안 본다", "goto": "d13_02" }
     ]
+  },
+
+  "d13_02": {
+    "panorama": "/panorama/d13_01_americans.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "eyeContactUS": { "gte": 1 } },
+        "text": "미군 하나가 만술과 눈이 마주친다. 미군이 고개를 끄덕인다.\n만술이 굳는다. 어떻게 해야 할지 모른다.\n하는 사이에 미군이 시선을 돌린다."
+      },
+      { "condition": {}, "text": "만술이 시선을 돌린다." }
+    ],
+    "next": "d13_03"
+  },
+
+  "d13_03": {
+    "panorama": "/panorama/d13_03_breakfast.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "성칠이 미군들을 보면서 말한다. \"저 사람들 뭐 먹는지 봐.\"\n만술이 본다. 달콤한 냄새가 난다. 뭔지 모르는 냄새."
+      },
+      { "condition": {}, "text": "달콤한 냄새가 난다. 뭔지 모르는 냄새." }
+    ],
+    "choices": [
+      { "label": "A. 그냥 건빵 먹는다", "goto": "d13_04" },
+      { "label": "B. 코를 킁킁인다", "goto": "d13_04", "effect": { "smelledUSFood": 1 } }
+    ]
+  },
+
+  "d13_04": {
+    "panorama": "/panorama/d13_04_load.jpg",
+    "narrative": "오늘 짐은 미군 물자다. 상자에 글씨가 있다. 읽을 수 없다.\n무겁다.",
+    "choices": [
+      { "label": "A. 그냥 맨다", "goto": "d13_05" },
+      { "label": "B. 글씨를 보려 한다", "goto": "d13_05", "effect": { "readBoxLetters": 1 } }
+    ]
+  },
+
+  "d13_05": {
+    "panorama": "/panorama/d13_04_load.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "readBoxLetters": { "gte": 1 } },
+        "text": "알파벳이다. 만술이 모른다. 뭔지 모르는 걸 지고 간다."
+      },
+      { "condition": {}, "text": "만술이 그냥 맨다." }
+    ],
+    "next": "d13_06"
+  },
+
+  "d13_06": {
+    "panorama": "/panorama/d13_06_climb_stumble.jpg",
+    "narrative": "오르막. 봉길 아저씨가 앞에서 간다.\n중간쯤 — 봉길 아저씨가 멈춘다. 돌부리에 발이 걸렸다.\n휘청한다.\n봉길 아저씨가 혼자 중심을 잡는다. 뒤를 보지 않는다. 그냥 다시 걷는다.",
+    "choices": [
+      { "label": "A. 아무 말 안 한다", "goto": "d13_07" },
+      { "label": "B. \"괜찮으세요?\" 하려다 안 한다", "goto": "d13_07" },
+      { "label": "C. \"괜찮으세요?\" 한다", "goto": "d13_07", "effect": { "askedBonggilOkD13": 1 } }
+    ]
+  },
+
+  "d13_07": {
+    "panorama": "/panorama/d13_06_climb_stumble.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "askedBonggilOkD13": { "gte": 1 } },
+        "text": "봉길 아저씨가 대답 안 한다. 그냥 걷는다.\n만술이 그 뒷모습을 보며 걷는다."
+      },
+      { "condition": {}, "text": "만술이 그냥 걷는다." }
+    ],
+    "next": "d13_08"
+  },
+
+  "d13_08": {
+    "panorama": "/panorama/d13_08_summit_scope.jpg",
+    "narrative": "정상에 미군이 있다. 망원경으로 뭔가를 보고 있다.\n만술이 그 방향을 본다.",
+    "choices": [
+      { "label": "A. 본다", "goto": "d13_09", "effect": { "watchedUSScope": 1 } },
+      { "label": "B. 안 본다", "goto": "d13_09" }
+    ]
+  },
+
+  "d13_09": {
+    "panorama": "/panorama/d13_08_summit_scope.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "watchedUSScope": { "gte": 1 } },
+        "text": "연기. 멀리. 오늘은 다섯 줄기.\n그리고 그 너머 — 뭔가 있는데 보이지 않는다."
+      },
+      { "condition": {}, "text": "만술이 안 본다." }
+    ],
+    "next": "d13_10"
+  },
+
+  "d13_10": {
+    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "narrative": "내려오는 길. 미군 하나가 같은 방향으로 내려온다. 혼자.\n미군이 뭔가를 꺼내서 만술한테 내민다.",
+    "choices": [
+      { "label": "A. 일단 받는다", "goto": "d13_11", "effect": { "gotChocolate": 1 } },
+      { "label": "B. 뭔지 보고 나서 결정한다", "goto": "d13_11", "effect": { "gotChocolate": 1 } }
+    ]
+  },
+
+  "d13_11": {
+    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "narrative": "초콜릿이다. 달다. 지금까지 먹어본 것 중 제일 달다.\n만술이 굳는다. 미군이 웃는다.",
+    "next": "d13_12"
+  },
+
+  "d13_12": {
+    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "성칠이 묻는다. \"미군이 뭔가 줬어?\""
+      },
+      { "condition": {}, "text": "캠프로 돌아온다." }
+    ],
+    "choices": [
+      { "label": "A. \"초콜릿.\" 하고 보여준다", "goto": "d13_13", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "sharedChocolate": 1 } },
+      { "label": "B. \"응.\" 그게 다", "goto": "d13_13", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. \"아니.\" 한다", "goto": "d13_13", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "hidChocolate": 1 } }
+    ],
+    "next": "d13_13"
+  },
+
+  "d13_13": {
+    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "sharedChocolate": { "gte": 1 } },
+        "text": "성칠이 눈이 커진다. 만술이 반을 잘라서 준다.\n둘이 초콜릿을 먹으며 내려온다."
+      },
+      {
+        "condition": { "hidChocolate": { "gte": 1 } },
+        "text": "주머니에 초콜릿이 있다. 쌀알 옆에."
+      },
+      { "condition": {}, "text": "캠프로 돌아온다." }
+    ],
+    "next": "d13_14"
+  },
+
+  "d13_14": {
+    "panorama": "/panorama/d13_14_evening.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "gotChocolate": { "gte": 1 }, "sharedChocolate": { "lte": 0 } },
+        "text": "저녁. 만술이 봉길 아저씨한테 다가간다. 초콜릿을 꺼낸다.\n봉길 아저씨한테 내민다.\n봉길 아저씨가 말한다. \"됐다.\""
+      },
+      { "condition": {}, "text": "저녁. 만술이 밥을 먹는다." }
+    ],
+    "choices": [
+      { "label": "A. 다시 넣는다", "goto": "d13_15", "condition": { "gotChocolate": { "gte": 1 }, "sharedChocolate": { "lte": 0 } } },
+      { "label": "B. 그냥 옆에 둔다", "goto": "d13_15", "condition": { "gotChocolate": { "gte": 1 }, "sharedChocolate": { "lte": 0 } }, "effect": { "leftChocolateBeside": 1 } }
+    ],
+    "next": "d13_15"
+  },
+
+  "d13_15": {
+    "panorama": "/panorama/d13_14_evening.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "leftChocolateBeside": { "gte": 1 } },
+        "text": "봉길 아저씨가 그걸 보다가 — 집어서 먹는다. 아무 말 없이.\n만술이 그걸 본다."
+      },
+      { "condition": {}, "text": "저녁 시간이 지나간다." }
+    ],
+    "next": "d13_end"
+  },
+
+  "d13_end": {
+    "panorama": "/panorama/d13_16_tent_night.jpg",
+    "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 그냥 잔다.\n\nD-13이 끝났다."
   }
 }
