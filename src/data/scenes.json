@@ -3653,6 +3653,195 @@
         "text": "만술이 저 고개를 생각한다. 고개는 고개다. 그런데 — 성칠의 말투가 이상했다. 잠이 늦게 온다.\n\nD-3이 끝났다."
       },
       { "condition": {}, "text": "만술이 눈을 감는다.\n\nD-3이 끝났다." }
+    ],
+    "next": "d2_01"
+  },
+
+  "d2_01": {
+    "panorama": "/panorama/d2_01_camp_tense.jpg",
+    "narrative": "아침. 캠프 분위기가 다르다.\nD-12때랑 비슷한데 — 더하다.\n군인들이 빠르게 움직인다. 말이 없다.\n하사가 지게꾼들을 모은다.\n\"오늘 루트 다르다. 빠르게 움직여. 뒤처지면 안 된다.\"\n그게 다다.",
+    "next": "d2_02"
+  },
+
+  "d2_02": {
+    "panorama": "/panorama/d2_02_load_bonggil.jpg",
+    "narrative": "성칠이 만술한테 낮게 말한다. \"어제 말한 고개 맞는 것 같아.\"\n만술이 고개를 끄덕인다.\n봉길 아저씨가 짐을 맨다. 빠르게. 표정이 없다.",
+    "choices": [
+      { "label": "A. \"아저씨, 오늘 루트 바뀐대요.\" 한다", "goto": "d2_03", "effect": { "toldBonggilRouteD2": 1 } },
+      { "label": "B. 그냥 짐을 맨다", "goto": "d2_03" }
+    ]
+  },
+
+  "d2_03": {
+    "panorama": "/panorama/d2_02_load_bonggil.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "toldBonggilRouteD2": { "gte": 1 } },
+        "text": "봉길 아저씨가 말한다. \"안다.\"\n이미 알고 있었다. 언제부터 알았는지는 모른다."
+      },
+      { "condition": {}, "text": "봉길 아저씨가 말없이 짐을 맨다." }
+    ],
+    "next": "d2_04"
+  },
+
+  "d2_04": {
+    "panorama": "/panorama/d2_04_departure.jpg",
+    "narrative": "줄이 선다. 오늘은 군인이 더 많다. 앞에도. 뒤에도.\n만술이 줄 중간에 선다. 봉길 아저씨가 앞에. 성칠이 뒤에.\n출발.",
+    "next": "d2_05"
+  },
+
+  "d2_05": {
+    "panorama": "/panorama/d2_05_ascent_steep.jpg",
+    "narrative": "오늘 길은 처음 가는 길이다. 가파르다. 어제까지 오른 어떤 고개보다.",
+    "choices": [
+      { "label": "A. 리듬을 찾는다 — 하나. 둘.", "goto": "d2_06" },
+      { "label": "B. 그냥 오른다 — 생각 없이", "goto": "d2_06" },
+      { "label": "C. 봉길 아저씨 발자국을 본다", "goto": "d2_06" }
+    ]
+  },
+
+  "d2_06": {
+    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "narrative": "고개 중턱. 총 소리가 난다. 가깝다.\n\"엎드려.\"\n다들 엎드린다.\n이번엔 — 길다. 총 소리가 계속된다.\n흙 냄새.",
+    "choices": [
+      { "label": "A. 눈을 감는다", "goto": "d2_07" },
+      { "label": "B. 눈을 뜨고 앞을 본다", "goto": "d2_07" },
+      { "label": "C. 봉길 아저씨를 찾는다", "goto": "d2_07", "effect": { "lookedForBonggilD2": 1 } }
+    ]
+  },
+
+  "d2_07": {
+    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "lookedForBonggilD2": { "gte": 1 } },
+        "text": "봉길 아저씨가 앞에 엎드려 있다. 움직이지 않는다.\n만술이 그 등을 본다. 짐이 올라갔다 내려간다. 숨을 쉬고 있다. 만술이 그 리듬을 본다."
+      },
+      { "condition": {}, "text": "만술이 흙바닥에 엎드려 총 소리를 듣는다." }
+    ],
+    "next": "d2_08"
+  },
+
+  "d2_08": {
+    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "narrative": "성칠이 만술 옆에 있다.\n성칠이 낮게 말한다. \"괜찮아?\"",
+    "choices": [
+      { "label": "A. \"응.\" 한다", "goto": "d2_09", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "B. 아무 말 안 한다", "goto": "d2_09" },
+      { "label": "C. 성칠 손을 잡는다", "goto": "d2_09", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "heldSeongchilHandD2": 1 } }
+    ]
+  },
+
+  "d2_09": {
+    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "heldSeongchilHandD2": { "gte": 1 } },
+        "text": "성칠이 굳는다. 1초. 그리고 잡아준다. 총 소리가 계속된다.\n둘이 엎드린 채로 손을 잡고 있는다. 총 소리가 멈출 때까지."
+      },
+      { "condition": {}, "text": "둘이 엎드린 채로 총 소리를 듣는다." }
+    ],
+    "next": "d2_10"
+  },
+
+  "d2_10": {
+    "panorama": "/panorama/d2_10_after_gunfire.jpg",
+    "narrative": "총 소리가 멈춘다.\n군인이 말한다. \"간다.\"\n다들 일어난다.\n만술이 일어난다. 무릎이 떨린다.\n봉길 아저씨가 일어난다. 안 떨린다.\n성칠이 일어난다. 만술과 눈이 마주친다.\n그냥 걷는다.",
+    "next": "d2_11"
+  },
+
+  "d2_11": {
+    "panorama": "/panorama/d2_11_summit_chaos.jpg",
+    "narrative": "정상. 오늘 정상은 다르다.\n군인들이 많다. 미군들도 있다. 뭔가 빠르게 움직인다.\n만술이 서 있는다.\n연기를 세려 하는데 — 오늘은 못 센다. 너무 정신없다.\n봉길 아저씨가 만술 옆에 선다. 처음으로 — 오늘 처음으로 — 옆에 선다.\n말이 없다. 만술도 말이 없다.\n둘이 그 정상에서 나란히 선다.",
+    "choices": [
+      { "label": "A. 아무 말 안 한다", "goto": "d2_12" },
+      { "label": "B. \"아저씨.\" 부른다", "goto": "d2_12", "effect": { "calledBonggilSummitD2": 1 } }
+    ]
+  },
+
+  "d2_12": {
+    "panorama": "/panorama/d2_11_summit_chaos.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "calledBonggilSummitD2": { "gte": 1 } },
+        "text": "봉길 아저씨가 만술을 본다. 만술이 말하려다 — 안 한다.\n그냥 나란히 선다. 봉길 아저씨가 다시 앞을 본다. 만술도 앞을 본다. 저 아래. 작은 것들."
+      },
+      { "condition": {}, "text": "둘이 나란히 저 아래를 본다." }
+    ],
+    "next": "d2_13"
+  },
+
+  "d2_13": {
+    "panorama": "/panorama/d2_13_descent_together.jpg",
+    "narrative": "내려오는 길. 봉길 아저씨가 만술 옆에서 내려온다. 자연스럽게.\n아무 말 없다.\n그냥 나란히 내려온다.\n오늘 이게 다다. 나란히 내려온다.",
+    "next": "d2_14"
+  },
+
+  "d2_14": {
+    "panorama": "/panorama/d2_14_evening_three.jpg",
+    "narrative": "셋이 나란히 앉는다. 자연스럽게.\n봉길 아저씨. 만술. 성칠.\n밥을 먹는다.\n봉길 아저씨가 말한다.\n\"내일이다.\"",
+    "choices": [
+      { "label": "A. \"네.\" 한다", "goto": "d2_15" },
+      { "label": "B. 성칠이랑 눈을 마주친다", "goto": "d2_15", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. 봉길 아저씨를 본다", "goto": "d2_15", "effect": { "watchedBonggilTomorrowD2": 1 } }
+    ]
+  },
+
+  "d2_15": {
+    "panorama": "/panorama/d2_14_evening_three.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "watchedBonggilTomorrowD2": { "gte": 1 } },
+        "text": "봉길 아저씨가 밥을 먹는다. 만술이 그 옆모습을 본다.\n저 고개. 내일. 봉길 아저씨가 그걸 알고 있었다. 언제부터 알았는지 모른다. 그래서 그랬던 건지도 모른다. 아니면 아닌 건지도."
+      },
+      { "condition": {}, "text": "셋이 말없이 밥을 먹는다." }
+    ],
+    "next": "d2_16"
+  },
+
+  "d2_16": {
+    "panorama": "/panorama/d2_16_night_seongchil_scared.jpg",
+    "narrative": "텐트 밖. 성칠이 만술 옆에 앉는다.\n말이 없다.\n한참 있다가 성칠이 말한다. \"무서워?\"",
+    "choices": [
+      { "label": "A. \"응.\" 한다", "goto": "d2_17", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "saidScaredYesD2": 1 } },
+      { "label": "B. \"모르겠어.\" 한다", "goto": "d2_17", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. \"아저씨는?\" 한다", "goto": "d2_17", "condition": { "knowsSeongchil": { "gte": 1 } } }
+    ]
+  },
+
+  "d2_17": {
+    "panorama": "/panorama/d2_16_night_seongchil_scared.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidScaredYesD2": { "gte": 1 } },
+        "text": "성칠이 말한다. \"나도.\" 그게 다다. 둘이 앉아 있는다.\n별이 있다. 만술이 D-21 새벽 별을 생각한다. 저 별이 그 별인지 아닌지 — 이제는 알 것 같다. 같은 별이다. 그냥 만술이 달라진 거다."
+      },
+      { "condition": {}, "text": "둘이 말없이 별을 본다." }
+    ],
+    "next": "d2_18"
+  },
+
+  "d2_18": {
+    "panorama": "/panorama/d2_18_tent_night.jpg",
+    "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n침묵.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n내일이다.",
+    "choices": [
+      { "label": "A. 잠이 온다", "goto": "d2_end" },
+      { "label": "B. 잠이 안 온다 — 오래 누워 있는다", "goto": "d2_end", "effect": { "stayedAwakeD2": 1 } }
+    ]
+  },
+
+  "d2_end": {
+    "panorama": "/panorama/d2_18_tent_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "stayedAwakeD2": { "gte": 1 }, "riceKept": { "gte": 1 } },
+        "text": "만술이 오래 누워 있는다. 봉길 아저씨 숨소리. 성칠 숨소리. 둘 다 잔다. 만술만 안 잔다.\n주머니에 손을 넣는다. 쌀알. 아직 있다. 손가락으로 굴린다. 하나. 둘. 하나. 둘.\n어느 순간 잠든다.\n\nD-2가 끝났다."
+      },
+      {
+        "condition": { "stayedAwakeD2": { "gte": 1 } },
+        "text": "만술이 오래 누워 있는다. 봉길 아저씨 숨소리. 성칠 숨소리. 둘 다 잔다. 만술만 안 잔다.\n어느 순간 잠든다.\n\nD-2가 끝났다."
+      },
+      { "condition": {}, "text": "만술이 눈을 감는다. 곧 잠든다.\n\nD-2가 끝났다." }
     ]
   }
 }
