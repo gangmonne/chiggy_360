@@ -1984,6 +1984,237 @@
         "text": "봉길 아저씨가 천장을 보고 있다. 눈이 열려 있다. 자는 게 아니다.\n\nD-12가 끝났다."
       },
       { "condition": {}, "text": "만술이 눈을 감는다.\n\nD-12가 끝났다." }
+    ],
+    "next": "d11_01"
+  },
+
+  "d11_01": {
+    "panorama": "/panorama/d11_01_bonggil_morning.jpg",
+    "narrative": "아침. 봉길 아저씨가 이미 밖에 있다.\n만술이 나가면 봉길 아저씨가 혼자 앉아서 뭔가를 본다. 아무것도 없는 방향.",
+    "choices": [
+      { "label": "A. \"아저씨, 잘 주무셨어요?\" 한다", "goto": "d11_02" },
+      { "label": "B. 옆에 그냥 앉는다", "goto": "d11_02", "effect": { "satBesideBonggilD11": 1 } },
+      { "label": "C. 그냥 성칠을 찾는다", "goto": "d11_02", "condition": { "knowsSeongchil": { "gte": 1 } } }
+    ]
+  },
+
+  "d11_02": {
+    "panorama": "/panorama/d11_01_bonggil_morning.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "satBesideBonggilD11": { "gte": 1 } },
+        "text": "봉길 아저씨가 만술을 보지 않는다. 둘이 아무 말 없이 앉아 있는다.\n만술이 봉길 아저씨가 보는 방향을 본다. 아무것도 없다."
+      },
+      { "condition": {}, "text": "만술이 다른 곳으로 간다." }
+    ],
+    "next": "d11_03"
+  },
+
+  "d11_03": {
+    "panorama": "/panorama/d11_03_senior_carrier.jpg",
+    "narrative": "선배 지게꾼이 만술 옆에 앉는다.\n한참 후 말한다. \"며칠 됐어?\"",
+    "choices": [
+      { "label": "A. \"열흘요.\" 한다", "goto": "d11_04", "effect": { "saidTenDays": 1 } },
+      { "label": "B. \"잘 모르겠어요.\" 한다", "goto": "d11_04" }
+    ]
+  },
+
+  "d11_04": {
+    "panorama": "/panorama/d11_03_senior_carrier.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidTenDays": { "gte": 1 } },
+        "text": "선배 지게꾼이 고개를 끄덕인다. \"그 정도면 몸은 됐겠네.\"\n만술이 그게 무슨 뜻인지 생각한다. 몸은 됐다. 그럼 뭐가 안 된 건가."
+      },
+      { "condition": {}, "text": "선배 지게꾼이 일어난다." }
+    ],
+    "next": "d11_05"
+  },
+
+  "d11_05": {
+    "panorama": "/panorama/d11_05_load.jpg",
+    "narrative": "오늘 짐. 하사가 만술을 부른다. 오늘 또 사람이다.\n만술이 굳는다.\n하사가 말한다. \"부상병.\"\n이번엔 의식이 있다. 또래다.\n만술이 그 얼굴을 본다.",
+    "next": "d11_06"
+  },
+
+  "d11_06": {
+    "panorama": "/panorama/d11_06_wounded_first.jpg",
+    "narrative": "부상병이 만술을 본다. 눈이 맑다.\n다리에 붕대가 감겨 있다. 걷지 못한다.\n만술이 지게에 묶으려 한다.\n부상병이 말한다. \"야.\"\n만술이 본다.\n부상병이 말한다. \"조심해.\"",
+    "choices": [
+      { "label": "A. \"예.\" 한다", "goto": "d11_07" },
+      { "label": "B. \"알아.\" 한다", "goto": "d11_07", "effect": { "saidAlGo": 1 } },
+      { "label": "C. 아무 말 안 하고 묶는다", "goto": "d11_07" }
+    ]
+  },
+
+  "d11_07": {
+    "panorama": "/panorama/d11_06_wounded_first.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidAlGo": { "gte": 1 } },
+        "text": "부상병이 잠깐 만술을 본다. 그리고 말한다. \"몇 살이야?\"\n만술이 말한다. \"열아홉.\" 부상병이 말한다. \"나도.\""
+      },
+      { "condition": {}, "text": "만술이 끈을 묶는다." }
+    ],
+    "next": "d11_08"
+  },
+
+  "d11_08": {
+    "panorama": "/panorama/d11_08_climb_wounded.jpg",
+    "narrative": "출발. 부상병이 가끔 말한다.\n\"미끄러워.\" \"조심.\" \"여기 돌 있어.\"",
+    "choices": [
+      { "label": "A. \"응.\" 하고 피한다", "goto": "d11_09", "effect": { "respondedToWarnings": 1 } },
+      { "label": "B. 말 없이 피한다", "goto": "d11_09" },
+      { "label": "C. \"그러게.\" 한다", "goto": "d11_09" }
+    ]
+  },
+
+  "d11_09": {
+    "panorama": "/panorama/d11_08_climb_wounded.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "respondedToWarnings": { "gte": 1 } },
+        "text": "둘 사이에 짧은 호흡이 생긴다."
+      },
+      { "condition": {}, "text": "만술이 길을 살피며 걷는다." }
+    ],
+    "next": "d11_10"
+  },
+
+  "d11_10": {
+    "panorama": "/panorama/d11_10_name.jpg",
+    "narrative": "고개 중턱 그늘에서 쉰다.\n부상병이 말한다. \"이름이 뭐야.\"",
+    "choices": [
+      { "label": "A. \"만술이요.\" 한다", "goto": "d11_11", "effect": { "knowsJaebok": 1 } },
+      { "label": "B. 아무 말 안 한다", "goto": "d11_11" }
+    ]
+  },
+
+  "d11_11": {
+    "panorama": "/panorama/d11_10_name.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsJaebok": { "gte": 1 } },
+        "text": "부상병이 말한다. \"나는 재복이.\"\n만술이 그 이름을 받는다. 재복. 이름이 생겼다."
+      },
+      { "condition": {}, "text": "부상병이 아무 말 없이 쉰다." }
+    ],
+    "next": "d11_12"
+  },
+
+  "d11_12": {
+    "panorama": "/panorama/d11_12_slip.jpg",
+    "narrative": "오르막 후반. 경사가 심해진다.\n발이 미끄러진다.\n순간 — 뒤로 쏠린다.",
+    "choices": [
+      { "label": "A. 버틴다 — 같이 굴러떨어지지 않으려고", "goto": "d11_13", "effect": { "heldOnSlip": 1 } },
+      { "label": "B. 지게끈을 놓는다", "goto": "d11_13", "effect": { "droppedJaebok": 1 } }
+    ]
+  },
+
+  "d11_13": {
+    "panorama": "/panorama/d11_12_slip.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "heldOnSlip": { "gte": 1 } },
+        "text": "만술이 이를 악물고 버틴다. 무릎이 땅을 긁는다. 겨우 잡는다.\n재복이 신음한다. 잠깐 후 재복이 말한다. \"괜찮아?\" 만술한테 묻는 거다."
+      },
+      {
+        "condition": { "droppedJaebok": { "gte": 1 } },
+        "text": "재복이 굴러떨어진다. 만술이 뛰어 내려간다. 재복이 눈을 뜨고 있다.\n\"야.\" 만술이 재복 옆에 앉는다. 아무 말 못 한다."
+      },
+      { "condition": {}, "text": "만술이 버틴다." }
+    ],
+    "next": "d11_14"
+  },
+
+  "d11_14": {
+    "panorama": "/panorama/d11_14_summit_handoff.jpg",
+    "narrative": "정상. 재복을 내려놓는다. 의무병이 온다.\n재복이 만술을 본다.",
+    "choices": [
+      { "label": "A. 마주친다", "goto": "d11_15", "effect": { "metJaebokEyes": 1 } },
+      { "label": "B. 피한다", "goto": "d11_15" }
+    ]
+  },
+
+  "d11_15": {
+    "panorama": "/panorama/d11_14_summit_handoff.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "metJaebokEyes": { "gte": 1 } },
+        "text": "재복이 말한다. \"수고했어.\" 만술이 아무 말 못 한다. 재복이 실려간다."
+      },
+      { "condition": {}, "text": "만술이 시선을 피한다." }
+    ],
+    "next": "d11_16"
+  },
+
+  "d11_16": {
+    "panorama": "/panorama/d11_16_descend.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "내려오면서 성칠이 옆에 온다.\n\"부상병 어땠어?\""
+      },
+      { "condition": {}, "text": "내려오는 길. 아무도 말이 없다." }
+    ],
+    "choices": [
+      { "label": "A. \"무거웠어.\" 한다", "goto": "d11_17", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "B. \"말을 하더라.\" 한다", "goto": "d11_17", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. \"재복이래.\" 한다", "goto": "d11_17", "condition": { "knowsSeongchil": { "gte": 1 }, "knowsJaebok": { "gte": 1 } }, "effect": { "toldSeongchilJaebokName": 1 } }
+    ],
+    "next": "d11_17"
+  },
+
+  "d11_17": {
+    "panorama": "/panorama/d11_16_descend.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "toldSeongchilJaebokName": { "gte": 1 } },
+        "text": "성칠이 멈춘다. 잠깐. 그리고 걷는다. \"이름 알았어?\"\n만술이 고개를 끄덕인다. 성칠이 말한다. \"난 모르는 게 나을 것 같아.\"\n만술이 그 말을 씹는다."
+      },
+      { "condition": {}, "text": "캠프로 돌아온다." }
+    ],
+    "next": "d11_18"
+  },
+
+  "d11_18": {
+    "panorama": "/panorama/d11_18_evening_bonggil.jpg",
+    "narrative": "저녁. 만술이 봉길 아저씨 옆에 앉는다.\n봉길 아저씨가 보지 않는다.",
+    "choices": [
+      { "label": "A. \"아저씨, 오늘 부상병 졌어요.\" 한다", "goto": "d11_19", "effect": { "toldBonggilAboutJaebok": 1 } },
+      { "label": "B. 아무 말 안 하고 앉아 있는다", "goto": "d11_19" }
+    ]
+  },
+
+  "d11_19": {
+    "panorama": "/panorama/d11_18_evening_bonggil.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "toldBonggilAboutJaebok": { "gte": 1 } },
+        "text": "봉길 아저씨가 말한다. \"그래.\" 그게 다다.\n만술이 더 말하려다 안 한다."
+      },
+      { "condition": {}, "text": "둘이 아무 말 없이 앉아 있는다." }
+    ],
+    "next": "d11_20"
+  },
+
+  "d11_20": {
+    "panorama": "/panorama/d11_20_tent_night.jpg",
+    "narrative": "텐트. 봉길 아저씨가 눕는다.\n만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"",
+    "choices": [
+      { "label": "A. 그냥 눈을 감는다", "goto": "d11_end" },
+      { "label": "B. \"재복이라고 했어요.\" 한다", "goto": "d11_end", "condition": { "knowsJaebok": { "gte": 1 } }, "effect": { "saidJaebokNameAtNight": 1 } }
+    ]
+  },
+
+  "d11_end": {
+    "panorama": "/panorama/d11_20_tent_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidJaebokNameAtNight": { "gte": 1 } },
+        "text": "봉길 아저씨가 침묵한다. 한참. 그리고 말한다. \"자라.\"\n만술이 눈을 감는다. 재복. 그 이름이 어둠 속에 있다.\n\nD-11이 끝났다."
+      },
+      { "condition": {}, "text": "만술이 눈을 감는다.\n\nD-11이 끝났다." }
     ]
   }
 }
