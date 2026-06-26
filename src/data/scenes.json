@@ -3132,6 +3132,188 @@
 
   "d6_end": {
     "panorama": "/panorama/d6_end_tent_night.jpg",
-    "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n오늘 하루. 하늘을 봤다. 쌀밥을 먹었다. 썩는 냄새를 맡았다. 재복인지 아닌지 모르는 부상병을 봤다.\n다 같이 오늘이다.\n\nD-6이 끝났다."
+    "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n오늘 하루. 하늘을 봤다. 쌀밥을 먹었다. 썩는 냄새를 맡았다. 재복인지 아닌지 모르는 부상병을 봤다.\n다 같이 오늘이다.\n\nD-6이 끝났다.",
+    "next": "d5_01"
+  },
+
+  "d5_01": {
+    "panorama": "/panorama/d5_01_dawn_artillery.jpg",
+    "narrative": "새벽. 포 소리에 눈이 떠진다. 가깝다.\n이번엔 아무도 안 일어난다. 다들 그냥 눈만 뜨고 있다.\n소리가 멈춘다.\n다시 잔다.\n이제 그 소리에 익숙해졌다. 그게 더 나쁜 거다.",
+    "next": "d5_02"
+  },
+
+  "d5_02": {
+    "panorama": "/panorama/d5_02_senior_porter.jpg",
+    "narrative": "선배 지게꾼이 만술 옆에 앉는다.\n\"며칠 됐어?\"\n\"열여섯이요.\"\n선배 지게꾼이 고개를 끄덕인다.",
+    "choices": [
+      { "label": "A. \"아저씨는요?\" 한다", "goto": "d5_03", "effect": { "askedSeniorD5": 1 } },
+      { "label": "B. 그냥 먹는다", "goto": "d5_03" }
+    ]
+  },
+
+  "d5_03": {
+    "panorama": "/panorama/d5_02_senior_porter.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "askedSeniorD5": { "gte": 1 } },
+        "text": "선배 지게꾼이 말한다. \"서른둘.\"\n만술이 그 숫자를 받는다. 서른두 날."
+      },
+      { "condition": {}, "text": "만술이 건빵을 씹는다." }
+    ],
+    "next": "d5_04"
+  },
+
+  "d5_04": {
+    "panorama": "/panorama/d5_04_wounded_again.jpg",
+    "narrative": "하사가 만술을 부른다. 또 부상병이다.\n만술이 굳지 않는다. 이번엔.\n그냥 간다.\n부상병을 본다. 재복이 아니다. 처음 보는 얼굴. 의식이 없다.\n만술이 지게에 묶는다. 익숙하게.",
+    "choices": [
+      { "label": "A. 군복에서 이름을 찾는다", "goto": "d5_05", "effect": { "lookedForNameD5": 1 } },
+      { "label": "B. 그냥 맨다", "goto": "d5_05" }
+    ]
+  },
+
+  "d5_05": {
+    "panorama": "/panorama/d5_04_wounded_again.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "lookedForNameD5": { "gte": 1 } },
+        "text": "이름표가 없다. 아니면 피에 가려져 있다.\n만술이 그냥 맨다. 이름 없이."
+      },
+      { "condition": {}, "text": "만술이 그냥 멘다." }
+    ],
+    "next": "d5_06"
+  },
+
+  "d5_06": {
+    "panorama": "/panorama/d5_06_ascent_nameless.jpg",
+    "narrative": "오르막. 이번 부상병은 말이 없다. 의식이 없으니까.\n숨소리만 들린다.\n재복이 말하던 것들이 생각난다. 조심해. 여기 돌 있어.\n이번엔 아무 말 없이 만술이 혼자 피한다.",
+    "choices": [
+      { "label": "A. 아무 말 안 한다", "goto": "d5_07" },
+      { "label": "B. \"조심할게요.\" 한다 — 듣지 못할 텐데", "goto": "d5_07", "condition": { "knowsJaebok": { "gte": 1 } }, "effect": { "saidCarefulD5": 1 } }
+    ]
+  },
+
+  "d5_07": {
+    "panorama": "/panorama/d5_06_ascent_nameless.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidCarefulD5": { "gte": 1 } },
+        "text": "만술이 걸으면서 그 말을 한다. 아주 낮게. 아무도 못 듣는다. 부상병도 못 듣는다. 그냥 한다."
+      },
+      { "condition": {}, "text": "만술이 묵묵히 걷는다." }
+    ],
+    "next": "d5_08"
+  },
+
+  "d5_08": {
+    "panorama": "/panorama/d5_08_rest_bonggil.jpg",
+    "narrative": "쉬는 시간. 봉길 아저씨가 지게꾼 하나한테 말한다. 짧게.\n그 지게꾼이 고개를 끄덕이고 간다.\n만술이 그걸 본다.",
+    "choices": [
+      { "label": "A. 봉길 아저씨한테 간다", "goto": "d5_09", "effect": { "wentToBonggilD5": 1 } },
+      { "label": "B. 그냥 부상병 옆에 앉는다", "goto": "d5_09" }
+    ]
+  },
+
+  "d5_09": {
+    "panorama": "/panorama/d5_08_rest_bonggil.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "wentToBonggilD5": { "gte": 1 } },
+        "text": "봉길 아저씨가 만술을 본다. \"왜.\"\n만술이 말하려다 — 안 한다. \"아니에요.\"\n봉길 아저씨가 돌아선다. 만술이 돌아온다. 부상병 숨소리가 들린다."
+      },
+      { "condition": {}, "text": "만술이 부상병 옆에 앉는다. 숨소리를 듣는다." }
+    ],
+    "next": "d5_10"
+  },
+
+  "d5_10": {
+    "panorama": "/panorama/d5_10_summit_handoff.jpg",
+    "narrative": "정상. 의무병이 부상병을 받아간다.\n만술의 등이 가벼워진다. 이제 그 가벼움에도 익숙하다.\n가벼워지면서 동시에 — 뭔가 빠져나간다. 그게 뭔지는 모른다.",
+    "choices": [
+      { "label": "A. 본다", "goto": "d5_11", "effect": { "watchedWoundedCarriedD5": 1 } },
+      { "label": "B. 안 본다", "goto": "d5_11" }
+    ]
+  },
+
+  "d5_11": {
+    "panorama": "/panorama/d5_10_summit_handoff.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "watchedWoundedCarriedD5": { "gte": 1 } },
+        "text": "이름 없는 부상병이 실려간다. 만술이 그 뒷모습을 본다.\n이름을 모른다. 이름이 없는 건지. 못 찾은 건지."
+      },
+      { "condition": {}, "text": "만술이 다음 짐을 챙긴다." }
+    ],
+    "next": "d5_12"
+  },
+
+  "d5_12": {
+    "panorama": "/panorama/d5_12_descent_seongchil.jpg",
+    "narrative": "성칠이 옆에 온다.\n\"오늘 또 사람 졌어?\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"이름은?\"",
+    "choices": [
+      { "label": "A. \"몰라.\" 한다", "goto": "d5_13", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "B. \"없었어.\" 한다", "goto": "d5_13", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "saidNoNameD5": 1 } },
+      { "label": "C. 아무 말 안 한다", "goto": "d5_13" }
+    ]
+  },
+
+  "d5_13": {
+    "panorama": "/panorama/d5_12_descent_seongchil.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidNoNameD5": { "gte": 1 } },
+        "text": "성칠이 걷는다. 한참 후 말한다. \"그게 더 나을 수도 있어.\"\n만술이 그 말을 씹는다. D-11에서 성칠이 했던 말이랑 같은 말이다. 그때랑 지금이랑 — 그 말이 같게 들리는지 다르게 들리는지."
+      },
+      { "condition": {}, "text": "성칠이 더 말하지 않는다." }
+    ],
+    "next": "d5_14"
+  },
+
+  "d5_14": {
+    "panorama": "/panorama/d5_14_evening_bonggil.jpg",
+    "narrative": "저녁. 봉길 아저씨가 혼자 먹는다.\n만술이 다가가서 앉는다. 봉길 아저씨가 보지 않는다.\n만술이 먹는다. 봉길 아저씨가 먹는다.\n봉길 아저씨가 일어나면서 만술 밥그릇을 본다.\n어제도 그랬다.\n왜 보는지 모른다. 그냥 본다. 그게 다다.",
+    "next": "d5_15"
+  },
+
+  "d5_15": {
+    "panorama": "/panorama/d5_15_night_seongchil_outside.jpg",
+    "narrative": "성칠이 말한다.\n\"집에 가면 뭐 할 거야.\"",
+    "choices": [
+      { "label": "A. \"논에 가야지.\" 한다", "goto": "d5_16", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "saidPaddyD5": 1 } },
+      { "label": "B. \"모르겠어.\" 한다", "goto": "d5_16", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. \"아직 거기까지 생각 못 했어.\" 한다", "goto": "d5_16", "condition": { "knowsSeongchil": { "gte": 1 } } }
+    ]
+  },
+
+  "d5_16": {
+    "panorama": "/panorama/d5_15_night_seongchil_outside.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidPaddyD5": { "gte": 1 } },
+        "text": "성칠이 말한다. \"나는 형 얼굴 보고 싶다.\"\n둘이 잠깐 있는다. 하늘. 별. 만술이 D-21 새벽 별을 생각한다."
+      },
+      { "condition": {}, "text": "성칠이 하늘을 본다." }
+    ],
+    "next": "d5_17"
+  },
+
+  "d5_17": {
+    "panorama": "/panorama/d5_17_tent_night.jpg",
+    "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"",
+    "choices": [
+      { "label": "A. \"예.\" 한다", "goto": "d5_end", "effect": { "saidYesD5": 1 } },
+      { "label": "B. 아무 말 안 한다", "goto": "d5_end" }
+    ]
+  },
+
+  "d5_end": {
+    "panorama": "/panorama/d5_17_tent_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "saidYesD5": { "gte": 1 } },
+        "text": "봉길 아저씨가 돌아눕는다. 성칠이 말한다. 아주 낮게. \"잘 자.\" 만술한테.\n만술이 말한다. \"응.\"\n봉길 아저씨한테는 못 하는 말을 성칠한테는 한다.\n\nD-5가 끝났다."
+      },
+      { "condition": {}, "text": "봉길 아저씨가 돌아눕는다. 만술이 눈을 감는다.\n\nD-5가 끝났다." }
+    ]
   }
 }
