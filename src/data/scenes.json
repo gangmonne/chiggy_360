@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "note": "Replace panorama paths with your own equirectangular 2:1 images.",
+    "hotspot_coords": "lon = horizontal degrees (0=forward, +90=left), lat = vertical degrees (0=horizon)"
+  },
+
+  "scene_00": {
+    "panorama": "/panorama/scene_00.jpg",
+    "narrative": "[SYSTEM] 시스템 초기화 완료. 당신은 어디에 있습니까?",
+    "hotspots": [
+      {
+        "id": "door",
+        "label": "문",
+        "lon": 45,
+        "lat": -5,
+        "description": "잠겨 있다.",
+        "effect": { "anomalyLevel": 1 }
+      },
+      {
+        "id": "window",
+        "label": "창문",
+        "lon": -30,
+        "lat": 10,
+        "description": "밖이 보인다.",
+        "goto": "scene_01"
+      }
+    ],
+    "choices": [
+      { "label": "[1] 문 쪽으로 간다", "goto": "scene_00", "effect": { "trustG": -5 } },
+      { "label": "[2] 창문을 본다",    "goto": "scene_01" }
+    ]
+  },
+
+  "scene_01": {
+    "panorama": "/panorama/scene_01.jpg",
+    "narrative": "[G] 여기서 무엇을 찾고 있나요?",
+    "character": {
+      "id": "subject_a",
+      "pose": "idle",
+      "position": [0.3, -0.4, -2.5]
+    },
+    "hotspots": [
+      {
+        "id": "subject",
+        "label": "인물",
+        "lon": 0,
+        "lat": 0,
+        "description": "낯선 사람이 서 있다.",
+        "effect": { "trustG": 5 }
+      }
+    ],
+    "choices": [
+      { "label": "[1] 말을 건다", "goto": "scene_01", "effect": { "trustG": 10 } },
+      { "label": "[2] 돌아간다",  "goto": "scene_00" }
+    ]
+  }
+}

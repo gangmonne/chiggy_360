@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>360 FMV Template</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <div id="ui-root">
+    <!-- Loading -->
+    <div id="loading">LOADING…</div>
+
+    <!-- HUD top-left -->
+    <div id="hud">
+      <div class="hud-line" id="hud-node">NODE —</div>
+      <div class="hud-line" id="hud-state">trustG 50 · anomaly 0</div>
+    </div>
+
+    <!-- Reset -->
+    <button id="reset-btn" title="New Game">↺</button>
+
+    <!-- Narrative (G's typewriter) -->
+    <div id="narrative"></div>
+
+    <!-- Hotspot anchors -->
+    <div id="hotspots"></div>
+
+    <!-- Choice buttons -->
+    <div id="choices"></div>
+
+    <!-- Info panel (hotspot detail) -->
+    <div id="panel" class="hidden">
+      <div id="panel-title"></div>
+      <div id="panel-body"></div>
+      <button id="panel-close">닫기</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
