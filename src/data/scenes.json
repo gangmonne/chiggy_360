@@ -1,57 +1,154 @@
 {
   "_meta": {
-    "note": "Replace panorama paths with your own equirectangular 2:1 images.",
+    "note": "지게꾼 (PORTER) — D-21 징집 당일. Replace panorama paths with your own equirectangular 2:1 images under public/panorama/.",
     "hotspot_coords": "lon = horizontal degrees (0=forward, +90=left), lat = vertical degrees (0=horizon)"
   },
 
-  "scene_00": {
-    "panorama": "/panorama/scene_00.jpg",
-    "narrative": "[SYSTEM] 시스템 초기화 완료. 당신은 어디에 있습니까?",
-    "hotspots": [
-      {
-        "id": "door",
-        "label": "문",
-        "lon": 45,
-        "lat": -5,
-        "description": "잠겨 있다.",
-        "effect": { "anomalyLevel": 1 }
-      },
-      {
-        "id": "window",
-        "label": "창문",
-        "lon": -30,
-        "lat": 10,
-        "description": "밖이 보인다.",
-        "goto": "scene_01"
-      }
-    ],
+  "d21_01": {
+    "panorama": "/panorama/d21_01_field_dawn.jpg",
+    "narrative": "해 뜨기 전. 만술이 눈을 뜬다. 논에서 자는 날이다.\n벼 냄새. 흙 냄새. 이슬이 얼굴에 닿아 있다.\n만술이 일어나지 않고 잠깐 누워 있는다. 하늘이 아직 어둡다. 별이 몇 개 남아 있다.",
     "choices": [
-      { "label": "[1] 문 쪽으로 간다", "goto": "scene_00", "effect": { "trustG": -5 } },
-      { "label": "[2] 창문을 본다",    "goto": "scene_01" }
+      { "label": "A. 바로 일어난다", "goto": "d21_02" },
+      { "label": "B. 별을 센다 — 셋까지 세고 일어난다", "goto": "d21_02", "effect": { "starsCounted": 1 } },
+      { "label": "C. 그냥 누워 있는다 — 어머니 소리가 들릴 때까지", "goto": "d21_02", "effect": { "starsCounted": 1 } }
     ]
   },
 
-  "scene_01": {
-    "panorama": "/panorama/scene_01.jpg",
-    "narrative": "[G] 여기서 무엇을 찾고 있나요?",
-    "character": {
-      "id": "subject_a",
-      "pose": "idle",
-      "position": [0.3, -0.4, -2.5]
-    },
+  "d21_02": {
+    "panorama": "/panorama/d21_02_paddy.jpg",
+    "narrative": "해가 뜬다. 벼가 아직 푸르다. 7월 초. 수확까진 멀었다.\n만술이 허리를 숙이고 일한다. 손이 익숙하게 움직인다.\n저 멀리 마을 입구에서 먼지가 인다. 트럭 소리.\n만술이 허리를 편다.",
+    "next": "d21_03"
+  },
+
+  "d21_03": {
+    "panorama": "/panorama/d21_03_truck_arrival.jpg",
+    "narrative": "트럭이 선다. 군인 둘. 마을 이장이 그 뒤에 서 있다.\n이장은 만술의 아버지 친구다. 그런데 지금 눈을 못 마주친다.\n군인 하나가 종이를 읽는다. 이만술. 박봉길.\n이장이 만술을 보지 않는 채로 말한다.\n\"나라 일이다.\"",
+    "choices": [
+      { "label": "A. 그냥 본다 — 아무 표정 없이", "goto": "d21_04" },
+      { "label": "B. 고개를 끄덕인다", "goto": "d21_04" },
+      { "label": "C. 이장의 눈을 찾는다 — 이장은 끝내 안 마주친다", "goto": "d21_04", "effect": { "sawElderAvert": 1 } }
+    ]
+  },
+
+  "d21_04": {
+    "panorama": "/panorama/d21_03_truck_arrival.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "sawElderAvert": { "gte": 1 } },
+        "text": "봉길 아저씨가 논두렁에서 온다. 손에 흙이 묻어 있다. 닦지 않은 채로 트럭 쪽으로 걷는다.\n만술이 이장의 눈을 끝까지 찾았다. 이장은 끝내 외면했다.\n만술이 처음으로 어른의 외면을 정면으로 목격한다.\n봉길 아저씨가 만술 옆을 지나치면서 낮게 말한다.\n\"짐 챙겨와. 옷 두 벌.\""
+      },
+      {
+        "condition": {},
+        "text": "봉길 아저씨가 논두렁에서 온다. 손에 흙이 묻어 있다. 닦지 않은 채로 트럭 쪽으로 걷는다.\n만술이 봉길 아저씨를 본다.\n봉길 아저씨가 만술 옆을 지나치면서 낮게 말한다.\n\"짐 챙겨와. 옷 두 벌.\"\n그게 다다. 뒤를 보지 않는다."
+      }
+    ],
+    "next": "d21_05"
+  },
+
+  "d21_05": {
+    "panorama": "/panorama/d21_05_home.jpg",
+    "narrative": "만술이 집으로 뛰어간다.\n마루. 방. 어머니가 부엌에 있다가 나온다. 어머니의 얼굴 — 이미 알고 있다는 얼굴.\n아무 말이 없다. 어머니가 방으로 들어가서 옷을 챙긴다. 만술 것. 접어서 만술 손에 쥐어준다.\n만술이 받는다.",
+    "choices": [
+      { "label": "A. \"다녀오겠습니다.\" 한다", "goto": "d21_06" },
+      { "label": "B. 아무 말 안 한다 — 그냥 나간다", "goto": "d21_06" },
+      { "label": "C. \"어머니.\" 부른다 — 그리고 아무 말 못 한다", "goto": "d21_06", "effect": { "motherPushedBack": 1 } }
+    ]
+  },
+
+  "d21_06": {
+    "panorama": "/panorama/d21_06_truck_departure.jpg",
+    "narrative": "트럭 앞. 군인이 올라타라고 한다.\n봉길 아저씨가 이미 올라가 있다. 다른 남자들이 올라간다.\n만술이 올라타려다 한 번 돌아본다.\n마을. 논. 어머니가 마루에 서 있다. 작게.",
+    "choices": [
+      { "label": "A. 손을 든다", "goto": "d21_07", "effect": { "wavedGoodbye": 1 } },
+      { "label": "B. 그냥 탄다", "goto": "d21_07" },
+      { "label": "C. 한참 본다 — 군인이 재촉할 때까지", "goto": "d21_07" }
+    ]
+  },
+
+  "d21_07": {
+    "panorama": "/panorama/d21_07_truck_bed.jpg",
+    "narrative": "트럭이 움직인다. 마을이 멀어진다.\n만술이 뒤를 본다. 봉길 아저씨는 앞을 본다.\n트럭에 여섯 명. 한 명은 계속 손마디를 꺾는다. 딱. 딱. 딱.\n한 명은 눈을 감고 있다. 한 명은 봇짐을 두 손으로 꼭 쥐고 있다.\n만술이 그 손들을 하나씩 본다.",
+    "choices": [
+      { "label": "A. 손마디 꺾는 남자", "goto": "d21_08" },
+      { "label": "B. 봇짐 쥔 남자", "goto": "d21_08" },
+      { "label": "C. 봉길 아저씨의 손", "goto": "d21_08", "effect": { "watchedBonggilHands": 1 } }
+    ]
+  },
+
+  "d21_08": {
+    "panorama": "/panorama/d21_07_truck_bed.jpg",
+    "narrative": "한참 가다가 봉길 아저씨가 담배를 꺼낸다. 불을 붙인다. 연기를 내뱉는다.\n만술한테 내밀지 않는다. 봉길 아저씨는 만술이 담배를 안 핀다는 걸 안다.\n그런데 오늘은 —",
+    "choices": [
+      { "label": "A. 내밀지 않는다", "goto": "d21_09" },
+      { "label": "B. \"저도요.\" 하고 손을 내민다", "goto": "d21_09", "effect": { "sharedFirstCigarette": 1 } }
+    ]
+  },
+
+  "d21_09": {
+    "panorama": "/panorama/d21_09_basecamp_arrival.jpg",
+    "narrative": "트럭이 선다. 군인이 내리라고 한다. 다들 내린다.\n만술이 내리기 직전 — 트럭 바닥을 본다. 짚이 깔려 있다.\n누군가 흘린 건지 — 쌀알 몇 개가 떨어져 있다.",
+    "choices": [
+      { "label": "A. 그냥 내린다", "goto": "d21_10" },
+      { "label": "B. 쌀알을 집는다", "goto": "d21_10", "effect": { "riceKept": 1 } }
+    ]
+  },
+
+  "d21_10": {
+    "panorama": "/panorama/d21_10_basecamp.jpg",
+    "narrative": "산 아래 캠프. 텐트들. 지게들이 벽에 기대어 세워져 있다.\n군인들이 움직인다. 빠르다. 냄새 — 땀, 밥, 뭔가 탄 것.\n선배 지게꾼 하나가 지나가다 만술을 본다. 위아래로 훑는다. 아무 말 안 하고 지나간다.\n봉길 아저씨가 만술 옆에 선다.\n\"입 다물고 시키는 것만 해.\"",
+    "choices": [
+      { "label": "A. \"예.\" 한다", "goto": "d21_11" },
+      { "label": "B. 고개를 끄덕인다", "goto": "d21_11" },
+      { "label": "C. 아무 반응 안 한다 — 캠프를 계속 본다", "goto": "d21_11" }
+    ]
+  },
+
+  "d21_11": {
+    "panorama": "/panorama/d21_10_basecamp.jpg",
+    "narrative": "하사가 나온다. 짧고 빠르게 말한다.\n\"군인 아니다. 짐 나른다. 탄약, 식량, 부상병. 시키는 대로. 딴짓하면 죽는다. 도망치면 죽는다. 겁나면 참아라.\"\n그게 다다.\n지게를 하나씩 받는다.\n만술이 지게를 받아들고 선다. 짐이 없는데도 — 무게가 있다.",
     "hotspots": [
       {
-        "id": "subject",
-        "label": "인물",
+        "id": "jige",
+        "label": "지게",
         "lon": 0,
-        "lat": 0,
-        "description": "낯선 사람이 서 있다.",
-        "effect": { "trustG": 5 }
+        "lat": -10,
+        "description": "받았는데 — 어떻게 매는지 모른다."
       }
     ],
     "choices": [
-      { "label": "[1] 말을 건다", "goto": "scene_01", "effect": { "trustG": 10 } },
-      { "label": "[2] 돌아간다",  "goto": "scene_00" }
+      { "label": "A. 선배 지게꾼한테 묻는다", "goto": "d21_12" },
+      { "label": "B. 봉길 아저씨한테 묻는다", "goto": "d21_12", "effect": { "bonggilDistance": 1 } },
+      { "label": "C. 아무한테도 안 묻고 혼자 해본다", "goto": "d21_12" },
+      { "label": "D. 하사한테 묻는다", "goto": "d21_12", "effect": { "askedSergeant": 1 } }
+    ]
+  },
+
+  "d21_12": {
+    "panorama": "/panorama/d21_12_tent_night.jpg",
+    "narrative": "텐트. 지게꾼 여섯이 눕는다. 좁다. 옆 사람 발이 얼굴 옆에 있다.\n아무도 말이 없다. 밖에서 군인들 소리가 들린다.\n한참 후 봉길 아저씨가 낮게 말한다.\n\"자라. 내일도 갈 길 멀다.\"",
+    "choices": [
+      { "label": "A. \"예.\" 하고 눈을 감는다", "goto": "d21_end" },
+      { "label": "B. 아무 말 없이 눈을 감는다", "goto": "d21_end" },
+      { "label": "C. \"무섭습니다, 아저씨.\" 한다", "goto": "d21_end", "effect": { "bonggilDistance": 1 } },
+      { "label": "D. \"아저씨는요?\" 한다", "goto": "d21_end", "effect": { "bonggilDistance": 2 } }
+    ]
+  },
+
+  "d21_end": {
+    "panorama": "/panorama/d21_12_tent_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "bonggilDistance": { "gte": 2 } },
+        "text": "봉길 아저씨가 한참 있다가 아주 낮게 말한다. \"나도.\"\n늦게, 더 조용하게 나온다. 그래서 더 크게 들린다.\n\nD-21이 끝났다."
+      },
+      {
+        "condition": { "bonggilDistance": { "gte": 1 } },
+        "text": "봉길 아저씨가 잠시 침묵하다가 말한다. \"나도.\"\n\nD-21이 끝났다."
+      },
+      {
+        "condition": {},
+        "text": "텐트 안이 조용해진다. 모두 잠든다.\n\nD-21이 끝났다."
+      }
     ]
   }
 }

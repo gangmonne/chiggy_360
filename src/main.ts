@@ -9,7 +9,14 @@ const sceneGraph = graph as SceneGraph;
 const canvas  = document.getElementById("scene") as HTMLCanvasElement;
 const loading = document.getElementById("loading")!;
 
-const director = new GameDirector(canvas, sceneGraph);
+const director = new GameDirector(canvas, sceneGraph, {
+  riceKept: 0,
+  knowsSeongchil: 0,
+  knowsJaebok: 0,
+  valleyEyeContact: 0,
+  bonggilDistance: 0,
+  countsSmoke: 0,
+});
 
 const firstNode = Object.keys(sceneGraph)[0];
 director.enter(firstNode).then(() => {

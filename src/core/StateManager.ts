@@ -2,18 +2,12 @@ import type { GameState } from "../types.js";
 
 const STORAGE_KEY = "fmv360_state";
 
-const DEFAULT: GameState = {
-  trustG: 50,
-  anomalyLevel: 0,
-  loopCount: 0,
-};
-
 export class StateManager {
   private state: GameState;
 
-  constructor() {
+  constructor(private readonly initial: GameState = {}) {
     const saved = localStorage.getItem(STORAGE_KEY);
-    this.state = saved ? { ...DEFAULT, ...JSON.parse(saved) } : { ...DEFAULT };
+    this.state = saved ? { ...initial, ...JSON.parse(saved) } : { ...initial };
   }
 
   get(): Readonly<GameState> { return this.state; }
@@ -23,8 +17,6 @@ export class StateManager {
     for (const [k, v] of Object.entries(effect)) {
       this.state[k] = (this.state[k] ?? 0) + v;
     }
-    this.state.trustG = Math.max(0, Math.min(100, this.state.trustG));
-    this.state.anomalyLevel = Math.max(0, this.state.anomalyLevel);
     this.save();
   }
 
@@ -34,7 +26,7 @@ export class StateManager {
   }
 
   reset(): void {
-    this.state = { ...DEFAULT };
+    this.state = { ...this.initial };
     localStorage.removeItem(STORAGE_KEY);
   }
 

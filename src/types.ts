@@ -30,23 +30,32 @@ export interface Choice {
   condition?: Record<string, Condition>;
 }
 
+export interface NarrativeVariant {
+  condition: Record<string, Condition>;
+  text: string;
+}
+
 export interface SceneNode {
   /** Path to an equirectangular 2:1 panorama image (or video in the future). */
   panorama?: string;
   /** Optional: which character pose to show in this scene. */
   character?: { id: string; pose: string; position: [number, number, number] };
-  /** G's narration typewritten into the HUD. */
+  /** Narration typewritten into the HUD. Default text when no variant matches. */
   narrative?: string;
+  /** Checked in order; the first whose condition passes overrides `narrative`. */
+  narrativeVariants?: NarrativeVariant[];
   hotspots?: Hotspot[];
   choices?: Choice[];
+  /**
+   * For scenes with no choices ("선택지 없음") — where to go once the player
+   * continues. Rendered as a single "계속" prompt.
+   */
+  next?: string;
   unlockedLogs?: string[];
 }
 
 export type SceneGraph = Record<string, SceneNode>;
 
 export interface GameState {
-  trustG: number;
-  anomalyLevel: number;
-  loopCount: number;
   [key: string]: number;
 }

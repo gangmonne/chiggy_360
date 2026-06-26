@@ -24,8 +24,8 @@ export class GameDirector {
   private nodeId_el: HTMLElement;
   private state_el: HTMLElement;
 
-  constructor(canvas: HTMLCanvasElement, private graph: SceneGraph) {
-    this.state = new StateManager();
+  constructor(canvas: HTMLCanvasElement, private graph: SceneGraph, initialState: Record<string, number> = {}) {
+    this.state = new StateManager(initialState);
 
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
     this.renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
@@ -72,9 +72,8 @@ export class GameDirector {
     await this.viewer.setScene(node.panorama);
 
     // HUD
-    const s = this.state.get();
     this.nodeId_el.textContent = `NODE ${nodeId}`;
-    this.state_el.textContent  = `trustG ${s.trustG} · anomaly ${s.anomalyLevel}`;
+    this.refreshStateHud();
 
     // Character
     let characterVisible = false;
@@ -87,11 +86,13 @@ export class GameDirector {
       this.character.hide();
     }
 
-    // G cloud — only when no human character is visible
-    if (node.narrative) {
+    // Narrative — first matching variant wins, else the default text.
+    const variant = (node.narrativeVariants ?? []).find(v => this.state.checkCondition(v.condition));
+    const text = variant?.text ?? node.narrative;
+    if (text) {
       if (!characterVisible) this.gCloud.show();
       else this.gCloud.hide();
-      this.narrative.type(node.narrative);
+      this.narrative.type(text);
     } else {
       this.gCloud.hide();
     }
@@ -100,7 +101,18 @@ export class GameDirector {
     const visibleHotspots = (node.hotspots ?? []).filter(h => this.state.checkCondition(h.condition));
     const visibleChoices  = (node.choices  ?? []).filter(c => this.state.checkCondition(c.condition));
     this.hotspots.render(visibleHotspots);
-    this.choices.render(visibleChoices);
+
+    // 선택지 없음: a single "continue" prompt advances to `next`.
+    if (visibleChoices.length === 0 && node.next) {
+      this.choices.render([{ label: "▶", goto: node.next }]);
+    } else {
+      this.choices.render(visibleChoices);
+    }
+  }
+
+  private refreshStateHud(): void {
+    const s = this.state.get();
+    this.state_el.textContent = Object.entries(s).map(([k, v]) => `${k} ${v}`).join(" · ");
   }
 
   private handleHotspot(id: string, goto?: string, effect?: Record<string, number>): void {
@@ -137,13 +149,10 @@ export class GameDirector {
   update(t: number): void {
     const s = this.state.get();
     this.rig.update();
-    this.gCloud.update(t, s.trustG, s.anomalyLevel, this.narrative.isTyping);
-    this.character.update(t, s.trustG, s.anomalyLevel);
+    this.gCloud.update(t, s.trustG ?? 0, s.anomalyLevel ?? 0, this.narrative.isTyping);
+    this.character.update(t, s.trustG ?? 0, s.anomalyLevel ?? 0);
     this.hotspots.tick(this.rig.camera);
     this.renderer.render(this.viewer.scene, this.rig.camera);
-
-    // HUD refresh
-    this.state_el.textContent = `trustG ${s.trustG} · anomaly ${s.anomalyLevel}`;
   }
 
   private onResize(): void {
