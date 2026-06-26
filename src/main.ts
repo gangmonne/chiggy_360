@@ -124,6 +124,12 @@ const director = new GameDirector(canvas, sceneGraph, {
   chasedBonggilDescentD8: 0,
   deniedBonggilRumorD8: 0,
   saidSleepFirstD8: 0,
+  askedIfScaredD7: 0,
+  saidHatedSleepWordD7: 0,
+  helpedLaggingPorterD7: 0,
+  justWentD7: 0,
+  askedBackD7: 0,
+  saidOfCourseD7: 0,
 });
 
 const firstNode = Object.keys(sceneGraph)[0];
