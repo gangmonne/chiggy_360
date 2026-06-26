@@ -2372,6 +2372,183 @@
         "text": "봉길 아저씨가 말한다. \"자라고.\"\n만술이 눈을 감는다. 어둠 속에서 봉길 아저씨 숨소리를 듣는다. 그냥 숨소리다. 그런데 낯설다.\n\nD-10이 끝났다."
       },
       { "condition": {}, "text": "만술이 눈을 감는다.\n\nD-10이 끝났다." }
+    ],
+    "next": "d9_01"
+  },
+
+  "d9_01": {
+    "panorama": "/panorama/d9_01_tent_morning.jpg",
+    "narrative": "아침. 봉길 아저씨가 텐트 안에 있다.\n일어나 있다. 앉아서 지게끈을 본다.\n손질하는 게 아니다. 그냥 본다.\n만술이 일어나서 봉길 아저씨를 본다.\n봉길 아저씨가 만술을 보지 않는다.",
+    "next": "d9_02"
+  },
+
+  "d9_02": {
+    "panorama": "/panorama/d9_02_camp_crying.jpg",
+    "narrative": "밖에 나오면 — 지게꾼 하나가 울고 있다.\n소리 없이. 그냥 앉아서 건빵을 쥔 채로 운다.\n아무도 뭐라 안 한다. 아무도 다가가지 않는다.",
+    "choices": [
+      { "label": "A. 본다", "goto": "d9_03" },
+      { "label": "B. 안 본다", "goto": "d9_03" },
+      { "label": "C. 다가간다", "goto": "d9_03", "effect": { "approachedCryingPorter": 1 } }
+    ]
+  },
+
+  "d9_03": {
+    "panorama": "/panorama/d9_02_camp_crying.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "approachedCryingPorter": { "gte": 1 } },
+        "text": "만술이 그 옆에 앉는다. 아무 말 안 한다. 그 사람도 아무 말 안 한다.\n잠깐 그렇게 있다. 그 사람이 건빵을 씹기 시작한다. 만술이 일어난다.\n봉길 아저씨가 그 장면을 보고 있다. 만술이 돌아보면 — 봉길 아저씨가 시선을 돌린다."
+      },
+      { "condition": {}, "text": "만술이 자리를 옮긴다. 봉길 아저씨가 멀리서 그 모습을 보고 있었다는 걸 나중에 알게 된다." }
+    ],
+    "next": "d9_04"
+  },
+
+  "d9_04": {
+    "panorama": "/panorama/d9_04_ascent_wide.jpg",
+    "narrative": "오늘 루트가 넓어서 둘이 나란히 걸을 수 있다.\n만술이 봉길 아저씨 옆에서 걷는다.\n봉길 아저씨가 앞을 본다. 말이 없다.",
+    "choices": [
+      { "label": "A. 말을 건다 — \"아저씨, 고향 언제 가요.\"", "goto": "d9_05", "effect": { "askedAboutHomeD9": 1 } },
+      { "label": "B. 끝까지 안 한다", "goto": "d9_05" }
+    ]
+  },
+
+  "d9_05": {
+    "panorama": "/panorama/d9_04_ascent_wide.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "askedAboutHomeD9": { "gte": 1 } },
+        "text": "봉길 아저씨가 걸으면서 말한다. \"몰라.\" 그게 다다.\n그 '몰라'가 1주차 때 '몰라도 돼'랑 다르다. 그때는 만술을 보호하는 말이었는데 — 지금은 그냥 모른다는 말이다."
+      },
+      { "condition": {}, "text": "둘이 말없이 걷는다." }
+    ],
+    "next": "d9_06"
+  },
+
+  "d9_06": {
+    "panorama": "/panorama/d9_06_rest_stranger.jpg",
+    "narrative": "쉬는 시간. 봉길 아저씨가 다른 지게꾼 옆에 앉는다. 처음 보는 사람.\n만술이 그걸 본다.",
+    "choices": [
+      { "label": "A. 다가간다", "goto": "d9_07" },
+      { "label": "B. 성칠 옆에 앉는다", "goto": "d9_07", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. 혼자 앉는다", "goto": "d9_07", "effect": { "satAloneD9": 1 } }
+    ]
+  },
+
+  "d9_07": {
+    "panorama": "/panorama/d9_06_rest_stranger.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "satAloneD9": { "gte": 1 } },
+        "text": "만술이 혼자 앉아서 봉길 아저씨를 본다.\n봉길 아저씨가 그 낯선 지게꾼과 이야기한다. 만술한테는 안 하는 이야기를."
+      },
+      { "condition": {}, "text": "만술이 다른 데 앉는다. 봉길 아저씨 쪽은 보지 않으려 한다." }
+    ],
+    "next": "d9_08"
+  },
+
+  "d9_08": {
+    "panorama": "/panorama/d9_08_ascent_late.jpg",
+    "narrative": "봉길 아저씨가 속도를 올린다. 만술을 기다리지 않는다.",
+    "choices": [
+      { "label": "A. 속도를 올려 따라간다", "goto": "d9_09", "effect": { "chasedBonggilSpeed": 1 } },
+      { "label": "B. 자기 속도를 지킨다", "goto": "d9_09" }
+    ]
+  },
+
+  "d9_09": {
+    "panorama": "/panorama/d9_08_ascent_late.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "chasedBonggilSpeed": { "gte": 1 } },
+        "text": "봉길 아저씨를 따라잡는다. 그런데 봉길 아저씨가 만술이 옆에 온 걸 알면서 속도를 또 올린다.\n만술이 그걸 안다. 그리고 속도를 낮춘다."
+      },
+      { "condition": {}, "text": "만술이 자기 속도로 걷는다. 봉길 아저씨는 점점 멀어진다." }
+    ],
+    "next": "d9_10"
+  },
+
+  "d9_10": {
+    "panorama": "/panorama/d9_10_summit_alone.jpg",
+    "narrative": "정상. 봉길 아저씨가 먼저 와 있다.\n만술이 도착한다.\n봉길 아저씨가 내려간다. 만술이 막 도착했는데.",
+    "choices": [
+      { "label": "A. \"아저씨.\" 부른다", "goto": "d9_11", "effect": { "calledBonggilSummitD9": 1 } },
+      { "label": "B. 그냥 본다", "goto": "d9_11" }
+    ]
+  },
+
+  "d9_11": {
+    "panorama": "/panorama/d9_10_summit_alone.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "calledBonggilSummitD9": { "gte": 1 } },
+        "text": "봉길 아저씨가 멈추지 않는다. 듣지 못한 건지. 들었는데 안 멈춘 건지.\n만술은 모른다. 그게 더 힘들다."
+      },
+      { "condition": {}, "text": "만술이 그냥 본다. 봉길 아저씨의 뒷모습이 작아진다." }
+    ],
+    "next": "d9_12"
+  },
+
+  "d9_12": {
+    "panorama": "/panorama/d9_12_evening_alone.jpg",
+    "narrative": "저녁. 봉길 아저씨가 혼자 먹는다. 만술 쪽을 한 번도 안 본다.\n만술이 성칠 옆에 앉아서 먹는다. 밥 맛을 모른다. 씹는다.",
+    "choices": [
+      { "label": "A. 본다", "goto": "d9_13", "effect": { "watchedBonggilEatAloneD9": 1 } },
+      { "label": "B. 안 본다", "goto": "d9_13" }
+    ]
+  },
+
+  "d9_13": {
+    "panorama": "/panorama/d9_12_evening_alone.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "watchedBonggilEatAloneD9": { "gte": 1 } },
+        "text": "봉길 아저씨가 먹는다. 표정이 없다.\n만술이 그 옆모습을 본다. 낯설다. 고향에서 보던 봉길 아저씨가 아니다."
+      },
+      { "condition": {}, "text": "만술이 밥을 씹는다. 맛을 모른다." }
+    ],
+    "next": "d9_14"
+  },
+
+  "d9_14": {
+    "panorama": "/panorama/d9_14_night_seongchil.jpg",
+    "narrative": "텐트 밖. 성칠이 말한다.\n\"오늘 봉길 아저씨 저번에 짐 못 드는 애한테 놔두고 가라고 했대.\"",
+    "choices": [
+      { "label": "A. \"그랬어요?\" 한다", "goto": "d9_15", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "B. \"그럴 리가.\" 한다", "goto": "d9_15", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "deniedBonggilRumor": 1 } },
+      { "label": "C. 아무 말 안 한다", "goto": "d9_15" }
+    ]
+  },
+
+  "d9_15": {
+    "panorama": "/panorama/d9_14_night_seongchil.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "deniedBonggilRumor": { "gte": 1 } },
+        "text": "성칠이 만술을 본다. 아무 말 안 한다. 만술이 그 침묵을 받는다."
+      },
+      { "condition": {}, "text": "성칠이 더 말하지 않는다." }
+    ],
+    "next": "d9_16"
+  },
+
+  "d9_16": {
+    "panorama": "/panorama/d9_16_tent_night.jpg",
+    "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n침묵.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 — 그냥 습관이다.",
+    "choices": [
+      { "label": "A. \"예.\" 한다", "goto": "d9_end" },
+      { "label": "B. 아무 말 안 한다", "goto": "d9_end", "effect": { "silentAtNightD9": 1 } }
+    ]
+  },
+
+  "d9_end": {
+    "panorama": "/panorama/d9_16_tent_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "silentAtNightD9": { "gte": 1 } },
+        "text": "봉길 아저씨가 돌아눕는다. 만술이 천장을 본다.\n봉길 아저씨 숨소리를 듣는다. 고르다. 곧 잠든다. 만술은 오래 못 잔다.\n\nD-9가 끝났다."
+      },
+      { "condition": {}, "text": "봉길 아저씨가 돌아눕는다. 만술이 눈을 감는다.\n\nD-9가 끝났다." }
     ]
   }
 }
