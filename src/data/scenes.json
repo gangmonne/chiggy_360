@@ -300,6 +300,211 @@
         "condition": {},
         "text": "텐트 밖에서 바람 소리. 누군가 코를 곤다.\n만술이 천장을 본다.\n오늘 두 번 올랐다. 발에 물집이 생겼다. 연기가 어디서 나는지 몰랐다. 앞사람 이름을 몰랐다.\n눈이 감긴다.\n\nD-20이 끝났다."
       }
+    ],
+    "next": "d19_01"
+  },
+
+  "d19_01": {
+    "panorama": "/panorama/d19_01_wakeup.jpg",
+    "narrative": "눈을 뜬다. 어제 잠든 자세 그대로다.\n움직이려는데 — 몸이 1초 늦게 반응한다.\n허리. 어깨. 발. 어디가 제일 아픈지 순서를 매기기가 어렵다.\n봉길 아저씨는 이미 밖에 나가 있다.",
+    "next": "d19_02"
+  },
+
+  "d19_02": {
+    "panorama": "/panorama/d19_02_shoulder.jpg",
+    "narrative": "세수를 한다. 물이 차갑다.\n셔츠를 올려보면 — 어깨가 벗겨져 있다. 어젯밤엔 몰랐다. 지금 보니까 안다.\n빨갛게 쓸린 자리. 건드리면 쓰라리다.\n봉길 아저씨가 지나가다 본다. 멈춘다. 주머니에서 헝겊 조각을 꺼낸다.\n\"감아라.\"",
+    "choices": [
+      { "label": "A. 받는다", "goto": "d19_03", "effect": { "acceptedClothD19": 1 } },
+      { "label": "B. \"괜찮습니다.\" 하고 안 받는다", "goto": "d19_03" }
+    ]
+  },
+
+  "d19_03": {
+    "panorama": "/panorama/d19_03_load.jpg",
+    "narrative": "오늘도 포탄 상자. 만술이 지게에 묶는다.\n어제보다 빠르다. 끈도 덜 삐뚤다.\n선배 지게꾼이 지나가다 본다. 아무 말 안 한다.\n그게 칭찬인지 아닌지 모른다.",
+    "next": "d19_04"
+  },
+
+  "d19_04": {
+    "panorama": "/panorama/d19_04_rhythm.jpg",
+    "narrative": "어제 앞사람 발 박자에 맞췄던 거 — 오늘 혼자 해본다.\n발을 내딛는 간격. 숨 쉬는 타이밍.\n맞을 때가 있고 안 맞을 때가 있다. 맞는 순간엔 조금 덜 힘들다. 조금만.",
+    "choices": [
+      { "label": "A. 그냥 계속 걷는다", "goto": "d19_05" },
+      { "label": "B. 그 리듬을 기억해두려 한다", "goto": "d19_05", "effect": { "rememberedRhythm": 1 } }
+    ]
+  },
+
+  "d19_05": {
+    "panorama": "/panorama/d19_05_rest.jpg",
+    "narrative": "고개 중턱 그늘에서 잠깐 쉰다. 군인이 5분 준다.\n앞사람이 바위에 기댄다. 눈을 감는다.\n만술이 옆에 앉는다.",
+    "choices": [
+      { "label": "A. 그냥 쉰다", "goto": "d19_06" },
+      { "label": "B. \"아저씨 여기 오래 됐어요?\" 묻는다", "goto": "d19_06", "effect": { "askedSeniorDays": 1 } }
+    ]
+  },
+
+  "d19_06": {
+    "panorama": "/panorama/d19_05_rest.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "askedSeniorDays": { "gte": 1 } },
+        "text": "앞사람이 눈을 뜨지 않고 말한다. \"열흘.\"\n그게 다다. 만술이 열흘을 생각한다. 자기는 이틀째다."
+      },
+      { "condition": {}, "text": "쉬는 시간이 끝난다. 다시 일어선다." }
+    ],
+    "next": "d19_07"
+  },
+
+  "d19_07": {
+    "panorama": "/panorama/d19_06_legs.jpg",
+    "narrative": "쉬고 나서 다시 오른다. 쉬었더니 오히려 다리가 더 무겁다.\n앞사람이 아무렇지 않게 걷는다. 만술이 그 발뒤꿈치를 본다.\n고무신 뒤축이 닳아 있다. 한쪽이 더 닳아 있다.\n만술이 그걸 보면서 걷는다. 발뒤꿈치 하나를 보면서 고개를 오른다.",
+    "next": "d19_08"
+  },
+
+  "d19_08": {
+    "panorama": "/panorama/d19_08_summit_smoke.jpg",
+    "narrative": "정상. 어제 연기 두 줄기가 피어오르던 방향.\n오늘은 한 줄기다.\n어제보다 줄었는지 — 아니면 하나가 꺼진 건지. 만술은 모른다.",
+    "choices": [
+      { "label": "A. 그냥 내려간다", "goto": "d19_09" },
+      { "label": "B. \"아저씨, 저 연기 어디서 나는 거예요?\" 묻는다", "goto": "d19_09", "effect": { "askedAboutSmoke": 1 } }
+    ]
+  },
+
+  "d19_09": {
+    "panorama": "/panorama/d19_08_summit_smoke.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "askedAboutSmoke": { "gte": 1 } },
+        "text": "봉길 아저씨가 그 방향을 본다. 잠깐. 그리고 말한다.\n\"몰라도 돼.\"\n걷는다. 만술은 그 연기를 보면서 내려간다."
+      },
+      { "condition": {}, "text": "만술이 그냥 내려간다." }
+    ],
+    "next": "d19_10"
+  },
+
+  "d19_10": {
+    "panorama": "/panorama/d19_10_valley_route.jpg",
+    "narrative": "오후 행군은 다른 루트다. 계곡을 끼고 가는 길.\n물소리가 들린다. 더운데 — 물소리만 들어도 조금 낫다.\n만술이 물소리 쪽을 본다.",
+    "choices": [
+      { "label": "A. 그냥 걷는다", "goto": "d19_11" },
+      { "label": "B. 잠깐 물쪽을 본다 — 군인 눈치를 본다", "goto": "d19_11", "effect": { "wantedWater": 1 } }
+    ]
+  },
+
+  "d19_11": {
+    "panorama": "/panorama/d19_11_companion.jpg",
+    "narrative": "돌아오는 길. 빈 지게.\n옆에 처음 보는 지게꾼이 걷는다. 나이가 만술이랑 비슷해 보인다.\n그 사람이 만술을 본다. 만술도 본다. 아무 말 없다.\n그냥 같이 걷는다.",
+    "choices": [
+      { "label": "A. 묻는다", "goto": "d19_12", "effect": { "knowsSeongchil": 1 } },
+      { "label": "B. 안 묻는다", "goto": "d19_12" }
+    ]
+  },
+
+  "d19_12": {
+    "panorama": "/panorama/d19_11_companion.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "그 사람이 말한다. \"성칠이요.\"\n만술이 말한다. \"만술이요.\"\n그게 다다. 그런데 이름이 생겼다."
+      },
+      { "condition": {}, "text": "캠프까지 아무 말 없이 걷는다. 이름을 모른 채로." }
+    ],
+    "next": "d19_13"
+  },
+
+  "d19_13": {
+    "panorama": "/panorama/d19_13_camp_evening.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "캠프. 성칠이 만술 옆에 앉는다. 건빵을 하나 내민다."
+      },
+      { "condition": {}, "text": "캠프. 옆에 앉았던 그 지게꾼이 멀찍이 앉아 혼자 먹는다. 이름을 모른 채로." }
+    ],
+    "choices": [
+      { "label": "A. 받는다", "goto": "d19_14", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "ateWithSeongchil": 1 } },
+      { "label": "B. \"괜찮아요.\" 한다", "goto": "d19_14", "condition": { "knowsSeongchil": { "gte": 1 } } }
+    ],
+    "next": "d19_14"
+  },
+
+  "d19_14": {
+    "panorama": "/panorama/d19_14_bonggil_evening.jpg",
+    "narrative": "봉길 아저씨가 혼자 앉아서 밥을 먹는다. 만술 쪽을 보지 않는다.\n만술이 본다.\n봉길 아저씨 손에 헝겊 조각이 있다. 아까 만술한테 주려던 그거다. 아직 주머니에서 꺼내지 않은 채로 쥐고 있다.",
+    "choices": [
+      { "label": "A. 다가간다", "goto": "d19_15", "effect": { "bonggilDistance": 1, "approachedBonggilD19": 1 } },
+      { "label": "B. 그냥 본다", "goto": "d19_15" }
+    ]
+  },
+
+  "d19_15": {
+    "panorama": "/panorama/d19_14_bonggil_evening.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "approachedBonggilD19": { "gte": 1 } },
+        "text": "봉길 아저씨가 만술이 옆에 앉자 아무 말 없이 헝겊을 건넨다. 만술이 받는다.\n아까 거절했다면 — 봉길 아저씨가 두 번 내미는 셈이다."
+      },
+      { "condition": {}, "text": "만술이 멀찍이서 그냥 본다." }
+    ],
+    "next": "d19_16"
+  },
+
+  "d19_16": {
+    "panorama": "/panorama/d19_16_blisters.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "blisterPopped": { "gte": 1 } },
+        "text": "텐트. 만술이 발바닥을 본다.\n어제 물집 두 개. 오늘 하나 더 생겼다. 셋이다.\n만술이 센다. 하나. 둘. 셋.\n어제처럼 — 망설임 없이 터뜨린다. 습관이 됐다."
+      },
+      {
+        "condition": {},
+        "text": "텐트. 만술이 발바닥을 본다.\n어제 물집 두 개. 오늘 하나 더 생겼다. 셋이다.\n만술이 센다. 하나. 둘. 셋.\n어제처럼 — 그냥 둔다. 습관이 됐다."
+      }
+    ],
+    "next": "d19_17"
+  },
+
+  "d19_17": {
+    "panorama": "/panorama/d19_17_seongchil_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "knowsSeongchil": { "gte": 1 } },
+        "text": "텐트 밖. 성칠이 혼자 앉아 있다. 만술이 나온다. 둘이 앉는다.\n성칠이 말한다. \"고향 어디야?\""
+      },
+      { "condition": {}, "text": "텐트 밖. 바람이 분다. 만술이 혼자 잠깐 앉아 있다가 들어간다." }
+    ],
+    "choices": [
+      { "label": "A. 고향 마을 이름을 말한다", "goto": "d19_18", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "B. \"경상도요.\" 그게 다", "goto": "d19_18", "condition": { "knowsSeongchil": { "gte": 1 } } },
+      { "label": "C. \"아저씨는요?\" 먼저 묻는다", "goto": "d19_18", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "askedSeongchilFirst": 1 } }
+    ],
+    "next": "d19_18"
+  },
+
+  "d19_18": {
+    "panorama": "/panorama/d19_17_seongchil_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "askedSeongchilFirst": { "gte": 1 } },
+        "text": "성칠이 웃는다. 처음으로 웃는 사람을 본다. 작게.\n그리고 말한다. \"전라도.\"\n그게 다다."
+      },
+      { "condition": { "knowsSeongchil": { "gte": 1 } }, "text": "성칠이 고개를 끄덕인다. 더 묻지 않는다." },
+      { "condition": {}, "text": "텐트 안으로 돌아온다." }
+    ],
+    "next": "d19_19"
+  },
+
+  "d19_19": {
+    "panorama": "/panorama/d19_15_tent_night.jpg",
+    "narrativeVariants": [
+      {
+        "condition": { "bonggilDistance": { "gte": 1 } },
+        "text": "텐트 안으로 돌아온다. 봉길 아저씨가 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n어제는 \"내일도 갈 길 멀다\" 했는데 — 오늘은 그 말이 없다.\n없어진 말이 있다.\n\nD-19가 끝났다."
+      },
+      {
+        "condition": {},
+        "text": "텐트 안으로 돌아온다. 봉길 아저씨가 눕는다. 만술이 눕는다.\n아무 말이 없다.\n\nD-19가 끝났다."
+      }
     ]
   }
 }
