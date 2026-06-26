@@ -5,7 +5,7 @@
   },
 
   "d21_01": {
-    "panorama": "/panorama/d21_01_field_dawn.jpg",
+    "panorama": "/panorama/archetypes/home_paddy.jpg",
     "narrative": "해 뜨기 전. 만술이 눈을 뜬다. 논에서 자는 날이다.\n벼 냄새. 흙 냄새. 이슬이 얼굴에 닿아 있다.\n만술이 일어나지 않고 잠깐 누워 있는다. 하늘이 아직 어둡다. 별이 몇 개 남아 있다.",
     "choices": [
       { "label": "A. 바로 일어난다", "goto": "d21_02" },
@@ -15,13 +15,13 @@
   },
 
   "d21_02": {
-    "panorama": "/panorama/d21_02_paddy.jpg",
+    "panorama": "/panorama/archetypes/home_paddy.jpg",
     "narrative": "해가 뜬다. 벼가 아직 푸르다. 7월 초. 수확까진 멀었다.\n만술이 허리를 숙이고 일한다. 손이 익숙하게 움직인다.\n저 멀리 마을 입구에서 먼지가 인다. 트럭 소리.\n만술이 허리를 편다.",
     "next": "d21_03"
   },
 
   "d21_03": {
-    "panorama": "/panorama/d21_03_truck_arrival.jpg",
+    "panorama": "/panorama/archetypes/truck_road.jpg",
     "narrative": "트럭이 선다. 군인 둘. 마을 이장이 그 뒤에 서 있다.\n이장은 만술의 아버지 친구다. 그런데 지금 눈을 못 마주친다.\n군인 하나가 종이를 읽는다. 이만술. 박봉길.\n이장이 만술을 보지 않는 채로 말한다.\n\"나라 일이다.\"",
     "choices": [
       { "label": "A. 그냥 본다 — 아무 표정 없이", "goto": "d21_04" },
@@ -31,7 +31,7 @@
   },
 
   "d21_04": {
-    "panorama": "/panorama/d21_03_truck_arrival.jpg",
+    "panorama": "/panorama/archetypes/truck_road.jpg",
     "narrativeVariants": [
       {
         "condition": { "sawElderAvert": { "gte": 1 } },
@@ -46,7 +46,7 @@
   },
 
   "d21_05": {
-    "panorama": "/panorama/d21_05_home.jpg",
+    "panorama": "/panorama/archetypes/home_paddy.jpg",
     "narrative": "만술이 집으로 뛰어간다.\n마루. 방. 어머니가 부엌에 있다가 나온다. 어머니의 얼굴 — 이미 알고 있다는 얼굴.\n아무 말이 없다. 어머니가 방으로 들어가서 옷을 챙긴다. 만술 것. 접어서 만술 손에 쥐어준다.\n만술이 받는다.",
     "choices": [
       { "label": "A. \"다녀오겠습니다.\" 한다", "goto": "d21_06" },
@@ -56,7 +56,7 @@
   },
 
   "d21_06": {
-    "panorama": "/panorama/d21_06_truck_departure.jpg",
+    "panorama": "/panorama/archetypes/truck_road.jpg",
     "narrative": "트럭 앞. 군인이 올라타라고 한다.\n봉길 아저씨가 이미 올라가 있다. 다른 남자들이 올라간다.\n만술이 올라타려다 한 번 돌아본다.\n마을. 논. 어머니가 마루에 서 있다. 작게.",
     "choices": [
       { "label": "A. 손을 든다", "goto": "d21_07", "effect": { "wavedGoodbye": 1 } },
@@ -66,7 +66,7 @@
   },
 
   "d21_07": {
-    "panorama": "/panorama/d21_07_truck_bed.jpg",
+    "panorama": "/panorama/archetypes/truck_road.jpg",
     "narrative": "트럭이 움직인다. 마을이 멀어진다.\n만술이 뒤를 본다. 봉길 아저씨는 앞을 본다.\n트럭에 여섯 명. 한 명은 계속 손마디를 꺾는다. 딱. 딱. 딱.\n한 명은 눈을 감고 있다. 한 명은 봇짐을 두 손으로 꼭 쥐고 있다.\n만술이 그 손들을 하나씩 본다.",
     "choices": [
       { "label": "A. 손마디 꺾는 남자", "goto": "d21_08" },
@@ -76,7 +76,7 @@
   },
 
   "d21_08": {
-    "panorama": "/panorama/d21_07_truck_bed.jpg",
+    "panorama": "/panorama/archetypes/truck_road.jpg",
     "narrative": "한참 가다가 봉길 아저씨가 담배를 꺼낸다. 불을 붙인다. 연기를 내뱉는다.\n만술한테 내밀지 않는다. 봉길 아저씨는 만술이 담배를 안 핀다는 걸 안다.\n그런데 오늘은 —",
     "choices": [
       { "label": "A. 내밀지 않는다", "goto": "d21_09" },
@@ -85,7 +85,7 @@
   },
 
   "d21_09": {
-    "panorama": "/panorama/d21_09_basecamp_arrival.jpg",
+    "panorama": "/panorama/archetypes/basecamp.jpg",
     "narrative": "트럭이 선다. 군인이 내리라고 한다. 다들 내린다.\n만술이 내리기 직전 — 트럭 바닥을 본다. 짚이 깔려 있다.\n누군가 흘린 건지 — 쌀알 몇 개가 떨어져 있다.",
     "choices": [
       { "label": "A. 그냥 내린다", "goto": "d21_10" },
@@ -94,7 +94,7 @@
   },
 
   "d21_10": {
-    "panorama": "/panorama/d21_10_basecamp.jpg",
+    "panorama": "/panorama/archetypes/basecamp.jpg",
     "narrative": "산 아래 캠프. 텐트들. 지게들이 벽에 기대어 세워져 있다.\n군인들이 움직인다. 빠르다. 냄새 — 땀, 밥, 뭔가 탄 것.\n선배 지게꾼 하나가 지나가다 만술을 본다. 위아래로 훑는다. 아무 말 안 하고 지나간다.\n봉길 아저씨가 만술 옆에 선다.\n\"입 다물고 시키는 것만 해.\"",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d21_11" },
@@ -104,7 +104,7 @@
   },
 
   "d21_11": {
-    "panorama": "/panorama/d21_10_basecamp.jpg",
+    "panorama": "/panorama/archetypes/basecamp.jpg",
     "narrative": "하사가 나온다. 짧고 빠르게 말한다.\n\"군인 아니다. 짐 나른다. 탄약, 식량, 부상병. 시키는 대로. 딴짓하면 죽는다. 도망치면 죽는다. 겁나면 참아라.\"\n그게 다다.\n지게를 하나씩 받는다.\n만술이 지게를 받아들고 선다. 짐이 없는데도 — 무게가 있다.",
     "hotspots": [
       {
@@ -124,7 +124,7 @@
   },
 
   "d21_12": {
-    "panorama": "/panorama/d21_12_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 지게꾼 여섯이 눕는다. 좁다. 옆 사람 발이 얼굴 옆에 있다.\n아무도 말이 없다. 밖에서 군인들 소리가 들린다.\n한참 후 봉길 아저씨가 낮게 말한다.\n\"자라. 내일도 갈 길 멀다.\"",
     "choices": [
       { "label": "A. \"예.\" 하고 눈을 감는다", "goto": "d21_end" },
@@ -135,7 +135,7 @@
   },
 
   "d21_end": {
-    "panorama": "/panorama/d21_12_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "bonggilDistance": { "gte": 2 } },
@@ -154,13 +154,13 @@
   },
 
   "d20_01": {
-    "panorama": "/panorama/d20_01_wakeup.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "동이 트기 전. 누군가 텐트를 발로 찬다. 군인.\n\"일어나.\"\n그게 다다.\n지게꾼들이 일어난다. 말이 없다.\n만술이 눈을 비빈다. 어디 있는지 1초쯤 모른다.\n봉길 아저씨는 이미 앉아 있다. 언제 일어났는지 모른다.",
     "next": "d20_02"
   },
 
   "d20_02": {
-    "panorama": "/panorama/d20_02_breakfast.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "건빵 세 개. 물 한 모금. 그게 아침이다.\n만술이 건빵을 씹는다. 딱딱하다.\n옆에 처음 보는 지게꾼이 건빵을 물에 적셔서 먹는다.\n만술이 그걸 본다.",
     "choices": [
       { "label": "A. 그냥 씹는다", "goto": "d20_03" },
@@ -169,7 +169,7 @@
   },
 
   "d20_03": {
-    "panorama": "/panorama/d20_03_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "포탄 상자. 하사가 지게에 묶는 법을 보여준다. 한 번만.\n만술이 흉내낸다. 끈이 삐뚤다.",
     "choices": [
       { "label": "A. 그냥 맨다 — 어깨가 한쪽으로 쏠린다", "goto": "d20_04" },
@@ -179,7 +179,7 @@
   },
 
   "d20_04": {
-    "panorama": "/panorama/d20_03_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       {
         "condition": { "redidStrap": { "gte": 1 } },
@@ -191,13 +191,13 @@
   },
 
   "d20_05": {
-    "panorama": "/panorama/d20_05_lineup.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "지게꾼들이 줄을 선다. 앞에 군인 둘. 뒤에 군인 하나.\n만술이 줄 중간에 선다. 앞사람 발뒤꿈치가 보인다. 낡은 고무신.\n출발.",
     "next": "d20_06"
   },
 
   "d20_06": {
-    "panorama": "/panorama/d20_06_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "산길로 접어든다. 경사가 시작된다.\n포탄 상자가 등을 누른다. 발이 땅을 더 힘주어 밀어야 한다.\n숨이 찬다. 10분도 안 됐는데.\n앞사람은 그냥 걷는다. 리듬이 있다. 만술한테는 없다.",
     "choices": [
       { "label": "A. 그냥 헐떡인다", "goto": "d20_07" },
@@ -206,13 +206,13 @@
   },
 
   "d20_07": {
-    "panorama": "/panorama/d20_07_midslope.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "고개 중턱. 멀리서 소리가 들린다. 쿵. 쿵쿵.\n줄이 멈춘다. 아무 지시 없이. 그냥 다들 멈춘다.\n만술도 멈춘다. 심장이 빨라진다.\n앞사람 발뒤꿈치가 보인다. 움직이지 않는다.\n5초. 10초.\n군인이 말한다. \"간다.\"\n다시 걷는다.",
     "next": "d20_08"
   },
 
   "d20_08": {
-    "panorama": "/panorama/d20_08_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "고개 정상. 잠깐 멈춰서 숨을 고른다.\n만술이 고개를 들면 — 산 아래로 펼쳐지는 것들.\n마을. 논. 길. 멀리 연기 두 줄기.\n연기가 어디서 나는지는 모른다. 그냥 연기다.",
     "choices": [
       { "label": "A. 숨 고르고 바로 내려간다", "goto": "d20_09" },
@@ -222,7 +222,7 @@
   },
 
   "d20_09": {
-    "panorama": "/panorama/d20_09_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "짐을 내려놓고 돌아오는 길. 지게가 비었다.\n몸이 가벼운데 발이 이상하다. 무게가 없으니까 오히려 중심을 못 잡는다.\n앞사람이 앞에서 걷는다. 담배를 피우면서.\n만술이 따라 걷는다.",
     "choices": [
       { "label": "A. 그냥 걷는다", "goto": "d20_10" },
@@ -231,7 +231,7 @@
   },
 
   "d20_10": {
-    "panorama": "/panorama/d20_09_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "talkedToStranger": { "gte": 1 } },
@@ -243,7 +243,7 @@
   },
 
   "d20_11": {
-    "panorama": "/panorama/d20_11_second_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오전에 한 번. 오후에 한 번. 하루에 두 번 오른다는 걸 오늘 알았다.\n두 번째 짐은 식량 자루. 포탄보다 가벼운데 — 형태가 없어서 흔들린다.\n오르막 중간에 자루가 한쪽으로 쏠린다. 만술이 멈춰서 고쳐 맨다.\n뒤에서 봉길 아저씨가 온다. 멈추지 않는다. 그냥 지나친다.",
     "choices": [
       { "label": "A. 아무 말 안 한다", "goto": "d20_12" },
@@ -252,7 +252,7 @@
   },
 
   "d20_12": {
-    "panorama": "/panorama/d20_08_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "두 번째로 정상에 선다. 아까 본 풍경이랑 같다.\n연기는 그대로다. 아직 피어오른다.\n만술이 본다.",
     "choices": [
       { "label": "A. 아까보다 짧게 본다", "goto": "d20_13" },
@@ -262,7 +262,7 @@
   },
 
   "d20_13": {
-    "panorama": "/panorama/d20_13_feet.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "캠프로 돌아온다. 만술이 앉아서 발을 본다.\n발바닥에 물집이 잡혀 있다. 두 개.",
     "choices": [
       { "label": "A. 그냥 둔다", "goto": "d20_14" },
@@ -271,7 +271,7 @@
   },
 
   "d20_14": {
-    "panorama": "/panorama/d20_14_dinner.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "봉길 아저씨가 옆에 앉는다. 만술의 발을 본다. 아무 말 안 한다.\n오늘 저녁은 죽이다. 뜨겁다.\n만술이 천천히 먹는다. 배가 고팠는지 몰랐다. 먹으니까 안다.\n맞은편에 앉은 지게꾼이 죽을 다 먹고 그릇을 핥는다. 소리가 난다.\n아무도 뭐라 안 한다.",
     "choices": [
       { "label": "A. 안 한다", "goto": "d20_15" },
@@ -280,7 +280,7 @@
   },
 
   "d20_15": {
-    "panorama": "/panorama/d20_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "눕는다. 온몸이 아프다.\n오늘 두 번 올랐다. 내일도 두 번 오른다.\n봉길 아저씨가 눕는다.\n잠깐 침묵.\n봉길 아저씨가 말한다. \"자라. 내일도 갈 길 멀다.\"",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d20_16" },
@@ -290,7 +290,7 @@
   },
 
   "d20_16": {
-    "panorama": "/panorama/d20_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedIfScared": { "gte": 1 } },
@@ -305,13 +305,13 @@
   },
 
   "d19_01": {
-    "panorama": "/panorama/d19_01_wakeup.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "눈을 뜬다. 어제 잠든 자세 그대로다.\n움직이려는데 — 몸이 1초 늦게 반응한다.\n허리. 어깨. 발. 어디가 제일 아픈지 순서를 매기기가 어렵다.\n봉길 아저씨는 이미 밖에 나가 있다.",
     "next": "d19_02"
   },
 
   "d19_02": {
-    "panorama": "/panorama/d19_02_shoulder.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "세수를 한다. 물이 차갑다.\n셔츠를 올려보면 — 어깨가 벗겨져 있다. 어젯밤엔 몰랐다. 지금 보니까 안다.\n빨갛게 쓸린 자리. 건드리면 쓰라리다.\n봉길 아저씨가 지나가다 본다. 멈춘다. 주머니에서 헝겊 조각을 꺼낸다.\n\"감아라.\"",
     "choices": [
       { "label": "A. 받는다", "goto": "d19_03", "effect": { "acceptedClothD19": 1 } },
@@ -320,13 +320,13 @@
   },
 
   "d19_03": {
-    "panorama": "/panorama/d19_03_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘도 포탄 상자. 만술이 지게에 묶는다.\n어제보다 빠르다. 끈도 덜 삐뚤다.\n선배 지게꾼이 지나가다 본다. 아무 말 안 한다.\n그게 칭찬인지 아닌지 모른다.",
     "next": "d19_04"
   },
 
   "d19_04": {
-    "panorama": "/panorama/d19_04_rhythm.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "어제 앞사람 발 박자에 맞췄던 거 — 오늘 혼자 해본다.\n발을 내딛는 간격. 숨 쉬는 타이밍.\n맞을 때가 있고 안 맞을 때가 있다. 맞는 순간엔 조금 덜 힘들다. 조금만.",
     "choices": [
       { "label": "A. 그냥 계속 걷는다", "goto": "d19_05" },
@@ -335,7 +335,7 @@
   },
 
   "d19_05": {
-    "panorama": "/panorama/d19_05_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "고개 중턱 그늘에서 잠깐 쉰다. 군인이 5분 준다.\n앞사람이 바위에 기댄다. 눈을 감는다.\n만술이 옆에 앉는다.",
     "choices": [
       { "label": "A. 그냥 쉰다", "goto": "d19_06" },
@@ -344,7 +344,7 @@
   },
 
   "d19_06": {
-    "panorama": "/panorama/d19_05_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedSeniorDays": { "gte": 1 } },
@@ -356,13 +356,13 @@
   },
 
   "d19_07": {
-    "panorama": "/panorama/d19_06_legs.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "쉬고 나서 다시 오른다. 쉬었더니 오히려 다리가 더 무겁다.\n앞사람이 아무렇지 않게 걷는다. 만술이 그 발뒤꿈치를 본다.\n고무신 뒤축이 닳아 있다. 한쪽이 더 닳아 있다.\n만술이 그걸 보면서 걷는다. 발뒤꿈치 하나를 보면서 고개를 오른다.",
     "next": "d19_08"
   },
 
   "d19_08": {
-    "panorama": "/panorama/d19_08_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 어제 연기 두 줄기가 피어오르던 방향.\n오늘은 한 줄기다.\n어제보다 줄었는지 — 아니면 하나가 꺼진 건지. 만술은 모른다.",
     "choices": [
       { "label": "A. 그냥 내려간다", "goto": "d19_09" },
@@ -371,7 +371,7 @@
   },
 
   "d19_09": {
-    "panorama": "/panorama/d19_08_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedAboutSmoke": { "gte": 1 } },
@@ -383,7 +383,7 @@
   },
 
   "d19_10": {
-    "panorama": "/panorama/d19_10_valley_route.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrative": "오후 행군은 다른 루트다. 계곡을 끼고 가는 길.\n물소리가 들린다. 더운데 — 물소리만 들어도 조금 낫다.\n만술이 물소리 쪽을 본다.",
     "choices": [
       { "label": "A. 그냥 걷는다", "goto": "d19_11" },
@@ -392,7 +392,7 @@
   },
 
   "d19_11": {
-    "panorama": "/panorama/d19_11_companion.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "돌아오는 길. 빈 지게.\n옆에 처음 보는 지게꾼이 걷는다. 나이가 만술이랑 비슷해 보인다.\n그 사람이 만술을 본다. 만술도 본다. 아무 말 없다.\n그냥 같이 걷는다.",
     "choices": [
       { "label": "A. 묻는다", "goto": "d19_12", "effect": { "knowsSeongchil": 1 } },
@@ -401,7 +401,7 @@
   },
 
   "d19_12": {
-    "panorama": "/panorama/d19_11_companion.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -413,7 +413,7 @@
   },
 
   "d19_13": {
-    "panorama": "/panorama/d19_13_camp_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -429,7 +429,7 @@
   },
 
   "d19_14": {
-    "panorama": "/panorama/d19_14_bonggil_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "봉길 아저씨가 혼자 앉아서 밥을 먹는다. 만술 쪽을 보지 않는다.\n만술이 본다.\n봉길 아저씨 손에 헝겊 조각이 있다. 아까 만술한테 주려던 그거다. 아직 주머니에서 꺼내지 않은 채로 쥐고 있다.",
     "choices": [
       { "label": "A. 다가간다", "goto": "d19_15", "effect": { "bonggilDistance": 1, "approachedBonggilD19": 1 } },
@@ -438,7 +438,7 @@
   },
 
   "d19_15": {
-    "panorama": "/panorama/d19_14_bonggil_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "approachedBonggilD19": { "gte": 1 } },
@@ -450,7 +450,7 @@
   },
 
   "d19_16": {
-    "panorama": "/panorama/d19_16_blisters.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "blisterPopped": { "gte": 1 } },
@@ -465,7 +465,7 @@
   },
 
   "d19_17": {
-    "panorama": "/panorama/d19_17_seongchil_night.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -482,7 +482,7 @@
   },
 
   "d19_18": {
-    "panorama": "/panorama/d19_17_seongchil_night.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedSeongchilFirst": { "gte": 1 } },
@@ -495,7 +495,7 @@
   },
 
   "d19_19": {
-    "panorama": "/panorama/d19_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "bonggilDistance": { "gte": 1 } },
@@ -510,13 +510,13 @@
   },
 
   "d18_01": {
-    "panorama": "/panorama/d18_01_wakeup.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 텐트 밖에서 밥 냄새가 난다. 어제보다 이른 것 같다.\n만술이 일어난다. 몸이 — 어제보다 조금 빨리 반응한다.\n몸이 기억하기 시작했다.",
     "next": "d18_02"
   },
 
   "d18_02": {
-    "panorama": "/panorama/d18_02_breakfast.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -528,7 +528,7 @@
   },
 
   "d18_03": {
-    "panorama": "/panorama/d18_03_valley_route.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -543,7 +543,7 @@
   },
 
   "d18_04": {
-    "panorama": "/panorama/d18_04_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "산길. 저 아래서 물소리가 들린다.\n더위가 심하다. 땀이 눈에 들어온다.\n물소리가 가깝다.",
     "choices": [
       { "label": "A. 앞만 보고 걷는다", "goto": "d18_05" },
@@ -552,7 +552,7 @@
   },
 
   "d18_05": {
-    "panorama": "/panorama/d18_05_valley_water.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrative": "잠깐 멈춘다. 군인이 물 마셔도 된다고 한다.\n지게꾼들이 계곡으로 내려간다. 만술도 내려간다.\n물이 차갑다. 손으로 떠서 마신다.\n맛이 없다. 그냥 차갑다. 그게 좋다.\n성칠이 옆에서 얼굴을 물에 박는다. 푸하 — 소리를 낸다.",
     "choices": [
       { "label": "A. 손으로만 마신다", "goto": "d18_06" },
@@ -561,7 +561,7 @@
   },
 
   "d18_06": {
-    "panorama": "/panorama/d18_05_valley_water.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrativeVariants": [
       {
         "condition": { "dunkedFace": { "gte": 1 } },
@@ -573,13 +573,13 @@
   },
 
   "d18_07": {
-    "panorama": "/panorama/d18_05_valley_water.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrative": "물을 마시고 올라오려는데 — 앞사람이 손을 든다.\n멈춤 신호. 다들 굳는다.\n앞사람이 계곡 아래쪽을 가리킨다.",
     "next": "d18_08"
   },
 
   "d18_08": {
-    "panorama": "/panorama/d18_08_enemy_in_valley.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrative": "계곡 아래. 웃통을 벗은 중년 북한군. 갈비뼈가 다 보인다.\n물에 앉아서 손으로 물을 튀긴다. 천천히. 아무 생각 없이.\n그 옆에 샛파란 애들 셋. 발을 물에 담그고 있다. 하나가 웃는다. 소리는 안 들린다.\n총이 없다. 아무것도 없다. 그냥 물에 있다.\n만술이 본다.",
     "choices": [
       { "label": "A. 시선을 거둔다", "goto": "d18_09" },
@@ -589,7 +589,7 @@
   },
 
   "d18_09": {
-    "panorama": "/panorama/d18_08_enemy_in_valley.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrativeVariants": [
       {
         "condition": { "valleyEyeContact": { "gte": 1 } },
@@ -601,7 +601,7 @@
   },
 
   "d18_10": {
-    "panorama": "/panorama/d18_10_after_valley.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrative": "계곡을 지나 오르막을 다시 오른다.\n봉길 아저씨가 만술 옆으로 온다. 낮게 말한다.\n\"봤어?\"",
     "choices": [
       { "label": "A. \"네.\" 그게 다", "goto": "d18_11" },
@@ -611,7 +611,7 @@
   },
 
   "d18_11": {
-    "panorama": "/panorama/d18_10_after_valley.jpg",
+    "panorama": "/panorama/archetypes/valley_open.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedAboutGuns": { "gte": 1 } },
@@ -623,7 +623,7 @@
   },
 
   "d18_12": {
-    "panorama": "/panorama/d18_12_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -639,7 +639,7 @@
   },
 
   "d18_13": {
-    "panorama": "/panorama/d18_12_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "mentionedSimilarAge": { "gte": 1 } },
@@ -651,7 +651,7 @@
   },
 
   "d18_14": {
-    "panorama": "/panorama/d18_14_burned_village.jpg",
+    "panorama": "/panorama/archetypes/burned_village.jpg",
     "narrative": "내려오는 길. 뭔가 탄 냄새가 난다.\n저 아래 — 마을이었던 자리. 무너진 담. 검게 그을린 나무.\n빨랫줄에 옷이 걸려 있다. 어린아이 것.\n바람에 흔들린다.",
     "choices": [
       { "label": "A. 옷을 본다 — 걸음이 느려진다", "goto": "d18_15" },
@@ -661,7 +661,7 @@
   },
 
   "d18_15": {
-    "panorama": "/panorama/d18_14_burned_village.jpg",
+    "panorama": "/panorama/archetypes/burned_village.jpg",
     "narrativeVariants": [
       {
         "condition": { "sawBonggilAvertVillage": { "gte": 1 } },
@@ -673,7 +673,7 @@
   },
 
   "d18_16": {
-    "panorama": "/panorama/d18_16_dinner.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 밥 냄새.\n그런데 아까 탄 냄새가 아직 코에 남아 있다.\n밥을 먹으면서도 가끔 그 냄새가 섞인다.",
     "choices": [
       { "label": "A. 다 먹는다", "goto": "d18_17" },
@@ -682,7 +682,7 @@
   },
 
   "d18_17": {
-    "panorama": "/panorama/d18_16_dinner.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "ateHalfMeal": { "gte": 1 }, "knowsSeongchil": { "gte": 1 } },
@@ -694,7 +694,7 @@
   },
 
   "d18_18": {
-    "panorama": "/panorama/d18_18_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -709,7 +709,7 @@
   },
 
   "d18_19": {
-    "panorama": "/panorama/d18_18_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "silentAtNight": { "gte": 1 }, "valleyEyeContact": { "gte": 1 } },
@@ -729,7 +729,7 @@
   },
 
   "d18_end": {
-    "panorama": "/panorama/d18_18_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedAtRice": { "gte": 1 } },
@@ -745,7 +745,7 @@
   },
 
   "d17_01": {
-    "panorama": "/panorama/d17_01_wakeup.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -757,7 +757,7 @@
   },
 
   "d17_02": {
-    "panorama": "/panorama/d17_02_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "짐 배정. 하사가 만술을 부른다. 오늘 짐이 다르다.\n의식 없는 군인 하나. 들것이 없다. 지게에 묶는다.\n하사가 말한다. \"천천히. 흔들리면 안 돼.\"\n만술이 군인을 본다. 또래다. 얼굴이 창백하다. 숨은 쉰다.",
     "choices": [
       { "label": "A. 군인 얼굴만 본다", "goto": "d17_03" },
@@ -766,7 +766,7 @@
   },
 
   "d17_03": {
-    "panorama": "/panorama/d17_02_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       {
         "condition": { "readNameTag": { "gte": 1 } },
@@ -778,7 +778,7 @@
   },
 
   "d17_04": {
-    "panorama": "/panorama/d17_04_tying.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "군인을 지게에 묶는다. 어떻게 묶어야 하는지 아무도 안 알려준다.\n만술이 끈을 잡는다.",
     "choices": [
       { "label": "A. 짐 묶던 방식으로 묶는다", "goto": "d17_05" },
@@ -788,7 +788,7 @@
   },
 
   "d17_05": {
-    "panorama": "/panorama/d17_04_tying.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "tiedCarefully": { "gte": 1 } },
@@ -800,7 +800,7 @@
   },
 
   "d17_06": {
-    "panorama": "/panorama/d17_06_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "출발. 포탄 상자랑 무게가 비슷한데 — 다르다.\n출렁인다. 숨소리가 들린다. 가끔 신음소리가 난다.\n만술이 걸으면서 그 숨소리를 듣는다. 살아 있다는 소리.",
     "choices": [
       { "label": "A. 그냥 걷는다", "goto": "d17_07" },
@@ -809,7 +809,7 @@
   },
 
   "d17_07": {
-    "panorama": "/panorama/d17_06_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "matchedSoldierBreath": { "gte": 1 } },
@@ -821,7 +821,7 @@
   },
 
   "d17_08": {
-    "panorama": "/panorama/d17_08_midslope.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "고개 중턱. 군인이 크게 신음한다.\n만술이 멈춘다. 앞사람도 멈춘다. 줄 전체가 멈춘다.",
     "choices": [
       { "label": "A. \"괜찮습니까?\" 묻는다", "goto": "d17_09", "effect": { "askedIfOk": 1 } },
@@ -831,7 +831,7 @@
   },
 
   "d17_09": {
-    "panorama": "/panorama/d17_08_midslope.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedIfOk": { "gte": 1 } },
@@ -847,7 +847,7 @@
   },
 
   "d17_10": {
-    "panorama": "/panorama/d17_10_summit_handoff.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrative": "정상에 도착한다. 의무병이 기다리고 있다. 군인을 받아간다.\n만술의 등이 가벼워진다.\n그 가벼움이 이상하다. 홀가분한 건지 — 뭔가 잃은 건지.",
     "choices": [
       { "label": "A. 본다", "goto": "d17_11", "effect": { "watchedSoldierCarried": 1 } },
@@ -856,7 +856,7 @@
   },
 
   "d17_11": {
-    "panorama": "/panorama/d17_10_summit_handoff.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedSoldierCarried": { "gte": 1 }, "readNameTag": { "gte": 1 } },
@@ -872,7 +872,7 @@
   },
 
   "d17_12": {
-    "panorama": "/panorama/d17_12_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려오는 길. 봉길 아저씨가 만술 옆으로 온다. 걸으면서 말한다.\n\"무거웠지?\"",
     "choices": [
       { "label": "A. \"네.\" 한다", "goto": "d17_13" },
@@ -882,7 +882,7 @@
   },
 
   "d17_13": {
-    "panorama": "/panorama/d17_12_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidLoadDiffers": { "gte": 1 } },
@@ -894,7 +894,7 @@
   },
 
   "d17_14": {
-    "panorama": "/panorama/d17_14_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -911,7 +911,7 @@
   },
 
   "d17_15": {
-    "panorama": "/panorama/d17_14_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldSeongchilName": { "gte": 1 } },
@@ -923,7 +923,7 @@
   },
 
   "d17_16": {
-    "panorama": "/panorama/d17_16_stars.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "starsCounted": { "gte": 1 } },
@@ -935,7 +935,7 @@
   },
 
   "d17_17": {
-    "panorama": "/panorama/d17_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트 안. 봉길 아저씨가 눕는다.\n만술이 들어와서 눕는다.\n침묵.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 그게 다다.",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d17_end" },
@@ -944,7 +944,7 @@
   },
 
   "d17_end": {
-    "panorama": "/panorama/d17_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "silentAtNightD17": { "gte": 1 } },
@@ -956,7 +956,7 @@
   },
 
   "d16_01": {
-    "panorama": "/panorama/d16_01_empty_spot.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "아침. 일어나서 밖에 나오면 — 앞사람이 없다.\n지게꾼들이 모인다. 앞사람 자리가 비어 있다.\n아무도 설명 안 한다. 하사도 언급 안 한다. 그냥 오늘 다른 사람이 앞에 선다.",
     "choices": [
       { "label": "A. 봉길 아저씨한테 묻는다", "goto": "d16_02", "effect": { "askedBonggilAboutMissing": 1 } },
@@ -966,7 +966,7 @@
   },
 
   "d16_02": {
-    "panorama": "/panorama/d16_01_empty_spot.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       { "condition": { "askedBonggilAboutMissing": { "gte": 1 } }, "text": "봉길 아저씨가 말한다. \"몰라도 돼.\" 걷는다." },
       { "condition": { "askedSeongchilAboutMissing": { "gte": 1 } }, "text": "성칠이 낮게 말한다. \"다쳤대.\" 그게 다다." },
@@ -976,19 +976,19 @@
   },
 
   "d16_03": {
-    "panorama": "/panorama/d16_03_breakfast.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "건빵. 만술이 씹는다. 물에 적신다. 이제 자동으로.\n앞사람 자리에 오늘 다른 지게꾼이 앉아 있다. 모르는 얼굴.",
     "next": "d16_04"
   },
 
   "d16_04": {
-    "panorama": "/panorama/d16_04_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘 짐은 식량 자루. 만술이 맨다. 빠르다. 끈도 단단하다.\n선배 지게꾼이 지나가다 본다. 오늘은 뭔가 고쳐주지 않는다.\n그게 뭔지 안다.",
     "next": "d16_05"
   },
 
   "d16_05": {
-    "panorama": "/panorama/d16_05_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "출발. 오늘 앞에 서는 사람은 걸음이 다르다. 앞사람보다 빠르다.\n만술이 그 발뒤꿈치를 본다. 새 고무신이다. 아직 안 닳았다.",
     "choices": [
       { "label": "A. 빠른 걸음에 맞춰 따라간다", "goto": "d16_06" },
@@ -997,7 +997,7 @@
   },
 
   "d16_06": {
-    "panorama": "/panorama/d16_05_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "keptOwnRhythm": { "gte": 1 } },
@@ -1009,7 +1009,7 @@
   },
 
   "d16_07": {
-    "panorama": "/panorama/d16_07_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1026,7 +1026,7 @@
   },
 
   "d16_08": {
-    "panorama": "/panorama/d16_07_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidDontKnowName": { "gte": 1 } },
@@ -1038,13 +1038,13 @@
   },
 
   "d16_09": {
-    "panorama": "/panorama/d16_09_climb2.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "다시 오르는데 — 앞이 허하다.\n앞사람 발뒤꿈치 대신 — 그냥 길이 있다. 만술이 그 길을 본다.\n어떤 빈자리는 설명이 없다.",
     "next": "d16_10"
   },
 
   "d16_10": {
-    "panorama": "/panorama/d16_10_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 연기를 센다. 오늘은 세 줄기다.\n어제 한 줄기였는데.",
     "choices": [
       { "label": "A. 그냥 본다", "goto": "d16_11" },
@@ -1053,7 +1053,7 @@
   },
 
   "d16_11": {
-    "panorama": "/panorama/d16_10_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "countsSmoke": { "gte": 1 } },
@@ -1065,7 +1065,7 @@
   },
 
   "d16_12": {
-    "panorama": "/panorama/d16_12_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1082,7 +1082,7 @@
   },
 
   "d16_13": {
-    "panorama": "/panorama/d16_12_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedHowMuchLonger": { "gte": 1 } },
@@ -1094,7 +1094,7 @@
   },
 
   "d16_14": {
-    "panorama": "/panorama/d16_14_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 봉길 아저씨가 혼자 밥을 먹는다. 만술 쪽을 안 본다.\n만술이 본다.\n봉길 아저씨 언제부터였는지 모른다.",
     "choices": [
       { "label": "A. 다가간다", "goto": "d16_15", "effect": { "bonggilDistance": 1 } },
@@ -1103,7 +1103,7 @@
   },
 
   "d16_15": {
-    "panorama": "/panorama/d16_14_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "bonggilDistance": { "gte": 4 } },
@@ -1115,19 +1115,19 @@
   },
 
   "d16_16": {
-    "panorama": "/panorama/d16_16_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 그냥 잔다.\n\nD-16이 끝났다.",
     "next": "d15_01"
   },
 
   "d15_01": {
-    "panorama": "/panorama/d15_01_wakeup.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 일어나면서 만술이 센다. D-21부터 D-15. 일주일이다.\n몸이 달라졌다. 발에 물집이 굳었다. 어깨 쓸린 자리에 딱지가 앉았다.\n아침에 일어나는 속도가 빨라졌다.",
     "next": "d15_02"
   },
 
   "d15_02": {
-    "panorama": "/panorama/d15_02_rain_forecast.jpg",
+    "panorama": "/panorama/archetypes/rain_camp.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1139,7 +1139,7 @@
   },
 
   "d15_03": {
-    "panorama": "/panorama/d15_03_morning_march.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "오전은 아직 맑다. 만술이 걷는다. 리듬이 생겼다. 몸이 안다.",
     "choices": [
       { "label": "A. 그냥 걷는다", "goto": "d15_04" },
@@ -1148,7 +1148,7 @@
   },
 
   "d15_04": {
-    "panorama": "/panorama/d15_04_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "countsSmoke": { "gte": 1 } },
@@ -1164,7 +1164,7 @@
   },
 
   "d15_05": {
-    "panorama": "/panorama/d15_04_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "sawSmokeGap": { "gte": 1 } },
@@ -1176,7 +1176,7 @@
   },
 
   "d15_06": {
-    "panorama": "/panorama/d15_06_rain_climb.jpg",
+    "panorama": "/panorama/archetypes/rain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1191,7 +1191,7 @@
   },
 
   "d15_07": {
-    "panorama": "/panorama/d15_06_rain_climb.jpg",
+    "panorama": "/panorama/archetypes/rain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "slowedInRain": { "gte": 1 } },
@@ -1203,7 +1203,7 @@
   },
 
   "d15_08": {
-    "panorama": "/panorama/d15_08_rain_descend.jpg",
+    "panorama": "/panorama/archetypes/rain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1218,7 +1218,7 @@
   },
 
   "d15_09": {
-    "panorama": "/panorama/d15_08_rain_descend.jpg",
+    "panorama": "/panorama/archetypes/rain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "noticedNoSmokeSmell": { "gte": 1 }, "knowsSeongchil": { "gte": 1 } },
@@ -1230,7 +1230,7 @@
   },
 
   "d15_10": {
-    "panorama": "/panorama/d15_10_tent_rain.jpg",
+    "panorama": "/panorama/archetypes/tent_rain.jpg",
     "narrative": "비가 계속 온다. 텐트 안. 지게꾼들이 모여 있다. 젖은 옷. 젖은 냄새.\n누군가 콧노래를 흥얼거린다. 아주 작게. 뭔 노래인지 모른다.\n만술이 듣는다.",
     "choices": [
       { "label": "A. 콧노래 하는 사람을 본다", "goto": "d15_11" },
@@ -1240,7 +1240,7 @@
   },
 
   "d15_11": {
-    "panorama": "/panorama/d15_10_tent_rain.jpg",
+    "panorama": "/panorama/archetypes/tent_rain.jpg",
     "narrativeVariants": [
       {
         "condition": { "closedEyesListening": { "gte": 1 } },
@@ -1252,7 +1252,7 @@
   },
 
   "d15_12": {
-    "panorama": "/panorama/d15_12_bonggil_strap.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "봉길 아저씨가 지게끈을 손질한다. 조용히.\n만술이 본다. 봉길 아저씨 손이 움직인다. 익숙하게. 빠르게.",
     "choices": [
       { "label": "A. \"아저씨, 고향 생각 안 나요?\" 한다", "goto": "d15_13", "effect": { "askedHomesick": 1 } },
@@ -1261,7 +1261,7 @@
   },
 
   "d15_13": {
-    "panorama": "/panorama/d15_12_bonggil_strap.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedHomesick": { "gte": 1 } },
@@ -1273,13 +1273,13 @@
   },
 
   "d15_14": {
-    "panorama": "/panorama/d15_14_bear.jpg",
+    "panorama": "/panorama/archetypes/bear_encounter.jpg",
     "narrative": "비가 그쳤다. 만술이 소변 보러 밖에 나간다.\n어둠. 별이 몇 개 나왔다.\n나뭇가지 부러지는 소리. 무거운 발소리.\n만술이 굳는다.\n어둠 속 — 형체. 크다.\n곰이다. 20미터쯤. 만술을 안 본다. 그냥 지나간다.\n만술이 숨을 참는다.\n곰이 사라진다.\n만술이 텐트로 돌아온다.\n첫 번째 곰은 그냥 지나간다. 아직은.",
     "next": "d15_15"
   },
 
   "d15_15": {
-    "panorama": "/panorama/d15_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "눕는다. 봉길 아저씨가 말한다. \"자라.\"\n만술이 말하려다 — 곰 얘기. 그런데 안 한다.",
     "choices": [
       { "label": "A. \"곰 봤어요.\" 한다", "goto": "d15_16", "effect": { "toldBonggilAboutBear": 1 } },
@@ -1288,7 +1288,7 @@
   },
 
   "d15_16": {
-    "panorama": "/panorama/d15_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldBonggilAboutBear": { "gte": 1 } },
@@ -1300,19 +1300,19 @@
   },
 
   "d15_end": {
-    "panorama": "/panorama/d15_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "천장. 일주일이 지났다.\n발바닥 물집이 굳었다. 어깨 딱지가 앉았다.\n앞사람이 사라졌다. 성칠이 생겼다.\n계곡에서 눈이 마주친 얼굴이 있거나 없거나.\n연기를 세거나 안 세거나.\n주머니에 쌀알이 있거나 없거나.\n만술이 눈을 감는다.\n\n1주차 끝.",
     "next": "d14_01"
   },
 
   "d14_01": {
-    "panorama": "/panorama/d14_01_wakeup.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 일어나는데 — 빠르다. 몸이 먼저 안다. 일어날 시간.\n1주일 전 첫날 아침이랑 다르다. 그게 좋은 건지 나쁜 건지 아직 모른다.\n앞사람이 말했던 것 — 익숙해지면 그게 더 나쁜 거야.\n아직 그 말의 뜻을 모른다.",
     "next": "d14_02"
   },
 
   "d14_02": {
-    "panorama": "/panorama/d14_02_breakfast.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1329,7 +1329,7 @@
   },
 
   "d14_03": {
-    "panorama": "/panorama/d14_03_bonggil_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "봉길 아저씨가 혼자 앉아서 밥을 먹는다.\n만술이 다가가려는데 — 봉길 아저씨가 먼저 일어난다.\n타이밍이 맞지 않았다. 그게 다다.",
     "choices": [
       { "label": "A. 따라가서 옆에 선다", "goto": "d14_04", "effect": { "followedBonggilD14": 1 } },
@@ -1338,7 +1338,7 @@
   },
 
   "d14_04": {
-    "panorama": "/panorama/d14_03_bonggil_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "followedBonggilD14": { "gte": 1 } },
@@ -1350,13 +1350,13 @@
   },
 
   "d14_05": {
-    "panorama": "/panorama/d14_05_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘도 포탄 상자. 만술이 맨다. 손이 기억한다. 끈 묶는 순서. 무게 중심.\n선배 지게꾼이 지나가다 만술을 보지 않는다. 볼 필요가 없어졌다.\n칭찬은 없다. 그냥 당연해졌다.",
     "next": "d14_06"
   },
 
   "d14_06": {
-    "panorama": "/panorama/d14_06_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "출발. 줄. 앞에 봉길 아저씨가 간다.\n만술이 그 등을 본다.\n1주차엔 봉길 아저씨가 종종 뒤를 봤다. 만술이 잘 오나.\n오늘은 안 본다.",
     "choices": [
       { "label": "A. 그냥 걷는다", "goto": "d14_07" },
@@ -1365,7 +1365,7 @@
   },
 
   "d14_07": {
-    "panorama": "/panorama/d14_06_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilBack": { "gte": 1 } },
@@ -1377,7 +1377,7 @@
   },
 
   "d14_08": {
-    "panorama": "/panorama/d14_08_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "countsSmoke": { "gte": 1 } },
@@ -1394,7 +1394,7 @@
   },
 
   "d14_09": {
-    "panorama": "/panorama/d14_08_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldBonggilSmokeCount": { "gte": 1 } },
@@ -1406,7 +1406,7 @@
   },
 
   "d14_10": {
-    "panorama": "/panorama/d14_10_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1423,7 +1423,7 @@
   },
 
   "d14_11": {
-    "panorama": "/panorama/d14_10_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "agreedBonggilQuiet": { "gte": 1 } },
@@ -1435,7 +1435,7 @@
   },
 
   "d14_12": {
-    "panorama": "/panorama/d14_12_narrow_path.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오후는 다른 루트. 나무가 빽빽하다. 하늘이 좁다.\n길이 좁아서 줄이 길어진다.",
     "choices": [
       { "label": "A. 그냥 걷는다", "goto": "d14_13" },
@@ -1445,7 +1445,7 @@
   },
 
   "d14_13": {
-    "panorama": "/panorama/d14_12_narrow_path.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "feltSafeNarrow": { "gte": 1 } },
@@ -1457,7 +1457,7 @@
   },
 
   "d14_14": {
-    "panorama": "/panorama/d14_14_passing_soldier.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "좁은 길 중간에서 군인 하나가 내려온다. 반대 방향.\n지게꾼들이 비켜선다.\n군인이 지나가면서 중얼거린다. 알아들을 수 없다.\n만술이 그 얼굴을 본다. 눈이 어딘가 먼 데를 보고 있다.",
     "choices": [
       { "label": "A. 그냥 비켜선다", "goto": "d14_15" },
@@ -1467,7 +1467,7 @@
   },
 
   "d14_15": {
-    "panorama": "/panorama/d14_14_passing_soldier.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilWatchSoldier": { "gte": 1 } },
@@ -1479,7 +1479,7 @@
   },
 
   "d14_16": {
-    "panorama": "/panorama/d14_16_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 봉길 아저씨가 혼자 앉는다. 만술 쪽을 보지 않는다.\n어제도 그랬다. 그제도.\n언제부터였는지 — 정확히는 모른다.",
     "choices": [
       { "label": "A. 다가간다", "goto": "d14_17", "effect": { "bonggilDistance": 1 } },
@@ -1488,7 +1488,7 @@
   },
 
   "d14_17": {
-    "panorama": "/panorama/d14_16_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "bonggilDistance": { "gte": 5 } },
@@ -1500,7 +1500,7 @@
   },
 
   "d14_18": {
-    "panorama": "/panorama/d14_18_seongchil_night.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1517,7 +1517,7 @@
   },
 
   "d14_19": {
-    "panorama": "/panorama/d14_18_seongchil_night.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedSeongchilFamily": { "gte": 1 } },
@@ -1529,7 +1529,7 @@
   },
 
   "d14_20": {
-    "panorama": "/panorama/d14_20_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"",
     "choices": [
       { "label": "A. 그냥 눈을 감는다", "goto": "d14_end" },
@@ -1538,7 +1538,7 @@
   },
 
   "d14_end": {
-    "panorama": "/panorama/d14_20_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "calledBonggilD14": { "gte": 1 } },
@@ -1550,7 +1550,7 @@
   },
 
   "d13_01": {
-    "panorama": "/panorama/d13_01_americans.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrative": "아침. 캠프에 처음 보는 사람들이 있다. 미군 셋.\n키가 크다. 냄새가 다르다. 말이 안 통한다.",
     "choices": [
       { "label": "A. 힐끗 본다", "goto": "d13_02" },
@@ -1560,7 +1560,7 @@
   },
 
   "d13_02": {
-    "panorama": "/panorama/d13_01_americans.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrativeVariants": [
       {
         "condition": { "eyeContactUS": { "gte": 1 } },
@@ -1572,7 +1572,7 @@
   },
 
   "d13_03": {
-    "panorama": "/panorama/d13_03_breakfast.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1587,7 +1587,7 @@
   },
 
   "d13_04": {
-    "panorama": "/panorama/d13_04_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘 짐은 미군 물자다. 상자에 글씨가 있다. 읽을 수 없다.\n무겁다.",
     "choices": [
       { "label": "A. 그냥 맨다", "goto": "d13_05" },
@@ -1596,7 +1596,7 @@
   },
 
   "d13_05": {
-    "panorama": "/panorama/d13_04_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       {
         "condition": { "readBoxLetters": { "gte": 1 } },
@@ -1608,7 +1608,7 @@
   },
 
   "d13_06": {
-    "panorama": "/panorama/d13_06_climb_stumble.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오르막. 봉길 아저씨가 앞에서 간다.\n중간쯤 — 봉길 아저씨가 멈춘다. 돌부리에 발이 걸렸다.\n휘청한다.\n봉길 아저씨가 혼자 중심을 잡는다. 뒤를 보지 않는다. 그냥 다시 걷는다.",
     "choices": [
       { "label": "A. 아무 말 안 한다", "goto": "d13_07" },
@@ -1618,7 +1618,7 @@
   },
 
   "d13_07": {
-    "panorama": "/panorama/d13_06_climb_stumble.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedBonggilOkD13": { "gte": 1 } },
@@ -1630,7 +1630,7 @@
   },
 
   "d13_08": {
-    "panorama": "/panorama/d13_08_summit_scope.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrative": "정상에 미군이 있다. 망원경으로 뭔가를 보고 있다.\n만술이 그 방향을 본다.",
     "choices": [
       { "label": "A. 본다", "goto": "d13_09", "effect": { "watchedUSScope": 1 } },
@@ -1639,7 +1639,7 @@
   },
 
   "d13_09": {
-    "panorama": "/panorama/d13_08_summit_scope.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedUSScope": { "gte": 1 } },
@@ -1651,7 +1651,7 @@
   },
 
   "d13_10": {
-    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrative": "내려오는 길. 미군 하나가 같은 방향으로 내려온다. 혼자.\n미군이 뭔가를 꺼내서 만술한테 내민다.",
     "choices": [
       { "label": "A. 일단 받는다", "goto": "d13_11", "effect": { "gotChocolate": 1 } },
@@ -1660,13 +1660,13 @@
   },
 
   "d13_11": {
-    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrative": "초콜릿이다. 달다. 지금까지 먹어본 것 중 제일 달다.\n만술이 굳는다. 미군이 웃는다.",
     "next": "d13_12"
   },
 
   "d13_12": {
-    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1683,7 +1683,7 @@
   },
 
   "d13_13": {
-    "panorama": "/panorama/d13_10_chocolate.jpg",
+    "panorama": "/panorama/archetypes/us_camp_scene.jpg",
     "narrativeVariants": [
       {
         "condition": { "sharedChocolate": { "gte": 1 } },
@@ -1699,7 +1699,7 @@
   },
 
   "d13_14": {
-    "panorama": "/panorama/d13_14_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "gotChocolate": { "gte": 1 }, "sharedChocolate": { "lte": 0 } },
@@ -1715,7 +1715,7 @@
   },
 
   "d13_15": {
-    "panorama": "/panorama/d13_14_evening.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "leftChocolateBeside": { "gte": 1 } },
@@ -1727,13 +1727,13 @@
   },
 
   "d13_end": {
-    "panorama": "/panorama/d13_16_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 그냥 잔다.\n\nD-13이 끝났다.",
     "next": "d12_01"
   },
 
   "d12_01": {
-    "panorama": "/panorama/d12_01_artillery_dawn.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "새벽. 포 소리에 눈이 떠진다. 멀지 않다. 어제보다 가깝다.\n텐트 안 사람들이 다 깬다. 아무도 말 안 한다.\n소리가 멈춘다.",
     "choices": [
       { "label": "A. 다시 눈을 감는다", "goto": "d12_02" },
@@ -1743,7 +1743,7 @@
   },
 
   "d12_02": {
-    "panorama": "/panorama/d12_01_artillery_dawn.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilDawn": { "gte": 1 } },
@@ -1755,7 +1755,7 @@
   },
 
   "d12_03": {
-    "panorama": "/panorama/d12_03_morning_tense.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1767,13 +1767,13 @@
   },
 
   "d12_04": {
-    "panorama": "/panorama/d12_04_load_rush.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘 짐 배정이 급하게 이루어진다. 탄약 상자.\n만술이 끈을 맨다. 빠르게. 손이 기억한다.",
     "next": "d12_05"
   },
 
   "d12_05": {
-    "panorama": "/panorama/d12_05_climb_speed.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오늘 속도가 다르다. 빠르다.\n만술이 리듬을 찾으려 하는데 — 속도가 자꾸 바뀐다.",
     "choices": [
       { "label": "A. 이를 악물고 따라간다", "goto": "d12_06" },
@@ -1782,7 +1782,7 @@
   },
 
   "d12_06": {
-    "panorama": "/panorama/d12_05_climb_speed.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "fellBehindSpeed": { "gte": 1 }, "knowsSeongchil": { "gte": 1 } },
@@ -1794,7 +1794,7 @@
   },
 
   "d12_07": {
-    "panorama": "/panorama/d12_07_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "고개 중턱. 총 소리가 들린다. 멀지 않다.\n줄이 멈춘다. 이번엔 군인이 소리친다. \"엎드려.\"\n다들 엎드린다. 만술도 엎드린다. 짐이 무겁게 등을 누른다.\n흙 냄새. 풀 냄새.\n총 소리가 계속된다.",
     "choices": [
       { "label": "A. 눈을 감는다", "goto": "d12_08" },
@@ -1804,7 +1804,7 @@
   },
 
   "d12_08": {
-    "panorama": "/panorama/d12_07_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrativeVariants": [
       {
         "condition": { "foundBonggilBreathing": { "gte": 1 } },
@@ -1816,7 +1816,7 @@
   },
 
   "d12_09": {
-    "panorama": "/panorama/d12_07_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1833,7 +1833,7 @@
   },
 
   "d12_10": {
-    "panorama": "/panorama/d12_07_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidScaredYes": { "gte": 1 } },
@@ -1845,7 +1845,7 @@
   },
 
   "d12_11": {
-    "panorama": "/panorama/d12_11_gunfire_stop.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "총 소리가 멈춘다. 군인이 말한다. \"간다.\"\n다들 일어난다.",
     "choices": [
       { "label": "A. 바로 걷는다", "goto": "d12_12" },
@@ -1854,7 +1854,7 @@
   },
 
   "d12_12": {
-    "panorama": "/panorama/d12_11_gunfire_stop.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedAroundAfter": { "gte": 1 } },
@@ -1866,7 +1866,7 @@
   },
 
   "d12_13": {
-    "panorama": "/panorama/d12_13_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 군인들이 많다. 지게꾼들이 짐을 내려놓고 비켜선다.\n만술이 연기를 세려는데 — 오늘은 잘 안 보인다.\n연기가 아니라 — 뭔가 다른 게 피어오른다. 더 크고 검다.",
     "choices": [
       { "label": "A. \"저거 연기가 아닌 것 같아.\" 한다", "goto": "d12_14", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "saidNotSmoke": 1 } },
@@ -1875,7 +1875,7 @@
   },
 
   "d12_14": {
-    "panorama": "/panorama/d12_14_descend_fast.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려오는 길도 빠르다. 만술이 뛰다시피 내려온다. 발이 미끄러진다.",
     "choices": [
       { "label": "A. 잠깐 멈추고 다시 내려간다", "goto": "d12_15" },
@@ -1884,7 +1884,7 @@
   },
 
   "d12_15": {
-    "panorama": "/panorama/d12_14_descend_fast.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "fellWhileDescending": { "gte": 1 } },
@@ -1896,7 +1896,7 @@
   },
 
   "d12_16": {
-    "panorama": "/panorama/d12_16_camp_news.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "지게꾼 하나가 만술한테 말한다.\n\"오늘 누가 죽었대.\"\n누가 죽었는지 모른다.",
     "choices": [
       { "label": "A. \"누가요?\" 묻는다", "goto": "d12_17", "effect": { "askedWhoDied": 1 } },
@@ -1905,7 +1905,7 @@
   },
 
   "d12_17": {
-    "panorama": "/panorama/d12_16_camp_news.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedWhoDied": { "gte": 1 } },
@@ -1917,7 +1917,7 @@
   },
 
   "d12_18": {
-    "panorama": "/panorama/d12_18_bonggil_hard.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "저녁. 봉길 아저씨가 혼자 앉는다. 오늘 표정이 — 어제랑 다르다.\n딱딱하다. 더.\n만술이 다가간다.\n봉길 아저씨가 말한다. \"됐어. 저쪽 가 있어.\"",
     "choices": [
       { "label": "A. \"예.\" 하고 간다", "goto": "d12_19" },
@@ -1927,7 +1927,7 @@
   },
 
   "d12_19": {
-    "panorama": "/panorama/d12_18_bonggil_hard.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedBonggilWhy": { "gte": 1 } },
@@ -1939,7 +1939,7 @@
   },
 
   "d12_20": {
-    "panorama": "/panorama/d12_20_seongchil_night.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -1956,7 +1956,7 @@
   },
 
   "d12_21": {
-    "panorama": "/panorama/d12_20_seongchil_night.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "disagreedBonggilNormal": { "gte": 1 } },
@@ -1968,7 +1968,7 @@
   },
 
   "d12_22": {
-    "panorama": "/panorama/d12_22_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 먼저 누워 있다.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 — 목소리가 다르다. 뭔가 베어낸 것 같은 목소리.",
     "choices": [
       { "label": "A. 그냥 눈을 감는다", "goto": "d12_end" },
@@ -1977,7 +1977,7 @@
   },
 
   "d12_end": {
-    "panorama": "/panorama/d12_22_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilEyesOpen": { "gte": 1 } },
@@ -1989,7 +1989,7 @@
   },
 
   "d11_01": {
-    "panorama": "/panorama/d11_01_bonggil_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "아침. 봉길 아저씨가 이미 밖에 있다.\n만술이 나가면 봉길 아저씨가 혼자 앉아서 뭔가를 본다. 아무것도 없는 방향.",
     "choices": [
       { "label": "A. \"아저씨, 잘 주무셨어요?\" 한다", "goto": "d11_02" },
@@ -1999,7 +1999,7 @@
   },
 
   "d11_02": {
-    "panorama": "/panorama/d11_01_bonggil_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "satBesideBonggilD11": { "gte": 1 } },
@@ -2011,7 +2011,7 @@
   },
 
   "d11_03": {
-    "panorama": "/panorama/d11_03_senior_carrier.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "선배 지게꾼이 만술 옆에 앉는다.\n한참 후 말한다. \"며칠 됐어?\"",
     "choices": [
       { "label": "A. \"열흘요.\" 한다", "goto": "d11_04", "effect": { "saidTenDays": 1 } },
@@ -2020,7 +2020,7 @@
   },
 
   "d11_04": {
-    "panorama": "/panorama/d11_03_senior_carrier.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidTenDays": { "gte": 1 } },
@@ -2032,13 +2032,13 @@
   },
 
   "d11_05": {
-    "panorama": "/panorama/d11_05_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘 짐. 하사가 만술을 부른다. 오늘 또 사람이다.\n만술이 굳는다.\n하사가 말한다. \"부상병.\"\n이번엔 의식이 있다. 또래다.\n만술이 그 얼굴을 본다.",
     "next": "d11_06"
   },
 
   "d11_06": {
-    "panorama": "/panorama/d11_06_wounded_first.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "부상병이 만술을 본다. 눈이 맑다.\n다리에 붕대가 감겨 있다. 걷지 못한다.\n만술이 지게에 묶으려 한다.\n부상병이 말한다. \"야.\"\n만술이 본다.\n부상병이 말한다. \"조심해.\"",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d11_07" },
@@ -2048,7 +2048,7 @@
   },
 
   "d11_07": {
-    "panorama": "/panorama/d11_06_wounded_first.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidAlGo": { "gte": 1 } },
@@ -2060,7 +2060,7 @@
   },
 
   "d11_08": {
-    "panorama": "/panorama/d11_08_climb_wounded.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "출발. 부상병이 가끔 말한다.\n\"미끄러워.\" \"조심.\" \"여기 돌 있어.\"",
     "choices": [
       { "label": "A. \"응.\" 하고 피한다", "goto": "d11_09", "effect": { "respondedToWarnings": 1 } },
@@ -2070,7 +2070,7 @@
   },
 
   "d11_09": {
-    "panorama": "/panorama/d11_08_climb_wounded.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "respondedToWarnings": { "gte": 1 } },
@@ -2082,7 +2082,7 @@
   },
 
   "d11_10": {
-    "panorama": "/panorama/d11_10_name.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "고개 중턱 그늘에서 쉰다.\n부상병이 말한다. \"이름이 뭐야.\"",
     "choices": [
       { "label": "A. \"만술이요.\" 한다", "goto": "d11_11", "effect": { "knowsJaebok": 1 } },
@@ -2091,7 +2091,7 @@
   },
 
   "d11_11": {
-    "panorama": "/panorama/d11_10_name.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsJaebok": { "gte": 1 } },
@@ -2103,7 +2103,7 @@
   },
 
   "d11_12": {
-    "panorama": "/panorama/d11_12_slip.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "오르막 후반. 경사가 심해진다.\n발이 미끄러진다.\n순간 — 뒤로 쏠린다.",
     "choices": [
       { "label": "A. 버틴다 — 같이 굴러떨어지지 않으려고", "goto": "d11_13", "effect": { "heldOnSlip": 1 } },
@@ -2112,7 +2112,7 @@
   },
 
   "d11_13": {
-    "panorama": "/panorama/d11_12_slip.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "heldOnSlip": { "gte": 1 } },
@@ -2128,7 +2128,7 @@
   },
 
   "d11_14": {
-    "panorama": "/panorama/d11_14_summit_handoff.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrative": "정상. 재복을 내려놓는다. 의무병이 온다.\n재복이 만술을 본다.",
     "choices": [
       { "label": "A. 마주친다", "goto": "d11_15", "effect": { "metJaebokEyes": 1 } },
@@ -2137,7 +2137,7 @@
   },
 
   "d11_15": {
-    "panorama": "/panorama/d11_14_summit_handoff.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrativeVariants": [
       {
         "condition": { "metJaebokEyes": { "gte": 1 } },
@@ -2149,7 +2149,7 @@
   },
 
   "d11_16": {
-    "panorama": "/panorama/d11_16_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "knowsSeongchil": { "gte": 1 } },
@@ -2166,7 +2166,7 @@
   },
 
   "d11_17": {
-    "panorama": "/panorama/d11_16_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldSeongchilJaebokName": { "gte": 1 } },
@@ -2178,7 +2178,7 @@
   },
 
   "d11_18": {
-    "panorama": "/panorama/d11_18_evening_bonggil.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 만술이 봉길 아저씨 옆에 앉는다.\n봉길 아저씨가 보지 않는다.",
     "choices": [
       { "label": "A. \"아저씨, 오늘 부상병 졌어요.\" 한다", "goto": "d11_19", "effect": { "toldBonggilAboutJaebok": 1 } },
@@ -2187,7 +2187,7 @@
   },
 
   "d11_19": {
-    "panorama": "/panorama/d11_18_evening_bonggil.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldBonggilAboutJaebok": { "gte": 1 } },
@@ -2199,7 +2199,7 @@
   },
 
   "d11_20": {
-    "panorama": "/panorama/d11_20_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다.\n만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"",
     "choices": [
       { "label": "A. 그냥 눈을 감는다", "goto": "d11_end" },
@@ -2208,7 +2208,7 @@
   },
 
   "d11_end": {
-    "panorama": "/panorama/d11_20_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidJaebokNameAtNight": { "gte": 1 } },
@@ -2220,7 +2220,7 @@
   },
 
   "d10_01": {
-    "panorama": "/panorama/d10_01_tent_morning.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 봉길 아저씨가 없다.\n텐트 안에 없다. 밖에도 없다.\n만술이 찾는다.",
     "choices": [
       { "label": "A. 캠프 안을 둘러본다", "goto": "d10_02" },
@@ -2230,13 +2230,13 @@
   },
 
   "d10_02": {
-    "panorama": "/panorama/d10_02_camp_outskirt.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "캠프 외곽. 봉길 아저씨가 혼자 앉아 있다. 아무것도 없는 방향을 보고 있다.\n만술이 다가가려다 — 멈춘다. 뭔가 다가가면 안 될 것 같은 느낌.",
     "next": "d10_03"
   },
 
   "d10_03": {
-    "panorama": "/panorama/d10_03_camp_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "봉길 아저씨가 돌아온다. 만술을 보지 않는다.\n건빵을 집는다. 혼자 먹는다.\n성칠이 만술한테 낮게 말한다. \"봤어?\"\n만술이 고개를 끄덕인다.",
     "choices": [
       { "label": "A. \"뭔가 있었나봐.\" 한다", "goto": "d10_04", "effect": { "saidSomethingHappenedD10": 1 } },
@@ -2246,7 +2246,7 @@
   },
 
   "d10_04": {
-    "panorama": "/panorama/d10_04_ascent.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오르막 중간쯤 — 앞에서 뭔가 소리가 난다. 쿵.\n지게꾼 하나가 넘어졌다. 짐이 쏟아졌다.\n봉길 아저씨가 본다. 그리고 — 돌아선다. 그냥 걷는다.",
     "choices": [
       { "label": "A. 달려가서 돕는다", "goto": "d10_05", "effect": { "helpedFallenPorter": 1 } },
@@ -2256,7 +2256,7 @@
   },
 
   "d10_05": {
-    "panorama": "/panorama/d10_04_ascent.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilTurnAway": { "gte": 1 } },
@@ -2268,7 +2268,7 @@
   },
 
   "d10_06": {
-    "panorama": "/panorama/d10_06_shade_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "그늘. 만술이 봉길 아저씨 옆에 앉는다.\n봉길 아저씨가 말한다. \"저쪽 가.\"\n만술이 움직이지 않는다.\n봉길 아저씨가 만술을 본다. 처음으로 — 제대로 본다.\n그 눈이 낯설다.",
     "choices": [
       { "label": "A. \"왜요.\" 한다", "goto": "d10_07" },
@@ -2278,7 +2278,7 @@
   },
 
   "d10_07": {
-    "panorama": "/panorama/d10_06_shade_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedBonggilOkD10": { "gte": 1 } },
@@ -2290,7 +2290,7 @@
   },
 
   "d10_08": {
-    "panorama": "/panorama/d10_08_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 봉길 아저씨가 서 있다. 만술이 옆에 선다.\n봉길 아저씨가 말한다. 아무한테도 아닌 것처럼.\n\"다 저렇게 작네.\"",
     "choices": [
       { "label": "A. \"네.\" 한다", "goto": "d10_09" },
@@ -2300,7 +2300,7 @@
   },
 
   "d10_09": {
-    "panorama": "/panorama/d10_08_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedSummitSilent": { "gte": 1 } },
@@ -2312,7 +2312,7 @@
   },
 
   "d10_10": {
-    "panorama": "/panorama/d10_10_descent.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려오면서 성칠이 말한다.\n\"봉길 아저씨 뭔가 달라졌어.\"\n만술이 걷는다.\n성칠이 말한다. \"언제부터야?\"",
     "choices": [
       { "label": "A. \"모르겠어.\" 한다", "goto": "d10_11", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -2322,7 +2322,7 @@
   },
 
   "d10_11": {
-    "panorama": "/panorama/d10_10_descent.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidD12AfterD10": { "gte": 1 } },
@@ -2334,7 +2334,7 @@
   },
 
   "d10_12": {
-    "panorama": "/panorama/d10_12_evening_alone.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 봉길 아저씨가 혼자 먹는다. 아무도 안 본다.",
     "choices": [
       { "label": "A. 다가간다", "goto": "d10_13", "effect": { "approachedBonggilD10": 1 } },
@@ -2344,7 +2344,7 @@
   },
 
   "d10_13": {
-    "panorama": "/panorama/d10_12_evening_alone.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "approachedBonggilD10": { "gte": 1 } },
@@ -2356,7 +2356,7 @@
   },
 
   "d10_14": {
-    "panorama": "/panorama/d10_14_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 — 그냥 말이다. 온기가 없다.",
     "choices": [
       { "label": "A. 그냥 눈을 감는다", "goto": "d10_end" },
@@ -2365,7 +2365,7 @@
   },
 
   "d10_end": {
-    "panorama": "/panorama/d10_14_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "calledBonggilD10": { "gte": 1 } },
@@ -2377,13 +2377,13 @@
   },
 
   "d9_01": {
-    "panorama": "/panorama/d9_01_tent_morning.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 봉길 아저씨가 텐트 안에 있다.\n일어나 있다. 앉아서 지게끈을 본다.\n손질하는 게 아니다. 그냥 본다.\n만술이 일어나서 봉길 아저씨를 본다.\n봉길 아저씨가 만술을 보지 않는다.",
     "next": "d9_02"
   },
 
   "d9_02": {
-    "panorama": "/panorama/d9_02_camp_crying.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "밖에 나오면 — 지게꾼 하나가 울고 있다.\n소리 없이. 그냥 앉아서 건빵을 쥔 채로 운다.\n아무도 뭐라 안 한다. 아무도 다가가지 않는다.",
     "choices": [
       { "label": "A. 본다", "goto": "d9_03" },
@@ -2393,7 +2393,7 @@
   },
 
   "d9_03": {
-    "panorama": "/panorama/d9_02_camp_crying.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "approachedCryingPorter": { "gte": 1 } },
@@ -2405,7 +2405,7 @@
   },
 
   "d9_04": {
-    "panorama": "/panorama/d9_04_ascent_wide.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오늘 루트가 넓어서 둘이 나란히 걸을 수 있다.\n만술이 봉길 아저씨 옆에서 걷는다.\n봉길 아저씨가 앞을 본다. 말이 없다.",
     "choices": [
       { "label": "A. 말을 건다 — \"아저씨, 고향 언제 가요.\"", "goto": "d9_05", "effect": { "askedAboutHomeD9": 1 } },
@@ -2414,7 +2414,7 @@
   },
 
   "d9_05": {
-    "panorama": "/panorama/d9_04_ascent_wide.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedAboutHomeD9": { "gte": 1 } },
@@ -2426,7 +2426,7 @@
   },
 
   "d9_06": {
-    "panorama": "/panorama/d9_06_rest_stranger.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "쉬는 시간. 봉길 아저씨가 다른 지게꾼 옆에 앉는다. 처음 보는 사람.\n만술이 그걸 본다.",
     "choices": [
       { "label": "A. 다가간다", "goto": "d9_07" },
@@ -2436,7 +2436,7 @@
   },
 
   "d9_07": {
-    "panorama": "/panorama/d9_06_rest_stranger.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "satAloneD9": { "gte": 1 } },
@@ -2448,7 +2448,7 @@
   },
 
   "d9_08": {
-    "panorama": "/panorama/d9_08_ascent_late.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "봉길 아저씨가 속도를 올린다. 만술을 기다리지 않는다.",
     "choices": [
       { "label": "A. 속도를 올려 따라간다", "goto": "d9_09", "effect": { "chasedBonggilSpeed": 1 } },
@@ -2457,7 +2457,7 @@
   },
 
   "d9_09": {
-    "panorama": "/panorama/d9_08_ascent_late.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "chasedBonggilSpeed": { "gte": 1 } },
@@ -2469,7 +2469,7 @@
   },
 
   "d9_10": {
-    "panorama": "/panorama/d9_10_summit_alone.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 봉길 아저씨가 먼저 와 있다.\n만술이 도착한다.\n봉길 아저씨가 내려간다. 만술이 막 도착했는데.",
     "choices": [
       { "label": "A. \"아저씨.\" 부른다", "goto": "d9_11", "effect": { "calledBonggilSummitD9": 1 } },
@@ -2478,7 +2478,7 @@
   },
 
   "d9_11": {
-    "panorama": "/panorama/d9_10_summit_alone.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "calledBonggilSummitD9": { "gte": 1 } },
@@ -2490,7 +2490,7 @@
   },
 
   "d9_12": {
-    "panorama": "/panorama/d9_12_evening_alone.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 봉길 아저씨가 혼자 먹는다. 만술 쪽을 한 번도 안 본다.\n만술이 성칠 옆에 앉아서 먹는다. 밥 맛을 모른다. 씹는다.",
     "choices": [
       { "label": "A. 본다", "goto": "d9_13", "effect": { "watchedBonggilEatAloneD9": 1 } },
@@ -2499,7 +2499,7 @@
   },
 
   "d9_13": {
-    "panorama": "/panorama/d9_12_evening_alone.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilEatAloneD9": { "gte": 1 } },
@@ -2511,7 +2511,7 @@
   },
 
   "d9_14": {
-    "panorama": "/panorama/d9_14_night_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "텐트 밖. 성칠이 말한다.\n\"오늘 봉길 아저씨 저번에 짐 못 드는 애한테 놔두고 가라고 했대.\"",
     "choices": [
       { "label": "A. \"그랬어요?\" 한다", "goto": "d9_15", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -2521,7 +2521,7 @@
   },
 
   "d9_15": {
-    "panorama": "/panorama/d9_14_night_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "deniedBonggilRumor": { "gte": 1 } },
@@ -2533,7 +2533,7 @@
   },
 
   "d9_16": {
-    "panorama": "/panorama/d9_16_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n침묵.\n봉길 아저씨가 말한다. \"자라.\"\n오늘은 — 그냥 습관이다.",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d9_end" },
@@ -2542,7 +2542,7 @@
   },
 
   "d9_end": {
-    "panorama": "/panorama/d9_16_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "silentAtNightD9": { "gte": 1 } },
@@ -2554,7 +2554,7 @@
   },
 
   "d8_01": {
-    "panorama": "/panorama/d8_01_tent_morning.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 성칠이 만술을 깨운다. \"일어나.\"\n봉길 아저씨 방식이랑 똑같이.\n만술이 눈을 뜬다. 봉길 아저씨가 없다.",
     "choices": [
       { "label": "A. 찾는다", "goto": "d8_02", "effect": { "lookedForBonggilD8": 1 } },
@@ -2563,7 +2563,7 @@
   },
 
   "d8_02": {
-    "panorama": "/panorama/d8_02_camp_outskirt.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedForBonggilD8": { "gte": 1 } },
@@ -2575,7 +2575,7 @@
   },
 
   "d8_03": {
-    "panorama": "/panorama/d8_03_senior_porter.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "선배 지게꾼이 만술 옆에 앉는다.\n\"며칠 됐어?\"\n\"열사흘요.\"\n선배 지게꾼이 고개를 끄덕인다.\n\"저 아저씨.\" 봉길 아저씨 방향으로 턱짓한다. \"같이 온 거야?\"",
     "choices": [
       { "label": "A. \"네. 같은 마을이요.\" 한다", "goto": "d8_04" },
@@ -2585,7 +2585,7 @@
   },
 
   "d8_04": {
-    "panorama": "/panorama/d8_03_senior_porter.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidUsedToBeD8": { "gte": 1 } },
@@ -2597,7 +2597,7 @@
   },
 
   "d8_05": {
-    "panorama": "/panorama/d8_05_load_lineup.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "줄을 선다. 봉길 아저씨가 만술 옆에 서지 않는다. 다른 자리.",
     "choices": [
       { "label": "A. 간다", "goto": "d8_06", "effect": { "wentToBonggilLineD8": 1 } },
@@ -2606,7 +2606,7 @@
   },
 
   "d8_06": {
-    "panorama": "/panorama/d8_05_load_lineup.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       {
         "condition": { "wentToBonggilLineD8": { "gte": 1 } },
@@ -2618,7 +2618,7 @@
   },
 
   "d8_07": {
-    "panorama": "/panorama/d8_07_ascent_fall.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "앞에서 지게꾼 하나가 쓰러졌다. 짐이 굴러떨어진다.\n봉길 아저씨가 그 장면을 본다. 그리고 그냥 걷는다.",
     "choices": [
       { "label": "A. 달려가서 돕는다", "goto": "d8_08", "effect": { "helpedFallenPorterD8": 1 } },
@@ -2628,7 +2628,7 @@
   },
 
   "d8_08": {
-    "panorama": "/panorama/d8_07_ascent_fall.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "helpedFallenPorterD8": { "gte": 1 } },
@@ -2640,7 +2640,7 @@
   },
 
   "d8_09": {
-    "panorama": "/panorama/d8_09_shade_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "그늘. 봉길 아저씨가 혼자 앉아 있다.\n만술이 옆에 앉는다.\n봉길 아저씨가 만술을 보지 않는다.\n만술이 말한다. \"아저씨.\"\n봉길 아저씨가 말한다. \"왜.\"",
     "choices": [
       { "label": "A. \"아무것도 아니에요.\" 한다", "goto": "d8_10" },
@@ -2650,7 +2650,7 @@
   },
 
   "d8_10": {
-    "panorama": "/panorama/d8_09_shade_rest.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedWhyD8": { "gte": 1 } },
@@ -2662,7 +2662,7 @@
   },
 
   "d8_11": {
-    "panorama": "/panorama/d8_11_summit_no_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 연기를 센다. 오늘은 — 없다.\n처음으로 연기가 없다.\n만술이 그 방향을 본다. 그냥 하늘이다.",
     "choices": [
       { "label": "A. \"오늘 연기 없어.\" 한다", "goto": "d8_12", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "toldSeongchilNoSmokeD8": 1 } },
@@ -2671,7 +2671,7 @@
   },
 
   "d8_12": {
-    "panorama": "/panorama/d8_11_summit_no_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldSeongchilNoSmokeD8": { "gte": 1 } },
@@ -2683,7 +2683,7 @@
   },
 
   "d8_13": {
-    "panorama": "/panorama/d8_13_descent_bonggil_ahead.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "봉길 아저씨가 빠르게 내려간다. 혼자.\n만술이 그 뒷모습을 본다.\n저 등이 — 고향에서 보던 등이랑 같은 등인데. 다르다.",
     "choices": [
       { "label": "A. 따라간다", "goto": "d8_14", "effect": { "chasedBonggilDescentD8": 1 } },
@@ -2692,7 +2692,7 @@
   },
 
   "d8_14": {
-    "panorama": "/panorama/d8_13_descent_bonggil_ahead.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "chasedBonggilDescentD8": { "gte": 1 } },
@@ -2704,7 +2704,7 @@
   },
 
   "d8_15": {
-    "panorama": "/panorama/d8_15_night_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "텐트 밖. 성칠이 말한다.\n\"봉길 아저씨가 요즘 다른 지게꾼한테 뭐라고 하는 거 봤어? 저번에 짐 못 드는 애한테 놔두고 가라고 했대.\"",
     "choices": [
       { "label": "A. \"그랬어요?\" 한다", "goto": "d8_16", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -2714,7 +2714,7 @@
   },
 
   "d8_16": {
-    "panorama": "/panorama/d8_15_night_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "deniedBonggilRumorD8": { "gte": 1 } },
@@ -2726,7 +2726,7 @@
   },
 
   "d8_17": {
-    "panorama": "/panorama/d8_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n침묵.\n봉길 아저씨가 말하지 않는다.\n처음으로 — \"자라.\"가 없다.",
     "choices": [
       { "label": "A. \"아저씨, 자라.\" 한다", "goto": "d8_end", "effect": { "saidSleepFirstD8": 1 } },
@@ -2735,7 +2735,7 @@
   },
 
   "d8_end": {
-    "panorama": "/panorama/d8_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidSleepFirstD8": { "gte": 1 } },
@@ -2747,13 +2747,13 @@
   },
 
   "d7_01": {
-    "panorama": "/panorama/d7_01_tent_morning.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 2주일이다.\n만술이 센다. D-21부터 D-7.\n몸이 안 아픈 데가 없다. 근데 아픔이 익숙해졌다.\n앞사람이 말했던 것 — 익숙해지면 그게 더 나쁜 거야.\n오늘 처음으로 그 말이 무슨 뜻인지 알 것 같다.",
     "next": "d7_02"
   },
 
   "d7_02": {
-    "panorama": "/panorama/d7_02_camp_outskirt.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "봉길 아저씨가 텐트에 없다.\n만술이 밖에 나간다.\n봉길 아저씨가 캠프 외곽에 혼자 있다. 항상 그 자리.\n이번엔 만술이 다가간다.\n봉길 아저씨 옆에 선다. 봉길 아저씨가 만술을 보지 않는다.\n만술이 봉길 아저씨가 보는 방향을 본다. 산이다. 그냥 산.",
     "choices": [
       { "label": "A. \"아저씨, 밥 먹어요.\" 한다", "goto": "d7_03" },
@@ -2763,7 +2763,7 @@
   },
 
   "d7_03": {
-    "panorama": "/panorama/d7_02_camp_outskirt.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedIfScaredD7": { "gte": 1 } },
@@ -2775,7 +2775,7 @@
   },
 
   "d7_04": {
-    "panorama": "/panorama/d7_04_morning_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "성칠이 만술 옆에 온다.\n\"어젯밤에 봉길 아저씨 '자라' 안 했잖아.\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"이상하다. 그 말이 없으니까.\"",
     "choices": [
       { "label": "A. \"그러게.\" 한다", "goto": "d7_05", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -2785,7 +2785,7 @@
   },
 
   "d7_05": {
-    "panorama": "/panorama/d7_04_morning_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidHatedSleepWordD7": { "gte": 1 } },
@@ -2797,7 +2797,7 @@
   },
 
   "d7_06": {
-    "panorama": "/panorama/d7_06_load_heavy.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "하사가 봉길 아저씨를 부른다. 뭔가 말한다.\n봉길 아저씨가 고개를 끄덕인다.\n오늘 봉길 아저씨 짐이 더 무겁다.\n만술이 본다. 봉길 아저씨가 그 무거운 짐을 맨다. 표정이 없다.",
     "choices": [
       { "label": "A. \"제가 질게요.\" 하려다 안 한다", "goto": "d7_07" },
@@ -2807,13 +2807,13 @@
   },
 
   "d7_07": {
-    "panorama": "/panorama/d7_07_ascent_heavy.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "봉길 아저씨가 무거운 짐을 지고 앞에 간다. 뒤처지지 않는다.\n만술이 그 뒷모습을 본다.\n저 무게를 저렇게 가는 게 — 이상하다. 아니면 저렇게 되는 게 이 곳에서 사는 방식인 건지.",
     "next": "d7_08"
   },
 
   "d7_08": {
-    "panorama": "/panorama/d7_08_rest_porter_lags.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "쉬는 시간. 짐이 무거운 지게꾼 하나가 처진다. 못 오른다.\n봉길 아저씨가 그걸 본다. 그리고 — 간다. 그냥.\n만술이 봉길 아저씨를 본다.",
     "choices": [
       { "label": "A. 그 지게꾼한테 간다", "goto": "d7_09", "effect": { "helpedLaggingPorterD7": 1 } },
@@ -2823,7 +2823,7 @@
   },
 
   "d7_09": {
-    "panorama": "/panorama/d7_08_rest_porter_lags.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "helpedLaggingPorterD7": { "gte": 1 } },
@@ -2839,7 +2839,7 @@
   },
 
   "d7_10": {
-    "panorama": "/panorama/d7_10_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 봉길 아저씨가 먼저 와 있다. 만술이 도착한다.\n봉길 아저씨가 만술을 본다.\n처음으로 — 오늘 처음으로 — 만술을 제대로 본다.\n만술이 그 시선을 받는다.\n봉길 아저씨가 말한다. \"힘들어?\"",
     "choices": [
       { "label": "A. \"아니요.\" 한다", "goto": "d7_11" },
@@ -2849,7 +2849,7 @@
   },
 
   "d7_11": {
-    "panorama": "/panorama/d7_10_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedBackD7": { "gte": 1 } },
@@ -2861,7 +2861,7 @@
   },
 
   "d7_12": {
-    "panorama": "/panorama/d7_12_descent_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "내려오면서 성칠이 말한다.\n\"2주 됐다.\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"살아 있네.\"",
     "choices": [
       { "label": "A. \"그러게.\" 한다", "goto": "d7_13", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -2871,7 +2871,7 @@
   },
 
   "d7_13": {
-    "panorama": "/panorama/d7_12_descent_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidOfCourseD7": { "gte": 1 } },
@@ -2883,13 +2883,13 @@
   },
 
   "d7_14": {
-    "panorama": "/panorama/d7_14_evening_bonggil.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 봉길 아저씨가 혼자 먹는다.\n만술이 다가간다. 옆에 앉는다.\n아무 말 없이 같이 먹는다.\n봉길 아저씨가 다 먹고 일어나려다 — 멈춘다.\n만술을 본다.\n그리고 말한다.\n\"잘 먹어라.\"\n그게 다다. 봉길 아저씨가 일어난다. 만술이 그 뒷모습을 본다.\n잘 먹어라. 그게 오늘 봉길 아저씨가 만술한테 한 말 전부다.\n그런데 오래 남는다.",
     "next": "d7_15"
   },
 
   "d7_15": {
-    "panorama": "/panorama/d7_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n돌아왔다. 그 말이.",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d7_16" },
@@ -2898,13 +2898,13 @@
   },
 
   "d7_16": {
-    "panorama": "/panorama/d7_15_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "어느 쪽이든 — 봉길 아저씨가 돌아눕는다. 만술이 천장을 본다.",
     "next": "d7_end"
   },
 
   "d7_end": {
-    "panorama": "/panorama/d7_end_pocket_rice.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrativeVariants": [
       {
         "condition": { "riceKept": { "gte": 1 } },
@@ -2919,13 +2919,13 @@
   },
 
   "d6_01": {
-    "panorama": "/panorama/d6_01_tent_morning.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "3주차 — 감당한다.\n\n아침. 만술이 눈을 뜬다.\n몸이 — 안 아프다. 아픈 게 없어진 게 아니라 — 아픔이 그냥 몸의 일부가 됐다.\n앞사람이 말했던 것. 익숙해지면 그게 더 나쁜 거야.\n이제 완전히 안다.",
     "next": "d6_02"
   },
 
   "d6_02": {
-    "panorama": "/panorama/d6_02_morning_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "성칠이 옆에 앉는다. 건빵을 물에 적신다. 만술도 적신다.\n성칠이 말한다. \"일주일 남았다.\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"그 다음엔 어떻게 되는 거야.\"",
     "choices": [
       { "label": "A. \"집에 가겠지.\" 한다", "goto": "d6_03", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -2935,7 +2935,7 @@
   },
 
   "d6_03": {
-    "panorama": "/panorama/d6_02_morning_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidThereWillBeMoreD6": { "gte": 1 } },
@@ -2947,19 +2947,19 @@
   },
 
   "d6_04": {
-    "panorama": "/panorama/d6_04_bonggil_eat.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "봉길 아저씨가 혼자 앉아서 밥을 먹는다.\n만술이 다가가서 옆에 앉는다.\n봉길 아저씨가 보지 않는다. 만술도 보지 않는다.\n그냥 같이 먹는다.\n다 먹고 봉길 아저씨가 일어난다. 아무 말 없다.\n만술이 그 뒷모습을 본다.\n이제는 — 그냥 본다. 뭔가를 기대하지 않는다.\n그게 더 편한 건지 더 슬픈 건지 모른다.",
     "next": "d6_05"
   },
 
   "d6_05": {
-    "panorama": "/panorama/d6_05_load_ammo.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘 짐은 탄약 상자.\n만술이 맨다. 손이 기억한다. 자동이다.\n셋이 나란히 선다.\n줄이 출발한다.\n그냥 출발한다. 이제 출발은 그냥 출발이다.",
     "next": "d6_06"
   },
 
   "d6_06": {
-    "panorama": "/panorama/d6_06_ascent_open_sky.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오늘 루트는 처음 가는 길이다. 나무가 없다. 탁 트여 있다.\n하늘이 크다.\n만술이 올라가면서 하늘을 본다. 오랜만에 하늘을 봤다.",
     "choices": [
       { "label": "A. 잠깐 보고 발을 본다", "goto": "d6_07" },
@@ -2969,7 +2969,7 @@
   },
 
   "d6_07": {
-    "panorama": "/panorama/d6_06_ascent_open_sky.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "stoppedForSkyD6": { "gte": 1 } },
@@ -2981,7 +2981,7 @@
   },
 
   "d6_08": {
-    "panorama": "/panorama/d6_08_medic_passing.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "쉬는 시간. 의무병이 지나간다. 부상병을 지고 간다.\n만술이 본다. 얼굴이 안 보인다.\n재복인지 아닌지 모른다.",
     "choices": [
       { "label": "A. 보려 한다 — 얼굴을 확인하려", "goto": "d6_09", "condition": { "knowsJaebok": { "gte": 1 } }, "effect": { "triedToSeeJaebokD6": 1 } },
@@ -2991,7 +2991,7 @@
   },
 
   "d6_09": {
-    "panorama": "/panorama/d6_08_medic_passing.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "triedToSeeJaebokD6": { "gte": 1 } },
@@ -3003,7 +3003,7 @@
   },
 
   "d6_10": {
-    "panorama": "/panorama/d6_10_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 연기를 센다. 오늘은 한 줄기.\n며칠 전에 다섯이었는데.\n만술이 센다. 하나.\n그게 다다.",
     "choices": [
       { "label": "A. \"오늘 하나야.\" 한다", "goto": "d6_11", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "toldSeongchilOneSmokeD6": 1 } },
@@ -3012,7 +3012,7 @@
   },
 
   "d6_11": {
-    "panorama": "/panorama/d6_10_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldSeongchilOneSmokeD6": { "gte": 1 } },
@@ -3024,7 +3024,7 @@
   },
 
   "d6_12": {
-    "panorama": "/panorama/d6_12_descent_us_soldiers.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려오는 길. 미군 둘이 올라온다. 반대 방향.\n지나치면서 하나가 만술한테 뭔가 말한다. 못 알아듣는다.\n그냥 지나친다.",
     "choices": [
       { "label": "A. 돌아본다", "goto": "d6_13", "effect": { "lookedBackUSD6": 1 } },
@@ -3033,7 +3033,7 @@
   },
 
   "d6_13": {
-    "panorama": "/panorama/d6_12_descent_us_soldiers.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedBackUSD6": { "gte": 1 } },
@@ -3045,7 +3045,7 @@
   },
 
   "d6_14": {
-    "panorama": "/panorama/d6_14_afternoon_smell.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오후. 오늘 오후 루트에서 냄새가 난다. 탄 냄새가 아니다.\n썩는 냄새다.\n지게꾼들이 다 안다. 아무도 말 안 한다.",
     "choices": [
       { "label": "A. 숨을 참는다", "goto": "d6_15" },
@@ -3055,7 +3055,7 @@
   },
 
   "d6_15": {
-    "panorama": "/panorama/d6_14_afternoon_smell.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilSmellD6": { "gte": 1 } },
@@ -3067,7 +3067,7 @@
   },
 
   "d6_16": {
-    "panorama": "/panorama/d6_16_afternoon_summit_empty.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 오늘 오후 정상엔 아무것도 없다. 군인도 없다. 미군도 없다.\n그냥 하늘이다.\n만술이 선다.\n멀리 — 마을들. 길들. 산들. 전장이 어딘지 모른다. 다 같이 보인다.",
     "choices": [
       { "label": "A. 짐 내려놓고 바로 내려간다", "goto": "d6_17" },
@@ -3077,7 +3077,7 @@
   },
 
   "d6_17": {
-    "panorama": "/panorama/d6_16_afternoon_summit_empty.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "stoodLongD6": { "gte": 1 } },
@@ -3089,7 +3089,7 @@
   },
 
   "d6_18": {
-    "panorama": "/panorama/d6_18_evening_rice.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "오늘 저녁은 쌀밥이다. 처음으로 쌀밥이다.\n성칠이 눈이 커진다. \"쌀밥이다.\"\n만술이 한 숟갈 뜬다. 어머니 집 밥이랑 다르다. 그런데 쌀이다.",
     "choices": [
       { "label": "A. 천천히 먹는다", "goto": "d6_19", "effect": { "ateSlowlyD6": 1 } },
@@ -3098,7 +3098,7 @@
   },
 
   "d6_19": {
-    "panorama": "/panorama/d6_18_evening_rice.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "ateSlowlyD6": { "gte": 1 } },
@@ -3110,7 +3110,7 @@
   },
 
   "d6_20": {
-    "panorama": "/panorama/d6_20_evening_bonggil_rice.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "봉길 아저씨도 쌀밥을 먹는다. 혼자.\n쌀밥인데 — 건빵 먹는 것처럼 먹는다.",
     "choices": [
       { "label": "A. 그냥 본다", "goto": "d6_21" },
@@ -3119,7 +3119,7 @@
   },
 
   "d6_21": {
-    "panorama": "/panorama/d6_20_evening_bonggil_rice.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "approachedBonggilRiceD6": { "gte": 1 } },
@@ -3131,19 +3131,19 @@
   },
 
   "d6_end": {
-    "panorama": "/panorama/d6_end_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n오늘 하루. 하늘을 봤다. 쌀밥을 먹었다. 썩는 냄새를 맡았다. 재복인지 아닌지 모르는 부상병을 봤다.\n다 같이 오늘이다.\n\nD-6이 끝났다.",
     "next": "d5_01"
   },
 
   "d5_01": {
-    "panorama": "/panorama/d5_01_dawn_artillery.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "새벽. 포 소리에 눈이 떠진다. 가깝다.\n이번엔 아무도 안 일어난다. 다들 그냥 눈만 뜨고 있다.\n소리가 멈춘다.\n다시 잔다.\n이제 그 소리에 익숙해졌다. 그게 더 나쁜 거다.",
     "next": "d5_02"
   },
 
   "d5_02": {
-    "panorama": "/panorama/d5_02_senior_porter.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "선배 지게꾼이 만술 옆에 앉는다.\n\"며칠 됐어?\"\n\"열여섯이요.\"\n선배 지게꾼이 고개를 끄덕인다.",
     "choices": [
       { "label": "A. \"아저씨는요?\" 한다", "goto": "d5_03", "effect": { "askedSeniorD5": 1 } },
@@ -3152,7 +3152,7 @@
   },
 
   "d5_03": {
-    "panorama": "/panorama/d5_02_senior_porter.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedSeniorD5": { "gte": 1 } },
@@ -3164,7 +3164,7 @@
   },
 
   "d5_04": {
-    "panorama": "/panorama/d5_04_wounded_again.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "하사가 만술을 부른다. 또 부상병이다.\n만술이 굳지 않는다. 이번엔.\n그냥 간다.\n부상병을 본다. 재복이 아니다. 처음 보는 얼굴. 의식이 없다.\n만술이 지게에 묶는다. 익숙하게.",
     "choices": [
       { "label": "A. 군복에서 이름을 찾는다", "goto": "d5_05", "effect": { "lookedForNameD5": 1 } },
@@ -3173,7 +3173,7 @@
   },
 
   "d5_05": {
-    "panorama": "/panorama/d5_04_wounded_again.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedForNameD5": { "gte": 1 } },
@@ -3185,7 +3185,7 @@
   },
 
   "d5_06": {
-    "panorama": "/panorama/d5_06_ascent_nameless.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오르막. 이번 부상병은 말이 없다. 의식이 없으니까.\n숨소리만 들린다.\n재복이 말하던 것들이 생각난다. 조심해. 여기 돌 있어.\n이번엔 아무 말 없이 만술이 혼자 피한다.",
     "choices": [
       { "label": "A. 아무 말 안 한다", "goto": "d5_07" },
@@ -3194,7 +3194,7 @@
   },
 
   "d5_07": {
-    "panorama": "/panorama/d5_06_ascent_nameless.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidCarefulD5": { "gte": 1 } },
@@ -3206,7 +3206,7 @@
   },
 
   "d5_08": {
-    "panorama": "/panorama/d5_08_rest_bonggil.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "쉬는 시간. 봉길 아저씨가 지게꾼 하나한테 말한다. 짧게.\n그 지게꾼이 고개를 끄덕이고 간다.\n만술이 그걸 본다.",
     "choices": [
       { "label": "A. 봉길 아저씨한테 간다", "goto": "d5_09", "effect": { "wentToBonggilD5": 1 } },
@@ -3215,7 +3215,7 @@
   },
 
   "d5_09": {
-    "panorama": "/panorama/d5_08_rest_bonggil.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrativeVariants": [
       {
         "condition": { "wentToBonggilD5": { "gte": 1 } },
@@ -3227,7 +3227,7 @@
   },
 
   "d5_10": {
-    "panorama": "/panorama/d5_10_summit_handoff.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrative": "정상. 의무병이 부상병을 받아간다.\n만술의 등이 가벼워진다. 이제 그 가벼움에도 익숙하다.\n가벼워지면서 동시에 — 뭔가 빠져나간다. 그게 뭔지는 모른다.",
     "choices": [
       { "label": "A. 본다", "goto": "d5_11", "effect": { "watchedWoundedCarriedD5": 1 } },
@@ -3236,7 +3236,7 @@
   },
 
   "d5_11": {
-    "panorama": "/panorama/d5_10_summit_handoff.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedWoundedCarriedD5": { "gte": 1 } },
@@ -3248,7 +3248,7 @@
   },
 
   "d5_12": {
-    "panorama": "/panorama/d5_12_descent_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "성칠이 옆에 온다.\n\"오늘 또 사람 졌어?\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"이름은?\"",
     "choices": [
       { "label": "A. \"몰라.\" 한다", "goto": "d5_13", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -3258,7 +3258,7 @@
   },
 
   "d5_13": {
-    "panorama": "/panorama/d5_12_descent_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidNoNameD5": { "gte": 1 } },
@@ -3270,13 +3270,13 @@
   },
 
   "d5_14": {
-    "panorama": "/panorama/d5_14_evening_bonggil.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 봉길 아저씨가 혼자 먹는다.\n만술이 다가가서 앉는다. 봉길 아저씨가 보지 않는다.\n만술이 먹는다. 봉길 아저씨가 먹는다.\n봉길 아저씨가 일어나면서 만술 밥그릇을 본다.\n어제도 그랬다.\n왜 보는지 모른다. 그냥 본다. 그게 다다.",
     "next": "d5_15"
   },
 
   "d5_15": {
-    "panorama": "/panorama/d5_15_night_seongchil_outside.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "성칠이 말한다.\n\"집에 가면 뭐 할 거야.\"",
     "choices": [
       { "label": "A. \"논에 가야지.\" 한다", "goto": "d5_16", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "saidPaddyD5": 1 } },
@@ -3286,7 +3286,7 @@
   },
 
   "d5_16": {
-    "panorama": "/panorama/d5_15_night_seongchil_outside.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidPaddyD5": { "gte": 1 } },
@@ -3298,7 +3298,7 @@
   },
 
   "d5_17": {
-    "panorama": "/panorama/d5_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d5_end", "effect": { "saidYesD5": 1 } },
@@ -3307,7 +3307,7 @@
   },
 
   "d5_end": {
-    "panorama": "/panorama/d5_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidYesD5": { "gte": 1 } },
@@ -3319,13 +3319,13 @@
   },
 
   "d4_01": {
-    "panorama": "/panorama/d4_01_rain_morning.jpg",
+    "panorama": "/panorama/archetypes/rain_camp.jpg",
     "narrative": "비가 온다. 아침부터.\n텐트 안이 눅눅하다. 냄새가 다르다.\n성칠이 만술을 깨운다. \"비 온다.\"\n만술이 눈을 뜬다. \"알아.\"",
     "next": "d4_02"
   },
 
   "d4_02": {
-    "panorama": "/panorama/d4_02_rain_bonggil.jpg",
+    "panorama": "/panorama/archetypes/rain_camp.jpg",
     "narrative": "봉길 아저씨가 텐트 밖에 있다. 비를 맞으면서.\n만술이 나간다.\n\"아저씨, 텐트 안으로 들어오세요.\"\n봉길 아저씨가 만술을 본다. 아무 말 안 한다. 그냥 서 있는다.",
     "choices": [
       { "label": "A. 텐트 안으로 들어간다", "goto": "d4_03" },
@@ -3334,7 +3334,7 @@
   },
 
   "d4_03": {
-    "panorama": "/panorama/d4_02_rain_bonggil.jpg",
+    "panorama": "/panorama/archetypes/rain_camp.jpg",
     "narrativeVariants": [
       {
         "condition": { "stoodInRainD4": { "gte": 1 } },
@@ -3346,7 +3346,7 @@
   },
 
   "d4_04": {
-    "panorama": "/panorama/d4_04_load_rain.jpg",
+    "panorama": "/panorama/archetypes/rain_camp.jpg",
     "narrative": "비 속에서 짐을 맨다. 짐이 젖는다. 무거워진다.\n만술이 끈을 맨다. 젖은 끈이 미끄럽다.",
     "choices": [
       { "label": "A. 그냥 맨다 — 미끄러워도", "goto": "d4_05" },
@@ -3355,7 +3355,7 @@
   },
 
   "d4_05": {
-    "panorama": "/panorama/d4_05_ascent_mud.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "비가 오니까 길이 진흙이다.\n발이 빠진다. 짐이 흔들린다.\n앞에 봉길 아저씨가 간다. 진흙에서도 빠르다.\n만술이 그 발자국을 밟으면서 간다.",
     "choices": [
       { "label": "A. 밟는다 — 조금 덜 빠진다", "goto": "d4_06", "effect": { "followedFootprintsD4": 1 } },
@@ -3364,7 +3364,7 @@
   },
 
   "d4_06": {
-    "panorama": "/panorama/d4_06_mid_slip.jpg",
+    "panorama": "/panorama/archetypes/rain_ascent.jpg",
     "narrative": "고개 중턱. 지게꾼 하나가 미끄러진다. 짐이 쏟아진다.\n봉길 아저씨가 그걸 본다. 지나친다.\n만술이 본다.",
     "choices": [
       { "label": "A. 달려가서 잡아준다", "goto": "d4_07", "effect": { "helpedSlippedPorterD4": 1 } },
@@ -3374,7 +3374,7 @@
   },
 
   "d4_07": {
-    "panorama": "/panorama/d4_06_mid_slip.jpg",
+    "panorama": "/panorama/archetypes/rain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "helpedSlippedPorterD4": { "gte": 1 } },
@@ -3390,7 +3390,7 @@
   },
 
   "d4_08": {
-    "panorama": "/panorama/d4_08_summit_rain.jpg",
+    "panorama": "/panorama/archetypes/rain_camp.jpg",
     "narrative": "정상. 비가 더 세진다.\n만술이 연기를 찾는다. 보이지 않는다. 비 때문에.",
     "choices": [
       { "label": "A. 그냥 내려간다", "goto": "d4_09" },
@@ -3399,7 +3399,7 @@
   },
 
   "d4_09": {
-    "panorama": "/panorama/d4_08_summit_rain.jpg",
+    "panorama": "/panorama/archetypes/rain_camp.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedInRainD4": { "gte": 1 } },
@@ -3411,7 +3411,7 @@
   },
 
   "d4_10": {
-    "panorama": "/panorama/d4_10_descent_footprints.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려오는 길. 봉길 아저씨가 앞에서 빠르게 내려간다.\n만술이 그 발자국을 보면서 내려온다.\n진흙에 찍힌 발자국. 봉길 아저씨 것.",
     "choices": [
       { "label": "A. 계속 밟는다", "goto": "d4_11" },
@@ -3420,7 +3420,7 @@
   },
 
   "d4_11": {
-    "panorama": "/panorama/d4_10_descent_footprints.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "tookOwnPathD4": { "gte": 1 } },
@@ -3432,7 +3432,7 @@
   },
 
   "d4_12": {
-    "panorama": "/panorama/d4_12_camp_wet.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "성칠이 만술한테 헝겊을 건넨다. \"닦아.\"\n만술이 받는다.\n봉길 아저씨가 젖은 채로 앉는다. 아무도 헝겊을 주지 않는다.",
     "choices": [
       { "label": "A. 건넨다", "goto": "d4_13", "effect": { "offeredClothD4": 1 } },
@@ -3441,7 +3441,7 @@
   },
 
   "d4_13": {
-    "panorama": "/panorama/d4_12_camp_wet.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "offeredClothD4": { "gte": 1 } },
@@ -3453,25 +3453,25 @@
   },
 
   "d4_14": {
-    "panorama": "/panorama/d4_14_evening_three.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 비가 그쳤다.\n오늘 저녁은 죽이다. 뜨겁다.\n만술이 먹는다. 성칠이 먹는다. 봉길 아저씨가 먹는다.\n셋이 나란히 앉아서 먹는다. 아무 말 없이.\n처음으로 — 셋이 나란히 앉아서 먹는다.\n봉길 아저씨가 먼저 다 먹는다. 일어나려다 — 만술을 본다. 성칠을 본다.\n그리고 앉는다. 봉길 아저씨가 앉는다. 오늘은. 그냥.",
     "next": "d4_15"
   },
 
   "d4_15": {
-    "panorama": "/panorama/d4_14_evening_three.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "셋이 앉아 있는다.\n봉길 아저씨가 말한다. 아무한테도 아닌 것처럼.\n\"비 오는 날엔 벼가 잘 큰다.\"\n그게 다다. 봉길 아저씨가 일어난다. 만술이 그 말을 받는다. 성칠도. 아무도 대답 안 한다. 그냥 받는다.",
     "next": "d4_end"
   },
 
   "d4_end": {
-    "panorama": "/panorama/d4_end_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n비 오는 날엔 벼가 잘 큰다.\n그 말이 어둠 속에 있다.\n\nD-4가 끝났다.",
     "next": "d3_01"
   },
 
   "d3_01": {
-    "panorama": "/panorama/d3_01_clear_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "아침. 맑다. 어제 비가 씻어냈다. 공기가 다르다.\n만술이 눈을 뜬다. 봉길 아저씨가 텐트 안에 있다.\n아직 안 일어났다.\n만술이 그걸 본다. 이상하다. 항상 먼저 일어났는데.",
     "choices": [
       { "label": "A. \"아저씨, 일어나야 해요.\" 한다", "goto": "d3_02", "effect": { "saidWakeUpD3": 1 } },
@@ -3480,7 +3480,7 @@
   },
 
   "d3_02": {
-    "panorama": "/panorama/d3_01_clear_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidWakeUpD3": { "gte": 1 } },
@@ -3492,7 +3492,7 @@
   },
 
   "d3_03": {
-    "panorama": "/panorama/d3_03_morning_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "성칠이 말한다. \"나흘 남았다.\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"세면 더 빨리 간다.\"",
     "choices": [
       { "label": "A. 센다 — 습관처럼", "goto": "d3_04", "effect": { "countedDaysD3": 1 } },
@@ -3501,7 +3501,7 @@
   },
 
   "d3_04": {
-    "panorama": "/panorama/d3_04_load_ammo.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "오늘 짐. 탄약 상자.\n만술이 맨다.\n그런데 오늘은 — 맨 다음에 잠깐 서 있는다.\n이 짐이 어디로 가는지. 이 탄약이 누구한테 쓰이는지.",
     "choices": [
       { "label": "A. 그냥 걷는다", "goto": "d3_05" },
@@ -3510,7 +3510,7 @@
   },
 
   "d3_05": {
-    "panorama": "/panorama/d3_04_load_ammo.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       {
         "condition": { "thoughtAboutAmmoD3": { "gte": 1 } },
@@ -3522,7 +3522,7 @@
   },
 
   "d3_06": {
-    "panorama": "/panorama/d3_06_ascent_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오늘 성칠이 만술 옆에서 걷는다.\n한참 오르다가 성칠이 말한다.\n\"만술아.\"\n처음으로 이름을 불렀다.",
     "choices": [
       { "label": "A. \"응.\" 한다", "goto": "d3_07", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -3531,7 +3531,7 @@
   },
 
   "d3_07": {
-    "panorama": "/panorama/d3_06_ascent_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedAtSeongchilD3": { "gte": 1 } },
@@ -3543,13 +3543,13 @@
   },
 
   "d3_08": {
-    "panorama": "/panorama/d3_08_rest_bonggil.jpg",
+    "panorama": "/panorama/archetypes/mountain_rest.jpg",
     "narrative": "쉬는 시간. 봉길 아저씨가 혼자 앉아 있다.\n만술이 다가간다. 옆에 앉는다.\n봉길 아저씨가 보지 않는다.\n만술이 말한다. \"아저씨.\"\n봉길 아저씨가 말한다. \"왜.\"\n만술이 말한다. \"이틀 있으면 우리 고개 하나만 더 오르면 된대요.\"\n봉길 아저씨가 침묵한다.\n그리고 말한다. \"그래.\"\n그게 다다. 그런데 오래 남는다.",
     "next": "d3_09"
   },
 
   "d3_09": {
-    "panorama": "/panorama/d3_09_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 오늘 연기는 두 줄기.\n만술이 센다. 하나. 둘.\n성칠이 옆에서 본다. \"세고 있어?\"\n만술이 고개를 끄덕인다.\n성칠이 말한다. \"처음부터 셌어?\"",
     "choices": [
       { "label": "A. \"응.\" 한다", "goto": "d3_10", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -3559,7 +3559,7 @@
   },
 
   "d3_10": {
-    "panorama": "/panorama/d3_09_summit_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidSinceD16": { "gte": 1 } },
@@ -3571,7 +3571,7 @@
   },
 
   "d3_11": {
-    "panorama": "/panorama/d3_11_descent_strange.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려오는 길. 뭔가 이상하다.\n뭔지 모르는데 — 이상하다.",
     "choices": [
       { "label": "A. 성칠한테 \"이상하지 않아?\" 한다", "goto": "d3_12", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "askedStrangeD3": 1 } },
@@ -3581,7 +3581,7 @@
   },
 
   "d3_12": {
-    "panorama": "/panorama/d3_11_descent_strange.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedStrangeD3": { "gte": 1 } },
@@ -3593,7 +3593,7 @@
   },
 
   "d3_13": {
-    "panorama": "/panorama/d3_13_evening_us.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 미군들이 많아졌다. 오늘 새로 온 것 같다.\n하사가 군인들이랑 뭔가 이야기한다. 빠르게.",
     "choices": [
       { "label": "A. 본다", "goto": "d3_14" },
@@ -3603,7 +3603,7 @@
   },
 
   "d3_14": {
-    "panorama": "/panorama/d3_13_evening_us.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilUSD3": { "gte": 1 } },
@@ -3615,7 +3615,7 @@
   },
 
   "d3_15": {
-    "panorama": "/panorama/d3_15_night_route_changes.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "텐트 밖. 성칠이 말한다.\n\"내일 루트 바뀐대.\"\n만술이 본다.\n성칠이 말한다. \"들었어. 군인들이 얘기하는 거.\"",
     "choices": [
       { "label": "A. \"어디로?\" 한다", "goto": "d3_16", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "askedWhereD3": 1 } },
@@ -3625,7 +3625,7 @@
   },
 
   "d3_16": {
-    "panorama": "/panorama/d3_15_night_route_changes.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "askedWhereD3": { "gte": 1 } },
@@ -3637,7 +3637,7 @@
   },
 
   "d3_17": {
-    "panorama": "/panorama/d3_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n저 고개.",
     "choices": [
       { "label": "A. 그냥 잔다", "goto": "d3_end" },
@@ -3646,7 +3646,7 @@
   },
 
   "d3_end": {
-    "panorama": "/panorama/d3_17_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "thoughtAboutPassD3": { "gte": 1 } },
@@ -3658,13 +3658,13 @@
   },
 
   "d2_01": {
-    "panorama": "/panorama/d2_01_camp_tense.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "아침. 캠프 분위기가 다르다.\nD-12때랑 비슷한데 — 더하다.\n군인들이 빠르게 움직인다. 말이 없다.\n하사가 지게꾼들을 모은다.\n\"오늘 루트 다르다. 빠르게 움직여. 뒤처지면 안 된다.\"\n그게 다다.",
     "next": "d2_02"
   },
 
   "d2_02": {
-    "panorama": "/panorama/d2_02_load_bonggil.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "성칠이 만술한테 낮게 말한다. \"어제 말한 고개 맞는 것 같아.\"\n만술이 고개를 끄덕인다.\n봉길 아저씨가 짐을 맨다. 빠르게. 표정이 없다.",
     "choices": [
       { "label": "A. \"아저씨, 오늘 루트 바뀐대요.\" 한다", "goto": "d2_03", "effect": { "toldBonggilRouteD2": 1 } },
@@ -3673,7 +3673,7 @@
   },
 
   "d2_03": {
-    "panorama": "/panorama/d2_02_load_bonggil.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       {
         "condition": { "toldBonggilRouteD2": { "gte": 1 } },
@@ -3685,13 +3685,13 @@
   },
 
   "d2_04": {
-    "panorama": "/panorama/d2_04_departure.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "줄이 선다. 오늘은 군인이 더 많다. 앞에도. 뒤에도.\n만술이 줄 중간에 선다. 봉길 아저씨가 앞에. 성칠이 뒤에.\n출발.",
     "next": "d2_05"
   },
 
   "d2_05": {
-    "panorama": "/panorama/d2_05_ascent_steep.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오늘 길은 처음 가는 길이다. 가파르다. 어제까지 오른 어떤 고개보다.",
     "choices": [
       { "label": "A. 리듬을 찾는다 — 하나. 둘.", "goto": "d2_06" },
@@ -3701,7 +3701,7 @@
   },
 
   "d2_06": {
-    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "고개 중턱. 총 소리가 난다. 가깝다.\n\"엎드려.\"\n다들 엎드린다.\n이번엔 — 길다. 총 소리가 계속된다.\n흙 냄새.",
     "choices": [
       { "label": "A. 눈을 감는다", "goto": "d2_07" },
@@ -3711,7 +3711,7 @@
   },
 
   "d2_07": {
-    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedForBonggilD2": { "gte": 1 } },
@@ -3723,7 +3723,7 @@
   },
 
   "d2_08": {
-    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "성칠이 만술 옆에 있다.\n성칠이 낮게 말한다. \"괜찮아?\"",
     "choices": [
       { "label": "A. \"응.\" 한다", "goto": "d2_09", "condition": { "knowsSeongchil": { "gte": 1 } } },
@@ -3733,7 +3733,7 @@
   },
 
   "d2_09": {
-    "panorama": "/panorama/d2_06_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrativeVariants": [
       {
         "condition": { "heldSeongchilHandD2": { "gte": 1 } },
@@ -3745,13 +3745,13 @@
   },
 
   "d2_10": {
-    "panorama": "/panorama/d2_10_after_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "총 소리가 멈춘다.\n군인이 말한다. \"간다.\"\n다들 일어난다.\n만술이 일어난다. 무릎이 떨린다.\n봉길 아저씨가 일어난다. 안 떨린다.\n성칠이 일어난다. 만술과 눈이 마주친다.\n그냥 걷는다.",
     "next": "d2_11"
   },
 
   "d2_11": {
-    "panorama": "/panorama/d2_11_summit_chaos.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrative": "정상. 오늘 정상은 다르다.\n군인들이 많다. 미군들도 있다. 뭔가 빠르게 움직인다.\n만술이 서 있는다.\n연기를 세려 하는데 — 오늘은 못 센다. 너무 정신없다.\n봉길 아저씨가 만술 옆에 선다. 처음으로 — 오늘 처음으로 — 옆에 선다.\n말이 없다. 만술도 말이 없다.\n둘이 그 정상에서 나란히 선다.",
     "choices": [
       { "label": "A. 아무 말 안 한다", "goto": "d2_12" },
@@ -3760,7 +3760,7 @@
   },
 
   "d2_12": {
-    "panorama": "/panorama/d2_11_summit_chaos.jpg",
+    "panorama": "/panorama/archetypes/summit_busy.jpg",
     "narrativeVariants": [
       {
         "condition": { "calledBonggilSummitD2": { "gte": 1 } },
@@ -3772,13 +3772,13 @@
   },
 
   "d2_13": {
-    "panorama": "/panorama/d2_13_descent_together.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려오는 길. 봉길 아저씨가 만술 옆에서 내려온다. 자연스럽게.\n아무 말 없다.\n그냥 나란히 내려온다.\n오늘 이게 다다. 나란히 내려온다.",
     "next": "d2_14"
   },
 
   "d2_14": {
-    "panorama": "/panorama/d2_14_evening_three.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "셋이 나란히 앉는다. 자연스럽게.\n봉길 아저씨. 만술. 성칠.\n밥을 먹는다.\n봉길 아저씨가 말한다.\n\"내일이다.\"",
     "choices": [
       { "label": "A. \"네.\" 한다", "goto": "d2_15" },
@@ -3788,7 +3788,7 @@
   },
 
   "d2_15": {
-    "panorama": "/panorama/d2_14_evening_three.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilTomorrowD2": { "gte": 1 } },
@@ -3800,7 +3800,7 @@
   },
 
   "d2_16": {
-    "panorama": "/panorama/d2_16_night_seongchil_scared.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "텐트 밖. 성칠이 만술 옆에 앉는다.\n말이 없다.\n한참 있다가 성칠이 말한다. \"무서워?\"",
     "choices": [
       { "label": "A. \"응.\" 한다", "goto": "d2_17", "condition": { "knowsSeongchil": { "gte": 1 } }, "effect": { "saidScaredYesD2": 1 } },
@@ -3810,7 +3810,7 @@
   },
 
   "d2_17": {
-    "panorama": "/panorama/d2_16_night_seongchil_scared.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidScaredYesD2": { "gte": 1 } },
@@ -3822,7 +3822,7 @@
   },
 
   "d2_18": {
-    "panorama": "/panorama/d2_18_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n침묵.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.\n내일이다.",
     "choices": [
       { "label": "A. 잠이 온다", "goto": "d2_end" },
@@ -3831,7 +3831,7 @@
   },
 
   "d2_end": {
-    "panorama": "/panorama/d2_18_tent_night.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "stayedAwakeD2": { "gte": 1 }, "riceKept": { "gte": 1 } },
@@ -3847,19 +3847,19 @@
   },
 
   "d1_01": {
-    "panorama": "/panorama/d1_01_last_morning.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "아침. 만술이 눈을 뜬다.\n봉길 아저씨가 있다. 텐트 안에. 성칠이 있다.\n셋 다 있다.\n만술이 그걸 본다.",
     "next": "d1_02"
   },
 
   "d1_02": {
-    "panorama": "/panorama/d1_02_last_breakfast.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "밖. 건빵.\n만술이 물에 적신다. 성칠이 물에 적신다.\n봉길 아저씨가 — 물에 적신다. 처음으로.\n만술이 그걸 본다. 봉길 아저씨가 건빵을 물에 적시는 것.\n아무 말 안 한다. 그냥 같이 먹는다.",
     "next": "d1_03"
   },
 
   "d1_03": {
-    "panorama": "/panorama/d1_03_load_ammo_last.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "하사가 짐을 배정한다. 탄약 상자.\n만술이 맨다. 마지막이다. 아마.\n끈을 맨다. 처음 날이랑 같은 끈인데 — 손이 다르다.",
     "choices": [
       { "label": "A. 그냥 맨다", "goto": "d1_04" },
@@ -3868,7 +3868,7 @@
   },
 
   "d1_04": {
-    "panorama": "/panorama/d1_03_load_ammo_last.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       {
         "condition": { "lookedAtHandsD1": { "gte": 1 } },
@@ -3880,7 +3880,7 @@
   },
 
   "d1_05": {
-    "panorama": "/panorama/d1_05_departure_last.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "줄이 선다. 봉길 아저씨가 앞에. 만술이 중간에. 성칠이 뒤에.\n출발.\n만술이 앞을 본다. 봉길 아저씨 등.\n저 등을 보면서 3주를 왔다.",
     "choices": [
       { "label": "A. 그냥 본다", "goto": "d1_06" },
@@ -3889,7 +3889,7 @@
   },
 
   "d1_06": {
-    "panorama": "/panorama/d1_06_second_bear.jpg",
+    "panorama": "/panorama/archetypes/bear_encounter.jpg",
     "narrative": "고개 중턱. 아무도 없는 시간. 군인들이 앞에서 멀어졌다.\n나무 사이에서 소리가 난다.\n만술이 멈춘다.\n무거운 발소리. 가깝다.\n나무 사이에서 — 곰이 나온다. 크다.\nD-15 밤보다 가깝다. 10미터.\n곰이 만술을 본다.",
     "choices": [
       { "label": "A. 숨는다 — 나무 뒤로", "goto": "d1_07", "effect": { "hidFromBearD1": 1 } },
@@ -3905,7 +3905,7 @@
   },
 
   "d1_07": {
-    "panorama": "/panorama/d1_06_second_bear.jpg",
+    "panorama": "/panorama/archetypes/bear_encounter.jpg",
     "narrativeVariants": [
       {
         "condition": { "pushedTowardBonggilD1": { "gte": 1 } },
@@ -3929,7 +3929,7 @@
   },
 
   "d1_08": {
-    "panorama": "/panorama/d1_08_after_bear.jpg",
+    "panorama": "/panorama/archetypes/bear_encounter.jpg",
     "narrative": "곰이 사라지고.\n봉길 아저씨가 만술을 본다.\n아무 말 안 한다.\n만술이 봉길 아저씨를 본다.",
     "choices": [
       { "label": "A. \"곰이었어요.\" 한다", "goto": "d1_09", "effect": { "saidItWasBearD1": 1 } },
@@ -3938,7 +3938,7 @@
   },
 
   "d1_09": {
-    "panorama": "/panorama/d1_08_after_bear.jpg",
+    "panorama": "/panorama/archetypes/bear_encounter.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidItWasBearD1": { "gte": 1 } },
@@ -3950,7 +3950,7 @@
   },
 
   "d1_10": {
-    "panorama": "/panorama/d1_10_summit_no_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "정상. 짐을 내려놓는다.\n만술이 선다.\n마지막이다.\n연기를 센다.\n오늘은 — 없다. 하나도 없다.\n만술이 그 하늘을 본다. 연기가 없는 하늘.",
     "choices": [
       { "label": "A. 바로 내려간다", "goto": "d1_11" },
@@ -3960,7 +3960,7 @@
   },
 
   "d1_11": {
-    "panorama": "/panorama/d1_10_summit_no_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       {
         "condition": { "stoodLongLastSummitD1": { "gte": 1 } },
@@ -3972,13 +3972,13 @@
   },
 
   "d1_12": {
-    "panorama": "/panorama/d1_12_descent_last.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "내려온다.\n발이 안다. 이 길을 안다.\n나무. 돌. 경사. 다 안다.\n만술이 내려오면서 생각한다. 21일.\n넘은 고개들.\n그 고개들이 다 여기로 왔다.",
     "next": "d1_13"
   },
 
   "d1_13": {
-    "panorama": "/panorama/d1_13_evening_rice_last.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrative": "저녁. 셋이 앉는다.\n오늘 저녁은 쌀밥이다. 또.\n봉길 아저씨가 먹는다. 오늘은 — 천천히.\n만술이 그걸 본다.\n성칠이 만술한테 낮게 말한다. \"끝났다.\"",
     "choices": [
       { "label": "A. \"응.\" 한다", "goto": "d1_14" },
@@ -3988,7 +3988,7 @@
   },
 
   "d1_14": {
-    "panorama": "/panorama/d1_13_evening_rice_last.jpg",
+    "panorama": "/panorama/archetypes/camp_evening.jpg",
     "narrativeVariants": [
       {
         "condition": { "watchedBonggilLastD1": { "gte": 1 } },
@@ -4000,7 +4000,7 @@
   },
 
   "d1_15": {
-    "panorama": "/panorama/d1_15_last_tent.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrative": "텐트. 봉길 아저씨가 눕는다. 성칠이 눕는다. 만술이 눕는다.\n침묵.\n봉길 아저씨가 말한다. \"자라.\"\n만술이 눈을 감는다.",
     "choices": [
       { "label": "A. \"예.\" 한다", "goto": "d1_end" },
@@ -4010,7 +4010,7 @@
   },
 
   "d1_end": {
-    "panorama": "/panorama/d1_15_last_tent.jpg",
+    "panorama": "/panorama/archetypes/tent_night.jpg",
     "narrativeVariants": [
       {
         "condition": { "saidYouTooD1": { "gte": 1 } },
@@ -4025,22 +4025,22 @@
   },
 
   "pivot_01": {
-    "panorama": "/panorama/pivot_01_wake.jpg",
+    "panorama": "/panorama/archetypes/tent_morning.jpg",
     "narrative": "아침. 눈을 뜬다.\n텐트 안. 봉길 아저씨. 성칠. 둘 다 있다.\n만술이 천장을 본다. 잠깐. 그리고 일어난다.",
     "next": "pivot_02"
   },
   "pivot_02": {
-    "panorama": "/panorama/pivot_02_different.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "밖에 나오면. 캠프가 다르다.\n군인들이 많다. 미군들도 있다. 하사가 빠르게 움직인다.\n지게꾼들이 모여 있다. 아무도 말이 없다.\n만술이 그 분위기를 본다.\n\n몸이 안다. 오늘이 다른 날이라는 것.",
     "next": "pivot_03"
   },
   "pivot_03": {
-    "panorama": "/panorama/pivot_03_three.jpg",
+    "panorama": "/panorama/archetypes/camp_morning.jpg",
     "narrative": "건빵. 셋이 앉는다. 봉길 아저씨. 만술. 성칠.\n물에 적신다. 셋 다. 아무 말 없다.\n봉길 아저씨가 씹는다. 만술이 씹는다. 성칠이 씹는다. 소리만 난다.\n봉길 아저씨가 다 먹는다. 일어나지 않는다.\n셋이 앉아 있는다.\n\n아무도 먼저 일어나지 않는다.",
     "next": "pivot_04"
   },
   "pivot_04": {
-    "panorama": "/panorama/pivot_04_load.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "하사가 짐을 배정한다. 탄약 상자. 만술이 받는다. 맨다. 끈을 묶는다.\n손이 기억한다. D-21부터 오늘까지. 스물하루.\n단단하게 맨다.",
     "choices": [
       { "label": "A. 확인한다 — 아직 있다", "goto": "pivot_05", "effect": { "checkedRicePivot": 1 } },
@@ -4048,7 +4048,7 @@
     ]
   },
   "pivot_05": {
-    "panorama": "/panorama/pivot_05_line.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrativeVariants": [
       { "condition": { "checkedRicePivot": { "gte": 1 } }, "text": "만술이 주머니에 손을 넣는다. 있다. 오늘도 있다. 손가락으로 굴린다. 한 번. 그리고 뺀다.\n\n줄이 선다. 봉길 아저씨가 앞에. 만술이 중간에. 성칠이 뒤에.\n3주 동안 같은 자리다.\n성칠이 만술 어깨를 한 번 친다. 말 없이.\n만술이 뒤를 돌아본다. 성칠이 앞을 본다. 봉길 아저씨가 앞을 본다." },
       { "condition": {}, "text": "줄이 선다. 봉길 아저씨가 앞에. 만술이 중간에. 성칠이 뒤에.\n3주 동안 같은 자리다.\n성칠이 만술 어깨를 한 번 친다. 말 없이.\n만술이 뒤를 돌아본다. 성칠이 앞을 본다. 봉길 아저씨가 앞을 본다." }
@@ -4056,22 +4056,22 @@
     "next": "pivot_06"
   },
   "pivot_06": {
-    "panorama": "/panorama/pivot_06_depart.jpg",
+    "panorama": "/panorama/archetypes/camp_load.jpg",
     "narrative": "군인이 말한다. \"간다.\"\n줄이 움직인다. 만술이 걷는다.\n오늘 고개.",
     "next": "pivot_07"
   },
   "pivot_07": {
-    "panorama": "/panorama/pivot_07_climb.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "오르막. 만술이 걷는다.\n발이 안다. 경사를 읽는 방법. 무게 중심을 잡는 방법. 숨 쉬는 타이밍.\n몸이 다 안다.\nD-20에서 몰랐던 것들을. 이제 다 안다.\n그게 좋은 건지 나쁜 건지 — 오늘은 모르겠다.\n그냥 오른다.",
     "next": "pivot_08"
   },
   "pivot_08": {
-    "panorama": "/panorama/pivot_08_passed.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "오르면서 만술이 본다. 길 옆 나무. 돌. 경사.\n어디선가 본 것 같은 것들.\n아니다. 다 처음 보는 것들이다.\n그런데 낯설지 않다. 3주 동안 다른 고개들을 올랐으니까.\n고개는 다 비슷하다. 그런데 다 달랐다.",
     "next": "pivot_09"
   },
   "pivot_09": {
-    "panorama": "/panorama/pivot_09_bonggil_back.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrative": "고개 중턱. 봉길 아저씨가 앞에 간다.\n만술이 그 등을 본다. 3주 동안 본 등이다.\n처음엔 — 뒤를 봐줬다. 그다음엔 — 안 봤다. 그다음엔 — 몰랐다. 어제는 — 나란히였다.\n오늘은. 봉길 아저씨가 걷는다. 그냥 걷는다.\n만술이 그 뒤에서 걷는다.",
     "choices": [
       { "label": "A. \"아저씨.\" 부른다", "goto": "pivot_10", "effect": { "calledBonggilPivot": 1 } },
@@ -4079,7 +4079,7 @@
     ]
   },
   "pivot_10": {
-    "panorama": "/panorama/pivot_10_seongchil.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       { "condition": { "calledBonggilPivot": { "gte": 1 } }, "text": "봉길 아저씨가 걸으면서 말한다. \"왜.\" 만술이 말한다. \"아무것도 아니에요.\"\n봉길 아저씨가 걷는다. 만술도 걷는다. 그냥 이름을 불렀다. 그게 다다.\n\n성칠이 만술 옆으로 온다. 숨을 고르면서 말한다. \"다 왔다.\"\n만술이 위를 본다. 정상이 보인다." },
       { "condition": {}, "text": "성칠이 만술 옆으로 온다. 숨을 고르면서 말한다. \"다 왔다.\"\n만술이 위를 본다. 정상이 보인다." }
@@ -4091,7 +4091,7 @@
     ]
   },
   "pivot_11": {
-    "panorama": "/panorama/pivot_11_gunfire.jpg",
+    "panorama": "/panorama/archetypes/combat_gunfire.jpg",
     "narrative": "정상 직전. 총 소리가 난다.\n가깝지 않다. 그런데 이 방향이다.\n줄이 속도를 올린다. 만술도 속도를 올린다.\n짐이 흔들린다. 발이 미끄러질 것 같다.",
     "choices": [
       { "label": "A. 속도를 올린다", "goto": "pivot_12" },
@@ -4100,7 +4100,7 @@
     ]
   },
   "pivot_12": {
-    "panorama": "/panorama/pivot_12_last_steps.jpg",
+    "panorama": "/panorama/archetypes/mountain_ascent.jpg",
     "narrativeVariants": [
       { "condition": { "lookedForBonggilPivot": { "gte": 1 } }, "text": "봉길 아저씨가 앞에 있다. 속도를 올리고 있다. 뒤를 보지 않는다.\n만술이 속도를 올린다. 봉길 아저씨 뒤를 따라간다.\n\n정상이 보인다. 만술이 오른다. 한 발. 한 발.\n숨이 찬다. 짐이 무겁다. 그런데 오른다." },
       { "condition": {}, "text": "정상이 보인다. 만술이 오른다. 한 발. 한 발.\n숨이 찬다. 짐이 무겁다. 그런데 오른다." }
@@ -4108,17 +4108,17 @@
     "next": "pivot_13"
   },
   "pivot_13": {
-    "panorama": "/panorama/pivot_13_arrival.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "정상. 만술이 선다. 숨을 고른다. 짐을 내려놓는다.\n의무병이 온다. 군인이 온다. 빠르게 움직인다.\n뭔가 있다. 무슨 일인지는 모른다.\n만술이 서 있는다.\n봉길 아저씨가 온다. 성칠이 온다. 셋이 선다.",
     "next": "pivot_14"
   },
   "pivot_14": {
-    "panorama": "/panorama/pivot_14_below.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "만술이 아래를 본다.\n저 아래. 마을들. 길들. 논들. 전장. 사람들.\n멀리서 보면 — 점이다. 다 점이다.\n만술이 그걸 본다.\n3주 동안 넘은 고개들. 저 아래 어딘가에 있다.\n다 점이다.",
     "next": "pivot_15"
   },
   "pivot_15": {
-    "panorama": "/panorama/pivot_15_bonggil_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "봉길 아저씨가 옆에 선다. 아래를 본다.\n만술이 봉길 아저씨를 본다.\n봉길 아저씨의 얼굴. 3주 전 논에서 보던 얼굴이랑 같은 얼굴이다. 다른 얼굴이다.\n봉길 아저씨가 말한다. 아주 낮게.\n\"다 저렇게 작네.\"\nD-10에서 한 번 했던 말이다. 그때는 아무한테도 아닌 것처럼 했는데.\n지금은 — 만술한테 하는 말 같다.",
     "choices": [
       { "label": "A. \"네.\" 한다", "goto": "pivot_16" },
@@ -4128,7 +4128,7 @@
     ]
   },
   "pivot_16": {
-    "panorama": "/panorama/pivot_16_seongchil_summit.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       { "condition": { "bonggilDistance": { "gte": 2 } }, "text": "봉길 아저씨가 만술을 본다. 오래. 그리고 아래를 본다. 아무 말 안 한다.\n만술도 아래를 본다. 점들이 있다. 작지만 거기 있다.\n\n성칠이 만술 옆에 온다. 아래를 본다.\n한참 후 성칠이 말한다. \"저 어딘가에 형이 있겠지.\"" },
       { "condition": {}, "text": "성칠이 만술 옆에 온다. 아래를 본다.\n한참 후 성칠이 말한다. \"저 어딘가에 형이 있겠지.\"" }
@@ -4140,7 +4140,7 @@
     ]
   },
   "pivot_17": {
-    "panorama": "/panorama/pivot_17_smoke.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       { "condition": { "knowsSeongchil": { "gte": 1 } }, "text": "성칠이 만술을 본다. 그리고 웃는다. 작게. 만술도 웃는다. 아주 작게.\n봉길 아저씨는 아래를 보고 있다.\n\n만술이 연기를 센다. 습관이다.\n오늘은 — 없다. 어제도 없었다.\n만술이 그 하늘을 본다. 연기가 없는 하늘.\nD-20에서 두 줄기를 봤던 것. 다섯이 됐다가. 줄었다가. 없어졌다.\n뭔지 모른다. 끝난 건지. 아니면 다른 데로 간 건지." },
       { "condition": {}, "text": "만술이 연기를 센다. 습관이다.\n오늘은 — 없다. 어제도 없었다.\n만술이 그 하늘을 본다. 연기가 없는 하늘.\nD-20에서 두 줄기를 봤던 것. 다섯이 됐다가. 줄었다가. 없어졌다.\n뭔지 모른다. 끝난 건지. 아니면 다른 데로 간 건지." }
@@ -4151,12 +4151,12 @@
     ]
   },
   "pivot_18": {
-    "panorama": "/panorama/pivot_18_alone.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrative": "군인들이 빠르게 움직인다. 봉길 아저씨가 어딘가로 간다. 성칠이 어딘가로 간다.\n만술이 혼자 선다. 정상. 아래를 본다.\n바람이 분다. 짐이 없다. 몸이 가볍다.\n\n그냥 선다. 그냥 바람을 맞는다.",
     "next": "pivot_19"
   },
   "pivot_19": {
-    "panorama": "/panorama/pivot_19_pocket.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "만술이 주머니에 손을 넣는다. 쌀알. 꺼낸다. 손바닥 위에 올린다.\n오늘은 낮이라 보인다. 작다.\nD-21 트럭 바닥에 있던 것. 왜 집었는지 몰랐다.\n지금도 확실히 모른다. 그냥 — 집었다.\n만술이 쌀알을 본다.",
     "choices": [
       { "label": "A. 다시 주머니에 넣는다", "goto": "pivot_20", "effect": { "keptRiceFinal": 1 } },
@@ -4165,7 +4165,7 @@
     ]
   },
   "pivot_20": {
-    "panorama": "/panorama/pivot_20_return.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       { "condition": { "keptRiceFinal": { "gte": 1 } }, "text": "만술이 쌀알을 다시 주머니에 넣는다. 아직 가지고 간다.\n\n봉길 아저씨가 돌아온다. 만술 옆에 선다. 아래를 본다.\n만술도 아래를 본다. 아무 말 없다. 한참.\n봉길 아저씨가 말한다. \"내려가자.\"" },
       { "condition": { "releasedRice": { "gte": 1 } }, "text": "쌀알이 바람에 날린다. 어디로 가는지 모른다. 저 아래로 가겠지. 점들 어딘가로.\n\n봉길 아저씨가 돌아온다. 만술 옆에 선다. 아래를 본다.\n만술도 아래를 본다. 아무 말 없다. 한참.\n봉길 아저씨가 말한다. \"내려가자.\"" },
@@ -4178,7 +4178,7 @@
     ]
   },
   "pivot_21": {
-    "panorama": "/panorama/pivot_21_last_look.jpg",
+    "panorama": "/panorama/archetypes/summit_clear.jpg",
     "narrativeVariants": [
       { "condition": { "bonggilDistance": { "gte": 1 } }, "text": "봉길 아저씨가 만술을 본다. 만술이 봉길 아저씨를 본다. 할 말이 없다. 그냥 봤다.\n봉길 아저씨가 만술을 본다. 그리고 말한다. \"가자.\" 만술이 고개를 끄덕인다.\n\n내려가기 전. 만술이 마지막으로 아래를 본다.\n저 아래. 점들.\n3주 동안 넘은 고개들이 저 어딘가에 있다.\n처음 올랐던 고개. 앞사람이 없어진 날. 계곡의 얼굴들. 재복. 비. 곰. 봉길 아저씨의 등. 성칠의 손.\n다 점이다. 멀리서 보면.\n그런데 — 있었다. 만술이 거기 있었다." },
       { "condition": {}, "text": "내려가기 전. 만술이 마지막으로 아래를 본다.\n저 아래. 점들.\n3주 동안 넘은 고개들이 저 어딘가에 있다.\n처음 올랐던 고개. 앞사람이 없어진 날. 계곡의 얼굴들. 재복. 비. 곰. 봉길 아저씨의 등. 성칠의 손.\n다 점이다. 멀리서 보면.\n그런데 — 있었다. 만술이 거기 있었다." }
@@ -4186,28 +4186,28 @@
     "next": "pivot_22"
   },
   "pivot_22": {
-    "panorama": "/panorama/pivot_22_descend.jpg",
+    "panorama": "/panorama/archetypes/mountain_descent.jpg",
     "narrative": "만술이 내려가기 시작한다. 봉길 아저씨가 앞에. 성칠이 뒤에.\n발이 안다. 내리막을. 한 발. 한 발.\n\n페이드 아웃.",
     "next": "ending_01"
   },
 
   "ending_01": {
-    "panorama": "/panorama/ending_01_time_passed.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "페이드 인. 어느 날.\n만술이 걷는다. 혼자.\n짐이 없다. 지게가 없다.\n어디로 가는지 모른다. 그냥 걷는다.",
     "next": "ending_02"
   },
   "ending_02": {
-    "panorama": "/panorama/ending_02_hill.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "언덕이 보인다. 높다. 고개들이랑 다르다.\n고개는 넘어야 했다. 이 언덕은 — 그냥 있다.\n만술이 오른다.",
     "next": "ending_03"
   },
   "ending_03": {
-    "panorama": "/panorama/ending_03_weight.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "오르면서. 짐이 없는데 — 발이 무겁다.\n고개들을 오를 때랑 다른 무게.\n그 무게가 뭔지 모른다. 그냥 무겁다.",
     "next": "ending_04"
   },
   "ending_04": {
-    "panorama": "/panorama/ending_04_passed.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrativeVariants": [
       { "condition": { "bonggilDistance": { "gte": 5 }, "knowsSeongchil": { "gte": 1 } }, "text": "봉길 아저씨가 어딘가 있다. 성칠이 어딘가 있다.\n그런데 만술이 혼자 이 언덕을 오른다.\n왜 혼자인지 모른다. 그냥 오른다." },
       { "condition": { "bonggilDistance": { "gte": 5 } }, "text": "봉길 아저씨가 어디서 갔는지 모른다. 어느 날 없었다. 설명이 없었다.\n그게 이 전쟁의 방식이었다.\n만술이 오르면서 생각한다. *비 오는 날엔 벼가 잘 큰다.* 그 말이 있다.\n봉길 아저씨는 없다." },
@@ -4218,22 +4218,22 @@
     "next": "ending_05"
   },
   "ending_05": {
-    "panorama": "/panorama/ending_05_arrival.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "언덕 정상. 만술이 선다. 숨을 고른다.\n아무것도 내려놓을 게 없다. 짐이 없으니까.",
     "next": "ending_06"
   },
   "ending_06": {
-    "panorama": "/panorama/ending_06_below.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "아래를 본다. 마을들. 길들. 논들. 산들.\n전장이 어딘지 모른다. 다 같이 보인다.\n멀리서 보면 — 점이다. 다 점이다.\n3주 동안 거기 있었다. 저 점들 어딘가에.\n지금은 여기 있다.",
     "next": "ending_07"
   },
   "ending_07": {
-    "panorama": "/panorama/ending_07_nothing.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "바람이 분다. 만술이 서 있는다.\n살아남았다. 혼자다.\n이제 아무것도 없다.\n봉길 아저씨가 없거나. 성칠이 없거나. 둘 다 있어도 — 뭔가 없다.\n그 없음이 뭔지 모른다.\n이름이 없다.",
     "next": "ending_08"
   },
   "ending_08": {
-    "panorama": "/panorama/ending_08_pocket.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrativeVariants": [
       { "condition": { "releasedRice": { "gte": 1 } }, "text": "만술이 빈 주머니에 손을 넣는다. 아무것도 없다. 손을 뺀다." },
       { "condition": {}, "text": "만술이 주머니에 손을 넣는다. 쌀알이 있다.\n만술이 쌀알을 꺼낸다. 손바닥 위에 올린다. 바람이 분다. 날아갈 것 같다.\n만술이 손을 오므린다. 꼭 쥔다." }
@@ -4241,7 +4241,7 @@
     "next": "ending_09"
   },
   "ending_09": {
-    "panorama": "/panorama/ending_09_last_line.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrativeVariants": [
       { "condition": { "bonggilDistance": { "gte": 5 }, "knowsSeongchil": { "gte": 1 } }, "text": "만술이 아래를 본다.\n아무 말도 안 한다. 끝까지.\n그냥 선다. 그냥 본다.\n바람이 분다.\n그게 다다." },
       { "condition": { "bonggilDistance": { "gte": 5 } }, "text": "만술이 아래를 본다.\n아무 말 없다. 한참.\n그리고 아주 낮게.\n\"비 오는 날엔 벼가 잘 큰다.\"\n봉길 아저씨 말이다. 만술이 한다." },
@@ -4252,7 +4252,7 @@
     "next": "ending_end"
   },
   "ending_end": {
-    "panorama": "/panorama/ending_end_fade.jpg",
+    "panorama": "/panorama/archetypes/ending_hill.jpg",
     "narrative": "어느 루트든. 만술이 서 있다.\n저 아래 점들. 바람. 만술의 등.\n카메라가 만술의 등을 본다. 멀어진다. 멀어진다.\n만술이 작아진다. 점이 된다.\n페이드 아웃.\n\n\"1950년 여름부터 1953년 휴전까지, 대한민국 국군을 지원한 민간인 지게꾼은 약 17만 명으로 추산된다. 이름이 기록된 사람은 거의 없다.\"\n\n페이드 아웃.\n\nEND."
   }
 }
