@@ -53,6 +53,20 @@ const director = new GameDirector(canvas, sceneGraph, {
   keptOwnRhythm: 0,
   saidDontKnowName: 0,
   askedHowMuchLonger: 0,
+  sawSmokeGap: 0,
+  slowedInRain: 0,
+  noticedNoSmokeSmell: 0,
+  closedEyesListening: 0,
+  askedHomesick: 0,
+  toldBonggilAboutBear: 0,
+  followedBonggilD14: 0,
+  watchedBonggilBack: 0,
+  toldBonggilSmokeCount: 0,
+  agreedBonggilQuiet: 0,
+  feltSafeNarrow: 0,
+  watchedBonggilWatchSoldier: 0,
+  askedSeongchilFamily: 0,
+  calledBonggilD14: 0,
 });
 
 const firstNode = Object.keys(sceneGraph)[0];
