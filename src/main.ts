@@ -48,6 +48,11 @@ const director = new GameDirector(canvas, sceneGraph, {
   saidLoadDiffers: 0,
   toldSeongchilName: 0,
   silentAtNightD17: 0,
+  askedBonggilAboutMissing: 0,
+  askedSeongchilAboutMissing: 0,
+  keptOwnRhythm: 0,
+  saidDontKnowName: 0,
+  askedHowMuchLonger: 0,
 });
 
 const firstNode = Object.keys(sceneGraph)[0];
